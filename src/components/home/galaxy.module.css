@@ -1,0 +1,11 @@
+.galaxy {
+    background: url("https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fbg.webp?alt=media&token=04065e19-33a8-4aaf-9f66-c189f13542cc");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.entusiasta {
+    background: url("https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fentusiastas.png?alt=media&token=d2855cd0-4d35-41dd-8242-8174a974bea2");
+    background-size: contain;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,36 @@
+.wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(252, 249, 240);
+    background: -moz-linear-gradient(
+        180deg,
+        rgba(252, 249, 240, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+        180deg,
+        rgba(252, 249, 240, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+    );
+    background: linear-gradient(
+        180deg,
+        rgba(252, 249, 240, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcf9f0",endColorstr="#000000",GradientType=1);
+}
+
+.hand {
+    background: rgb(87,57,251);
+    background: linear-gradient(180deg, rgba(87,57,251,1) 0%, rgba(0,0,0,1) 66%);
+}
+
+.hand_image {
+    background: url("https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fhand.png?alt=media&token=1a78095c-4488-45c5-a4eb-e5d3bbf8dce6");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}

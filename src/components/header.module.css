@@ -1,0 +1,34 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_mobile {
+    transition: all 0.3s ease-in-out;
+    height: 0;
+    overflow: hidden;
+}
+
+.dropdown.active .dropdown_mobile {
+    transition: all 0.3s ease-in-out;
+    height: 155px;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 10%);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.active_header_mobile {
+    display: none;
+}
