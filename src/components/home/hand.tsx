@@ -23,34 +23,34 @@ export default function Hand() {
         );
         camera.position.z = 550;
 
-        const purpleLight = new THREE.PointLight(0x800080); // Purple color
+        const purpleLight = new THREE.PointLight(0xbcf500); // Purple color
         purpleLight.position.set(-600, +10, -300);
         purpleLight.scale.set(1, 1, 1);
         purpleLight.intensity = 10;
         purpleLight.decay = 0.1;
         scene.add(purpleLight);
 
-        const blueLight = new THREE.PointLight(0x234e8f);
+        const blueLight = new THREE.PointLight(0xbcf500);
         blueLight.position.set(-90, 0, 1);
         blueLight.scale.set(1, 1, 1);
         blueLight.distance = 1605;
-        blueLight.intensity = 100;
+        blueLight.intensity = 10;
         blueLight.decay = 0.1;
         scene.add(blueLight);
 
-        const blueLightTop = new THREE.PointLight(0x234e8f);
+        const blueLightTop = new THREE.PointLight(0xffffff);
         blueLightTop.position.set(0, +200, 100);
         blueLightTop.scale.set(1, 1, 1);
         blueLightTop.distance = 160;
-        blueLightTop.intensity = 100;
+        blueLightTop.intensity = 10;
         blueLightTop.decay = 0.1;
         scene.add(blueLightTop);
 
-        const blueLightCenter = new THREE.PointLight(0x23898f);
+        const blueLightCenter = new THREE.PointLight(0xbcf500);
         blueLightCenter.position.set(0, +90, 100);
         blueLightCenter.scale.set(1, 1, 1);
         blueLightCenter.distance = 160;
-        blueLightCenter.intensity = 100;
+        blueLightCenter.intensity = 10;
         blueLightCenter.decay = 0.1;
         scene.add(blueLightCenter);
 
@@ -104,7 +104,7 @@ export default function Hand() {
                 <div className={`${styles.wrapper} z-[2]`}></div>
                 <div className="absolute top-[76px]">
                     <h2
-                        className="text-white font-primary text-[72px] not-italic font-bold leading-[normal] lg:text-[260px] lg:leading-[250px]"
+                        className="text-white font-secondary text-[150px]  leading-[normal] lg:text-[344px] lg:leading-[250px]"
                     >
                         EL MUNDO
                     </h2>
@@ -115,7 +115,7 @@ export default function Hand() {
                 </div>
                 <div className="absolute bottom-[41px] z-[2]">
                     <div
-                        className="text-white font-primary text-[44px] not-italic font-normal leading-[normal] lg:text-[150px] lg:leading-[120px]"
+                        className="text-[#bcf500] font-secondary text-[90px] not-italic font-normal leading-[normal] lg:text-[150px] lg:leading-[120px]"
                     >
                         EN TUS MANOS
                     </div>

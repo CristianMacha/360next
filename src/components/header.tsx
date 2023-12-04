@@ -1,10 +1,11 @@
 'use client'
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { useEffect } from 'react';
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { usePathname } from 'next/navigation';
+import styles from './header.module.css';
 
 export default function Header() {
     const pathName = usePathname();
@@ -40,7 +41,7 @@ export default function Header() {
 
     return (
         <div>
-            <header className="flex h-[86px] lg:h-[96px] px-[16px] lg:px-[40px] items-center justify-center w-full header__animate fixed z-50 backdrop-blur-md bg-white/30">
+            <header className={`flex h-[86px] lg:h-[96px] px-[16px] lg:px-[40px] items-center justify-center w-full header__animate fixed z-50 backdrop-blur-md bg-white/30`}>
                 <div className='flex justify-between items-center w-full'>
                     <div className='flex items-center gap-[96px]'>
                         <Link href='/'>
@@ -50,7 +51,9 @@ export default function Header() {
                                 className='w-[90px] h-[56px] lg:w-[128.913px] lg:h-[80.01px]' />
                         </Link>
                         <div className='hidden lg:flex items-start gap-[44px]'>
-                            <Link key={'portfolio'} href='/portfolio' className={`text-black font-primary text-[18px] not-italic font-medium leading-[normal] ${pathName === '/portfolio' ? 'text-blue-500 font-bold' : ''}`}>Portafolio</Link>
+                            <Link key={'portfolio'} href='/portfolio' className={`text-black font-primary text-[18px] not-italic font-medium leading-[normal] ${pathName === '/portfolio' ? 'text-blue-500 font-bold' : ''}`}>Precios</Link>
+                            <Link key={'portfolio'} href='/portfolio' className={`text-black font-primary text-[18px] not-italic font-medium leading-[normal] ${pathName === '/portfolio' ? 'text-blue-500 font-bold' : ''}`}>Nosotros</Link>
+                            {/* <Link key={'portfolio'} href='/portfolio' className={`text-black font-primary text-[18px] not-italic font-medium leading-[normal] ${pathName === '/portfolio' ? 'text-blue-500 font-bold' : ''}`}>Contacto</Link> */}
                             <div className={`text-black font-primary text-[18px] not-italic font-medium leading-[normal] cursor-pointer dropdown ${(pathName === '/design-web' || pathName === '/social-media') ? 'text-blue-500 font-bold' : ''}`}>
                                 Servicios
                                 <div className={`dropdown_content p-[16px] rounded-lg`}>
@@ -63,7 +66,7 @@ export default function Header() {
                         </div>
                     </div>
                     <div className='flex justify-center items-center'>
-                        <Link key={'contact'} href={'/contact'} className='hidden lg:block px-[16px] py-[8px] bg-black text-white rounded-full'>CONTACTO</Link>
+                        <Link key={'contact'} href={'/contact'} className='hidden lg:block px-[16px] py-[8px] bg-[#bcf500] text-black font-medium rounded-full'>CONTACTO</Link>
                         <button className="flex lg:hidden w-[46px] h-[46px] justify-center items-center rounded-full" id="btn_open_header_mobile" onClick={showHeaderMobile}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +139,7 @@ export default function Header() {
                 </div>
                 <div className="w-full flex justify-center">
                     <button
-                        className="px-[16px] py-[8px] bg-black text-white rounded-full effect_expand_x">CONTACTO</button>
+                        className="px-[16px] py-[8px] bg-[#bcf500] text-black font-medium rounded-full effect_expand_x">CONTACTO</button>
                 </div>
             </div>
         </div>

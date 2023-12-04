@@ -1,7 +1,6 @@
 .galaxy {
-    background: url("https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fbg.webp?alt=media&token=04065e19-33a8-4aaf-9f66-c189f13542cc");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 12%, rgba(188, 245, 0, 1) 100%);
 }
 
 .entusiasta {

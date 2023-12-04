@@ -6,7 +6,7 @@ interface CardProps {
 }
 export default function CardSample({ url, title, description, items }: CardProps) {
     return (
-        <div className="flex items-end h-[690px] md:h-screen px-[20px] pb-[20px] md:px-[40px] md:pb-[40px]" style={{backgroundImage: `url(${url})`}}>
+        <div className="flex items-end h-[690px] md:h-screen px-[20px] pb-[20px] md:px-[40px] md:pb-[40px]" style={{backgroundImage: `url(${url})`, backgroundPosition: 'center', backgroundSize: 'cover'}}>
             <div className="flex flex-col md:flex-row gap-1">
                 <div className="flex flex-col gap-4">
                     <div className="font-primary text-white text-[32px] md:text-[60px] font-medium">{title}</div>
