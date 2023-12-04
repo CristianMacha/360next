@@ -40,13 +40,13 @@ export default function Contact() {
     return (
         <>
             <div className='h-screen flex justify-center items-center bg-blue-50'>one</div>
-            <div className=' h-[400vh] content__pin relative'>
-                <div className='h-screen flex justify-center items-center pin__content z-10 sticky top-0'>
-                    <div className={`bg-purple-500 ${styles.clip5} clip5`}>
-                        <div className={`bg-pink-500 ${styles.clip4} clip4`}>
-                            <div className={`bg-yellow-500 ${styles.clip3} clip3`}>
-                                <div className={`bg-blue-500 ${styles.clip2} clip2`}>
-                                    <div className={`bg-white ${styles.clip1} clip1 flex justify-center`}>
+            <div className='h-[400vh] content__pin relative'>
+                <div className='h-screen flex justify-center items-center pin__content sticky top-0'>
+                    <div className={`bg-purple-500 ${styles.clip5} clip5 w-full`}>
+                        <div className={`bg-pink-500 ${styles.clip4} clip4 w-full`}>
+                            <div className={`bg-yellow-500 ${styles.clip3} clip3 w-full`}>
+                                <div className={`bg-blue-500 ${styles.clip2} clip2 w-full`}>
+                                    <div className={`bg-white ${styles.clip1} clip1 flex justify-center w-full`}>
                                         <section className={`flex py-[40px] px-[16px] flex-col justify-center items-center gap-[8px] w-full bg-[#ABABE7] h-screen lg:p-[80px] banner_gsap`}>
                                             <div className="flex flex-col justify-center items-center gap-[80px] self-stretch lg:gap-[200px]">
                                                 <div className="flex flex-col justify-center items-center gap-[32px] self-stretch lg:gap-[64px]">
