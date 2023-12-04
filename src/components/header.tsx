@@ -44,7 +44,10 @@ export default function Header() {
                 <div className='flex justify-between items-center w-full'>
                     <div className='flex items-center gap-[96px]'>
                         <Link href='/'>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Flogo360-black.png?alt=media&token=9f3c6088-efe7-4c26-a1da-b6806082faeb" alt="logo" className='w-[90px] h-[56px] lg:w-[128.913px] lg:h-[80.01px]' />
+                            <img
+                                src="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Flogo360Black.png?alt=media&token=4de7eb5c-2891-456a-8a44-73b726ffd991"
+                                alt="logo"
+                                className='w-[90px] h-[56px] lg:w-[128.913px] lg:h-[80.01px]' />
                         </Link>
                         <div className='hidden lg:flex items-start gap-[44px]'>
                             <Link key={'portfolio'} href='/portfolio' className={`text-black font-primary text-[18px] not-italic font-medium leading-[normal] ${pathName === '/portfolio' ? 'text-blue-500 font-bold' : ''}`}>Portafolio</Link>
