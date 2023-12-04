@@ -14,13 +14,14 @@ export default function Banner() {
                 trigger: ".banner_gsap",
                 start: "center-=100 center",
                 end: "center+=100 center",
-                scrub: 0.5,
+                scrub: true,
             },
         });
-        tl.to(".banner_gsap", {
-            clipPath: "circle(70.7% at 50% 50%)",
-            ease: "power2.inOut",
-        })
+        tl
+            .to(".banner_gsap", {
+                clipPath: "circle(70.7% at 50% 50%)",
+                ease: "power2.inOut",
+            })
             .to(".clip1", { clipPath: "circle(100.7% at 50% 50%)" }, "-=0.5")
             .to(".clip2", { clipPath: "circle(100.7% at 50% 50%)" }, "-=0.6")
             .to(".clip3", { clipPath: "circle(100.7% at 50% 50%)" }, "-=0.7")

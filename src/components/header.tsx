@@ -5,7 +5,6 @@ import { useEffect } from 'react';
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import styles from './header.module.css';
 
 export default function Header() {
     const pathName = usePathname();
@@ -52,21 +51,21 @@ export default function Header() {
                         </Link>
                         <div className='hidden lg:flex items-start gap-[44px]'>
                             <Link key={'portfolio'} href='/portfolio' className={`text-black font-primary text-[18px] not-italic font-medium leading-[normal] ${pathName === '/portfolio' ? 'text-blue-500 font-bold' : ''}`}>Precios</Link>
-                            <Link key={'portfolio'} href='/portfolio' className={`text-black font-primary text-[18px] not-italic font-medium leading-[normal] ${pathName === '/portfolio' ? 'text-blue-500 font-bold' : ''}`}>Nosotros</Link>
-                            {/* <Link key={'portfolio'} href='/portfolio' className={`text-black font-primary text-[18px] not-italic font-medium leading-[normal] ${pathName === '/portfolio' ? 'text-blue-500 font-bold' : ''}`}>Contacto</Link> */}
+                            <Link key={'nosotros'} href='/portfolio' className={`text-black font-primary text-[18px] not-italic font-medium leading-[normal] ${pathName === '/portfolio' ? 'text-blue-500 font-bold' : ''}`}>Nosotros</Link>
                             <div className={`text-black font-primary text-[18px] not-italic font-medium leading-[normal] cursor-pointer dropdown ${(pathName === '/design-web' || pathName === '/social-media') ? 'text-blue-500 font-bold' : ''}`}>
                                 Servicios
                                 <div className={`dropdown_content p-[16px] rounded-lg`}>
                                     <div className='flex flex-col gap-[10px]'>
                                         <Link key={'design-web'} href={'/design-web'} className={`text-black font-primary text-[18px] not-italic font-medium leading-[normal] ${pathName === '/design-web' ? 'text-blue-500 font-bold' : ''}`}>Diseño Web</Link>
-                                        <Link key={'social-medial'} href={'/social-media'} className={`text-black font-primary text-[18px] not-italic font-medium leading-[normal] ${pathName === '/social-media' ? 'text-blue-500 font-bold' : ''}`}>Social Media</Link>
+                                        <Link key={'redes-sociales'} href={'/social-media'} className={`text-black font-primary text-[18px] not-italic font-medium leading-[normal] ${pathName === '/social-media' ? 'text-blue-500 font-bold' : ''}`}>Redes Sociales</Link>
+                                        <Link key={'desarrollo'} href={'/social-media'} className={`text-black font-primary text-[18px] not-italic font-medium leading-[normal] ${pathName === '/social-media' ? 'text-blue-500 font-bold' : ''}`}>Desarrollo</Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className='flex justify-center items-center'>
-                        <Link key={'contact'} href={'/contact'} className='hidden lg:block px-[16px] py-[8px] bg-[#bcf500] text-black font-medium rounded-full'>CONTACTO</Link>
+                        <Link key={'contact'} href={'/contact'} className='hidden lg:block px-[16px] py-[8px] text-black font-medium rounded-full'>CONTACTO</Link>
                         <button className="flex lg:hidden w-[46px] h-[46px] justify-center items-center rounded-full" id="btn_open_header_mobile" onClick={showHeaderMobile}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
