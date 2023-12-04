@@ -29,16 +29,16 @@ export default function Portada() {
                     </div>
                     <div className="flex h-[77px] items-start shrink-0 self-stretch rounded-t-[40px] border-x-[1px] border-t-[1px] border-[#c7c7c7]">
                         <div className="flex justify-center items-center gap-[8px] flex-1 self-stretch border-r-[1px] border-[#c7c7c7]">
-                            <a href="/" className="text-black font-primary text-[24px] not-italic font-normal leading-[33.5px]">Branding</a>
+                            <h2><a href="/" className="text-black font-primary text-[24px] not-italic font-normal leading-[33.5px]">Branding</a></h2>
                         </div>
                         <div className="flex justify-center items-center gap-[8px] flex-1 self-stretch border-r-[1px] border-[#c7c7c7]">
-                            <a href="/" className="text-black font-primary text-[24px] not-italic font-normal leading-[33.5px]">Diseño de sistios web</a>
+                            <h2><a href="/" className="text-black font-primary text-[24px] not-italic font-normal leading-[33.5px]">Diseño de sistios web</a></h2>
                         </div>
                         <div className="flex justify-center items-center gap-[8px] flex-1 self-stretch border-r-[1px] border-[#c7c7c7]">
-                            <a href="/" className="text-black font-primary text-[24px] not-italic font-normal leading-[33.5px]">Event planer</a>
+                            <h2><a href="/" className="text-black font-primary text-[24px] not-italic font-normal leading-[33.5px]">Social Media</a></h2>
                         </div>
                         <div className="flex justify-center items-center gap-[8px] flex-1 self-stretch">
-                            <a href="/" className="text-black font-primary text-[24px] not-italic font-normal leading-[33.5px]">Desarrollo web</a>
+                            <h2><a href="/" className="text-black font-primary text-[24px] not-italic font-normal leading-[33.5px]">Desarrollo web</a></h2>
                         </div>
                     </div>
                 </div>

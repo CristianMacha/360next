@@ -11,16 +11,16 @@ export default function Services() {
                         <p className=" text-[#2B2A2A] font-primary text-[20px] italic font-normal leading-[normal] lg:flex lg:w-[387px]">Una identidad de marca atemporal y memorable que ayuda a las empresas a establecer una presencia fuerte y consistente en el mercado.</p>
                     </div>
                     <div className="flex px-[16px] pb-[16px] flex-col items-start gap-[12px] border-b border-[#c7c7c7] lg:border-b-0">
-                        <h2 className="text-black font-primary text-[24px] not-italic font-bold leading-[normal] lg:text-[28px]">Event Planner</h2>
-                        <p className=" text-[#2B2A2A] font-primary text-[20px] italic font-normal leading-[normal] lg:flex lg:w-[387px]">Una identidad de marca atemporal y memorable que ayuda a las empresas a establecer una presencia fuerte y consistente en el mercado.</p>
+                        <h2 className="text-black font-primary text-[24px] not-italic font-bold leading-[normal] lg:text-[28px]">Social Media</h2>
+                        <p className=" text-[#2B2A2A] font-primary text-[20px] italic font-normal leading-[normal] lg:flex lg:w-[387px]">Diseños de productos innovadores y funcionales que permiten a las empresas y organizaciones conquistar sus mercados.</p>
                     </div>
                     <div className="flex px-[16px] pb-[16px] flex-col items-start gap-[12px] border-b border-[#c7c7c7] lg:border-b-0">
                         <h2 className="text-black font-primary text-[24px] not-italic font-bold leading-[normal] lg:text-[28px]">Diseño Web</h2>
-                        <p className=" text-[#2B2A2A] font-primary text-[20px] italic font-normal leading-[normal] lg:flex lg:w-[387px]">Una identidad de marca atemporal y memorable que ayuda a las empresas a establecer una presencia fuerte y consistente en el mercado.</p>
+                        <p className=" text-[#2B2A2A] font-primary text-[20px] italic font-normal leading-[normal] lg:flex lg:w-[387px]">Una amplia variedad de experiencias web, incluyendo promocionales, páginas de destino, marketing, portafolios y sitios corporativos.</p>
                     </div>
                     <div className="flex px-[16px] pb-[16px] flex-col items-start gap-[12px]">
                         <h2 className="text-black font-primary text-[24px] not-italic font-bold leading-[normal] lg:text-[28px]">Desarrollo Web</h2>
-                        <p className=" text-[#2B2A2A] font-primary text-[20px] italic font-normal leading-[normal] lg:flex lg:w-[387px]">Una identidad de marca atemporal y memorable que ayuda a las empresas a establecer una presencia fuerte y consistente en el mercado.</p>
+                        <p className=" text-[#2B2A2A] font-primary text-[20px] italic font-normal leading-[normal] lg:flex lg:w-[387px]">Desarrollo Jamstack para proyectos grandes y personalizados. Soluciones sin código para sitios más pequeños y un tiempo de comercialización más rápido.</p>
                     </div>
                 </div>
             </div>

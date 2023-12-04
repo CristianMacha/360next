@@ -43,21 +43,21 @@ export default function Banner() {
                                 <div className="flex flex-col justify-center items-center gap-[80px] self-stretch lg:gap-[200px]">
                                     <div className="flex flex-col justify-center items-center gap-[32px] self-stretch lg:gap-[64px]">
                                         <div className="flex flex-col justify-center items-center gap-[4px] self-stretch lg:self-auto">
-                                            <h4 className="self-stretch text-white text-center font-primary text-[32px] not-italic font-bold leading-[normal] lg:self-auto lg:text-[100px]">
+                                            <p className="self-stretch text-white text-center font-primary text-[32px] not-italic font-bold leading-[normal] lg:self-auto lg:text-[100px]">
                                                 Qué sucede tras bastidores?
-                                            </h4>
-                                            <h4 className="self-stretch text-white text-center font-primary text-[32px] not-italic font-bold leading-[normal] lg:self-auto lg:text-[100px]">
+                                            </p>
+                                            <p className="self-stretch text-white text-center font-primary text-[32px] not-italic font-bold leading-[normal] lg:self-auto lg:text-[100px]">
                                                 !Descubrelo por ti mismo!
-                                            </h4>
+                                            </p>
                                         </div>
                                         <div className="flex flex-col items-center gap-[12px] self-stretch">
-                                            <h5 className="self-stretch text-white text-center font-primary text-[16px] not-italic font-bold leading-[normal] lg:self-auto lg:text-[40px]">
+                                            <p className="self-stretch text-white text-center font-primary text-[16px] not-italic font-bold leading-[normal] lg:self-auto lg:text-[40px]">
                                                 Esto es un tablero. Puedes hacer click en nuestros
                                                 comentarios y leerlos, si, eso es todo.
-                                            </h5>
-                                            <h5 className="text-white text-center font-primary text-[16px] not-italic font-bold leading-[normal] lg:self-auto lg:text-[40px]">
+                                            </p>
+                                            <p className="text-white text-center font-primary text-[16px] not-italic font-bold leading-[normal] lg:self-auto lg:text-[40px]">
                                                 ... o explora mas a fondo
-                                            </h5>
+                                            </p>
                                         </div>
                                     </div>
                                     <div className="flex p-[4px] items-start gap-[8px] rounded-full border border-white bg-transparent">

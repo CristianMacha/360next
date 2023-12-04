@@ -32,21 +32,21 @@ export default function CardSampleProjectSection() {
                     <section>
                         <CardSampleProject
                             title="Diseño web"
-                            description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
+                            description="Crea una presencia digital impactante con nuestro diseño web de vanguardia"
                             items={['2023']}
                             url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FDISENO%20WEB%20OPT.webp?alt=media&token=b3184fce-5a18-4136-b358-1ebc770c7e95"} />
                     </section>
                     <section>
                         <CardSampleProject
                             title="Redes Sociales"
-                            description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
+                            description="Nuestro enfoque integral de negocios para los proyectos nos permite colaborar estrechamente con nuestros clientes y lograr los mejores resultados posibles."
                             items={['2023']}
                             url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FSOCIAL%20MEDIA%20OPT.webp?alt=media&token=3f148dcc-a6f8-4097-9a47-10607bf4d4e4"} />
                     </section>
                     <section>
                         <CardSampleProject
-                            title="Desarrollo"
-                            description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
+                            title="Desarrollo Web"
+                            description="AAplicaciones, sistemas y mucho más!"
                             items={['2023']}
                             url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fdesarrollo%20opt.webp?alt=media&token=19384a3b-21b1-46a0-a9a4-04711cedeb70"} />
                     </section>
@@ -55,17 +55,17 @@ export default function CardSampleProjectSection() {
             <div className="block md:hidden">
                 <CardSample
                     title="Diseño web"
-                    description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
+                    description="Crea una presencia digital impactante con nuestro diseño web de vanguardia"
                     items={['2023']}
                     url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FDISENO%20WEB%20OPT.webp?alt=media&token=b3184fce-5a18-4136-b358-1ebc770c7e95"} />
                 <CardSample
                     title="Redes Sociales"
-                    description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
+                    description="Nuestro enfoque integral de negocios para los proyectos nos permite colaborar estrechamente con nuestros clientes y lograr los mejores resultados posibles."
                     items={['2023']}
                     url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FSOCIAL%20MEDIA%20OPT.webp?alt=media&token=3f148dcc-a6f8-4097-9a47-10607bf4d4e4"} />
                 <CardSample
                     title="Desarrollo"
-                    description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
+                    description="Aplicaciones, sistemas y mucho más!."
                     items={['2023']}
                     url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fdesarrollo%20opt.webp?alt=media&token=19384a3b-21b1-46a0-a9a4-04711cedeb70"} />
             </div>

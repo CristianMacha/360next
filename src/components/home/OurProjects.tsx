@@ -10,8 +10,8 @@ export default function OurProjects() {
                             <div className="text-white font-primary text-[16px] not-italic font-normal leading-[normal] lg:text-[20px]">proyectos completados</div>
                         </div>
                         <div className="flex gap-[8px] items-end lg:h-[82px] lg:items-end lg:gap-[4px]">
-                            <div className="text-white font-primary text-[40px] not-italic font-bold leading-[34.5px] lg:text-[100px] lg:leading-[88px]">45</div>
-                            <div className="text-white font-primary text-[16px] not-italic font-normal leading-[normal] lg:text-[20px]">proyectos completados</div>
+                            <div className="text-white font-primary text-[40px] not-italic font-bold leading-[34.5px] lg:text-[100px] lg:leading-[88px]">2</div>
+                            <div className="text-white font-primary text-[16px] not-italic font-normal leading-[normal] lg:text-[20px]">proyectos en curso</div>
                         </div>
                     </div>
                 </div>
