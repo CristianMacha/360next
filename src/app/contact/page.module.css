@@ -1,0 +1,19 @@
+.clip1 {
+    clip-path: circle(0.1% at 50% 50%);
+}
+
+.clip2 {
+    clip-path: circle(0.5% at 50% 50%);
+}
+
+.clip3 {
+    clip-path: circle(1% at 50% 50%);
+}
+
+.clip4 {
+    clip-path: circle(1.4% at 50% 50%);
+}
+
+.clip5 {
+    clip-path: circle(1.5% at 50% 50%);
+}
