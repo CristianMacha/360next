@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import CardSampleProject from "./cardSampleProject";
+import CardSample from "@/components/CardSample";
 
 export default function CardSampleProjectSection() {
     useEffect(() => {
@@ -27,22 +28,46 @@ export default function CardSampleProjectSection() {
     return (
         <>
             <div className="overflow-x-hidden relative hidden md:block">
-                <div className="container_scroll flex w-screen">
-                    <section className="w-screen h-[390px] lg:h-screen">
-                        <CardSampleProject url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fservice3.webp?alt=media&token=a229d11a-e567-43cb-a82a-fd4cda28392d"} />
+                <div className="container_scroll flex flex-row">
+                    <section>
+                        <CardSampleProject
+                            title="Diseño web"
+                            description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
+                            items={['2023']}
+                            url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360page%2FserviceDesignWeb1600x900.jpeg?alt=media&token=6c9386d5-8714-48c0-8143-510a060feba0"} />
                     </section>
-                    <section className="w-screen h-[390px] lg:h-screen">
-                        <CardSampleProject url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fservice1.webp?alt=media&token=c09c7392-f5d7-42a6-a412-ac375bfc4d46"} />
+                    <section>
+                        <CardSampleProject
+                            title="Redes Sociales"
+                            description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
+                            items={['2023']}
+                            url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360page%2FserviceDesignWeb1600x900.jpeg?alt=media&token=6c9386d5-8714-48c0-8143-510a060feba0"} />
                     </section>
-                    <section className="w-screen h-[390px] lg:h-screen">
-                        <CardSampleProject url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fservice2.webp?alt=media&token=9b5bbfa4-53ae-4ff7-8c6e-b64fec542d90"} />
+                    <section>
+                        <CardSampleProject
+                            title="Desarrollo Web"
+                            description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
+                            items={['2023']}
+                            url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360page%2FserviceDesignWeb1600x900.jpeg?alt=media&token=6c9386d5-8714-48c0-8143-510a060feba0"} />
                     </section>
                 </div>
             </div>
             <div className="block md:hidden">
-                <CardSampleProject url="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fservice3.webp?alt=media&token=a229d11a-e567-43cb-a82a-fd4cda28392d" />
-                <CardSampleProject url="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fservice1.webp?alt=media&token=c09c7392-f5d7-42a6-a412-ac375bfc4d46" />
-                <CardSampleProject url="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fservice2.webp?alt=media&token=9b5bbfa4-53ae-4ff7-8c6e-b64fec542d90" />
+                <CardSample
+                    title="Diseño web"
+                    description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
+                    items={['2023']}
+                    url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360page%2FserviceDesignWeb1600x900.jpeg?alt=media&token=6c9386d5-8714-48c0-8143-510a060feba0"} />
+                <CardSample
+                    title="Diseño web"
+                    description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
+                    items={['2023']}
+                    url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360page%2FserviceDesignWeb1600x900.jpeg?alt=media&token=6c9386d5-8714-48c0-8143-510a060feba0"} />
+                <CardSample
+                    title="Diseño web"
+                    description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
+                    items={['2023']}
+                    url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360page%2FserviceDesignWeb1600x900.jpeg?alt=media&token=6c9386d5-8714-48c0-8143-510a060feba0"} />
             </div>
         </>
     )

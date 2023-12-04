@@ -39,7 +39,7 @@ export default function Banner() {
                 <div className={`bg-yellow-500 ${styles.clip3} clip3`}>
                     <div className={`bg-blue-500 ${styles.clip2} clip2`}>
                         <div className={`bg-white ${styles.clip1} clip1 flex justify-center`}>
-                            <section className={`flex py-[40px] px-[16px] flex-col justify-center items-center gap-[8px] w-full bg-[#5739FB] lg:h-[985px] lg:p-[80px] ${styles.banner_gsap} banner_gsap`}>
+                            <section className={`flex py-[40px] px-[16px] flex-col justify-center items-center gap-[8px] w-full bg-[#ABABE7] lg:h-[985px] lg:p-[80px] ${styles.banner_gsap} banner_gsap`}>
                                 <div className="flex flex-col justify-center items-center gap-[80px] self-stretch lg:gap-[200px]">
                                     <div className="flex flex-col justify-center items-center gap-[32px] self-stretch lg:gap-[64px]">
                                         <div className="flex flex-col justify-center items-center gap-[4px] self-stretch lg:self-auto">

@@ -40,7 +40,7 @@ export default function Header() {
 
     return (
         <div>
-            <header className="flex h-[86px] lg:h-[96px] px-[16px] lg:px-[40px] items-center justify-center w-full header__animate fixed z-50 bg-white">
+            <header className="flex h-[86px] lg:h-[96px] px-[16px] lg:px-[40px] items-center justify-center w-full header__animate fixed z-50 backdrop-blur-md bg-white/30">
                 <div className='flex justify-between items-center w-full'>
                     <div className='flex items-center gap-[96px]'>
                         <Link href='/'>
@@ -61,7 +61,7 @@ export default function Header() {
                     </div>
                     <div className='flex justify-center items-center'>
                         <Link key={'contact'} href={'/contact'} className='hidden lg:block px-[16px] py-[8px] bg-black text-white rounded-full'>CONTACTO</Link>
-                        <button className="block lg:hidden" id="btn_open_header_mobile" onClick={showHeaderMobile}>
+                        <button className="flex lg:hidden w-[46px] h-[46px] justify-center items-center rounded-full" id="btn_open_header_mobile" onClick={showHeaderMobile}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="18"
@@ -91,7 +91,7 @@ export default function Header() {
                             />
                         </div>
                         <div className="flex justify-center items-center">
-                            <button id="btn_close_header_mobile" onClick={showHeaderMobile}>
+                            <button id="btn_close_header_mobile" onClick={showHeaderMobile} className='flex w-[46px] h-[46px] justify-center items-center'>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="14"

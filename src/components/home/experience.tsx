@@ -47,11 +47,11 @@ export default function Experience() {
                         </div>
                     </div>
                 </div>
-                <div className="flex w-auto py-[31px] px-[34px] flex-col justify-center items-center gap-[8px] self-stretch rounded-[40px] bg-[#5739FB] lg:self-auto lg:w-[690px] overflow-hidden experience-desktop">
+                <div className="flex w-auto py-[31px] px-[34px] flex-col justify-center items-center gap-[8px] self-stretch rounded-[40px] bg-[#D9FE95] lg:self-auto lg:w-[690px] overflow-hidden experience-desktop">
                     <div className="flex flex-col justify-center items-start gap-[28px] self-stretch lg:self-auto">
                         <div className="flex flex-col items-start gap-[44px] self-stretch lg:self-auto">
-                            <span className="font-primary text-[16px] not-italic font-normal leading-[normal] text text-white">Experiencia</span>
-                            <p className="self-stretch font-primary text-white text-[32px] not-italic font-normal leading-[normal] lg:text-[36px] text">
+                            <span className="font-primary text-[16px] not-italic font-normal leading-[normal] text text-black">Experiencia</span>
+                            <p className="self-stretch font-primary text-black text-[32px] not-italic font-normal leading-[normal] lg:text-[36px] text">
                                 Nuestro equipo cuenta con una gran cantidad de
                                 experiencia, por lo que puedes estar seguro de que
                                 presentaremos proyectos impresionantes y que nuestra

@@ -10,6 +10,7 @@ import Services from '@/components/home/services'
 import Testimonials from '@/components/home/testimonials'
 import SampleProject from '@/components/home/sampleProject'
 import Galaxy from '@/components/home/galaxy'
+import Reviews from '@/components/home/Reviews'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <OurProjects />
       <CardSampleProjectSection />
       <Testimonials />
+      <Reviews />
       <BannerScroll />
       <Services />
       <Experience />

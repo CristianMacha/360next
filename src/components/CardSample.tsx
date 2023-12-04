@@ -1,14 +1,12 @@
-import styles from './cardSampleProject.module.css';
-interface CardSampleProjectProps {
-    url: string;
+interface CardProps {
     title: string;
     description: string;
     items: string[];
+    url: string;
 }
-
-export default function CardSampleProject({ url, title, description, items }: CardSampleProjectProps) {
+export default function CardSample({ url, title, description, items }: CardProps) {
     return (
-        <div className="flex items-end w-screen h-screen px-[20px] pb-[20px] md:px-[40px] md:pb-[40px]" style={{backgroundImage: `url(${url})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
+        <div className="flex items-end h-[690px] md:h-screen px-[20px] pb-[20px] md:px-[40px] md:pb-[40px]" style={{backgroundImage: `url(${url})`}}>
             <div className="flex flex-col md:flex-row gap-1">
                 <div className="flex flex-col gap-4">
                     <div className="font-primary text-white text-[32px] md:text-[60px] font-medium">{title}</div>
