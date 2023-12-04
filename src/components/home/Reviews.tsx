@@ -1,6 +1,7 @@
 'use client'
 import { useEffect } from 'react';
-import 'keen-slider/keen-slider.min.css'
+
+import 'keen-slider/keen-slider.min.css';
 import KeenSlider from 'keen-slider';
 import styles from './reviews.module.css';
 
