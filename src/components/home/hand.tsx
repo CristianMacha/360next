@@ -75,7 +75,7 @@ export default function Hand() {
                         scrub: 1,
                     },
                 }).to(loadedObject.rotation, {
-                    z: Math.PI * 0.9,
+                    z: Math.PI * 0.5,
                     ease: "none",
                     duration: 3,
                 });
