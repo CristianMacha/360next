@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Header from '../components/header'
 import Footer from '@/components/home/footer'
+import FloatingMenu from '@/components/FloatingMenu'
 
 
 export const metadata: Metadata = {
@@ -16,9 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='overflow-x-hidden'>
-        <Header />
+      <body className='overflow-x-hidden relative'>
+        {/* <Header /> */}
         {children}
+        <FloatingMenu />
         <Footer />
       </body>
     </html>

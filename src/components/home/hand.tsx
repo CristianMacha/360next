@@ -75,7 +75,7 @@ export default function Hand() {
                         scrub: 1,
                     },
                 }).to(loadedObject.rotation, {
-                    z: Math.PI * 0.5,
+                    z: Math.PI * 0.9,
                     ease: "none",
                     duration: 3,
                 });
@@ -84,6 +84,9 @@ export default function Hand() {
         );
 
         const animate = () => {
+            // if (loadedObject) {
+            //     loadedObject.rotation.z += 0.01;
+            // }
             requestAnimationFrame(animate);
             renderer.render(scene, camera);
         };

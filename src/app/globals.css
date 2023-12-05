@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 @font-face {
   font-family: Aeonik;
   src: url("../assets/fonts/Aeonik-Air.otf") format("opentype");

@@ -1,6 +1,6 @@
 export default function Services() {
     return (
-        <section className="flex pt-[32px] flex-col items-start bg-white lg:pt-0">
+        <section className="flex pt-[32px] flex-col items-start bg-white lg:pt-0" id="services">
             <div className="flex flex-col items-start lg:px-[40px] lg:flex-row lg:justify-center">
                 <div className="flex py-0 px-[16px] items-start gap-[8px] lg:pt-[150px] lg:pr-[36px] lg:pl-0 lg:pb-0 lg:rounded-t-none lg:rounded-bl-[50px] lg:rounded-br-none lg:border-b lg:border-[#c7c7c7] lg:self-stretch">
                     <h3 className="text-black font-primary text-[40px] not-italic font-bold leading-[normal] lg:text-[112px] lg:leading-[normal]">Servicios</h3>

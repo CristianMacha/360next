@@ -1,6 +1,4 @@
-.banner_gsap {
-    clip-path: circle(0% at 50% 50%);
-}
+
 .clip1 {
     clip-path: circle(0.5% at 50% 50%);
 }
