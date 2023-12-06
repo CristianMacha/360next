@@ -1,5 +1,6 @@
 'use client'
 import { useEffect } from "react";
+// import Spline from '@splinetool/react-spline';
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -61,11 +62,11 @@ export default function Hand() {
         let loadedObject: THREE.Group<THREE.Object3DEventMap>;
         const loader = new FBXLoader();
         loader.load(
-            "https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fmanito.fbx?alt=media&token=ab700e94-1d5e-42bf-aa84-371cd1ddfebf",
+            "https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FFORMA2.fbx?alt=media&token=e8152ecf-6f38-456f-adae-74b3d7b78159",
             (fbx) => {
-                fbx.rotation.z += 0.5;
-                fbx.position.y -= 155;
-                fbx.position.x += 120;
+                // fbx.rotation.z += 0.5;
+                fbx.position.y -= 55;
+                fbx.position.x += 10;
                 fbx.scale.set(1.2, 1.2, 1.2);
                 loadedObject = fbx;
 
@@ -103,6 +104,9 @@ export default function Hand() {
 
     return (
         <>
+        {/* <div className="h-screen">
+        <Spline scene="https://prod.spline.design/Ef0Q22KLtkVQU67Y/scene.splinecode" />
+        </div> */}
             <section className={`h-[661px] flex justify-center self-stretch relative ${styles.hand} lg:h-[982px] overflow-hidden`}>
                 <div className={`${styles.wrapper} z-[2]`}></div>
                 <div className="absolute top-[76px]">
@@ -114,7 +118,8 @@ export default function Hand() {
                 </div>
                 <div className={`w-[390px] h-[608px] shrink-0 ${styles.hand_image} block lg:hidden`}></div>
                 <div className="hidden lg:block relative mt-[6rem]">
-                    <div id="hand-scene" className="container-scene"></div>
+                    {/* <div id="hand-scene" className="container-scene"></div> */}
+                    {/* <Spline scene="https://prod.spline.design/OaMVm5pGyPKb-aRz/scene.splinecode" /> */}
                 </div>
                 <div className="absolute bottom-[41px] z-[2]">
                     <div
@@ -124,6 +129,7 @@ export default function Hand() {
                     </div>
                 </div>
             </section>
+
         </>
     )
 }

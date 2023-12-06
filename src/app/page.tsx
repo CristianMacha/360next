@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Portada />
-      <Hand />
+      {/* <Hand /> */}
       <OurProjects />
       <CardSampleProjectSection />
       <Testimonials />
