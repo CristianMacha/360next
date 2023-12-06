@@ -8,7 +8,7 @@ export default function Portada() {
                 <Spline scene="https://prod.spline.design/Ef0Q22KLtkVQU67Y/scene.splinecode" />
             </div>
             <div className="flex flex-col md:flex-row justify-between w-full">
-                <div className="font-primary font-black text-[40px] md:text-[70px]">
+                <div className="font-primary font-bold text-[40px] md:text-[70px]">
                     <h1 className="leading-[normal] md:leading-[65px]"><span className='text-[#797979]'>AGENCIA DE</span> DISEÑO</h1>
                     <h1 className="leading-[normal] md:leading-[65px]">& DESARROLLO</h1>
                     <h1 className="leading-[normal] md:leading-[65px] text-[#797979]">CREATIVO</h1>
