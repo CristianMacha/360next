@@ -48,7 +48,7 @@ export default function CardSampleProjectSection() {
                             title="Desarrollo"
                             description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
                             items={['2023']}
-                            url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fdesarrollo%20opt.webp?alt=media&token=19384a3b-21b1-46a0-a9a4-04711cedeb70"} />
+                            url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FSocial%20media%20(1).webp?alt=media&token=d866b06f-bd52-43a1-bdb4-5969f0d0dfd3"} />
                     </section>
                 </div>
             </div>
