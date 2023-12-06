@@ -34,21 +34,24 @@ export default function CardSampleProjectSection() {
                             title="Diseño web"
                             description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
                             items={['2023']}
-                            url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FPIC1%20OPT.webp?alt=media&token=cdfc52f5-53d4-4b8e-b25b-1d2440a7d28f"} />
+                            position="bottom"
+                            url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FGALE%201%20OPT.webp?alt=media&token=7292bc01-3aa9-4dc8-9107-bc71291ede59"} />
                     </section>
                     <section>
                         <CardSampleProject
                             title="Redes Sociales"
                             description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
                             items={['2023']}
-                            url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FPIC2%20OPT.webp?alt=media&token=329a6085-0d76-4062-b2af-35752bd0e601"} />
+                            position="top"
+                            url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FGALE%202%20OPT.webp?alt=media&token=23fb96cc-b8b2-4c93-9c07-b443a10eb335"} />
                     </section>
                     <section>
                         <CardSampleProject
                             title="Desarrollo"
                             description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
                             items={['2023']}
-                            url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FPIC3%20OPT.webp?alt=media&token=f8d33f1f-36ad-4023-a5af-21f29598eb5d"} />
+                            position="bottom"
+                            url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FGALE%203%20OPT.webp?alt=media&token=09d82f45-90c2-4e7a-8b8e-27665e75157b"} />
                     </section>
                 </div>
             </div>
@@ -57,17 +60,17 @@ export default function CardSampleProjectSection() {
                     title="Diseño web"
                     description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
                     items={['2023']}
-                    url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FPIC1%20OPT.webp?alt=media&token=cdfc52f5-53d4-4b8e-b25b-1d2440a7d28f"} />
+                    url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fmobile%20Disen%CC%83o%20web.jpg?alt=media&token=e79ca2f6-78ce-48a8-a47d-6fc781cb539b"} />
                 <CardSample
                     title="Redes Sociales"
                     description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
                     items={['2023']}
-                    url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FPIC2%20OPT.webp?alt=media&token=329a6085-0d76-4062-b2af-35752bd0e601"} />
+                    url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fmobile%20Social%20media.jpg?alt=media&token=db1c5369-f1a4-4091-81c6-4bf9a7995298"} />
                 <CardSample
                     title="Desarrollo"
                     description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
                     items={['2023']}
-                    url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FPIC3%20OPT.webp?alt=media&token=f8d33f1f-36ad-4023-a5af-21f29598eb5d"} />
+                    url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fmobile%20Desarrollo%20web.jpg?alt=media&token=ce2f7091-cb46-43ab-a3cc-6e85f7ec9050"} />
             </div>
         </>
     )
