@@ -1,5 +1,5 @@
 'use client'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -7,6 +7,16 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from './banner.module.css';
 
 export default function Banner() {
+    const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+
+    const handleMouseMove = (e: any) => {
+        setCursorPos({ x: e.clientX + 10, y: e.clientY + 10 });
+    }
+
+    const handleMouseLeave = () => {
+        setCursorPos({ x: 0, y: 0 });
+    }
+
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
         const tl = gsap.timeline({
@@ -26,18 +36,18 @@ export default function Banner() {
             .to(".clip4", { clipPath: "circle(100.7% at 50% 50%)" }, "-=0.8")
             .to(".clip5", { clipPath: "circle(100.7% at 50% 50%)" }, "-=0.9");
 
-            gsap.to(".banner_gsap", {
-                scrollTrigger: {
-                    trigger: ".content__pin",
-                    start: "bottom-=500 top",
-                    end: "bottom",
-                    scrub: true,
-                    markers: false,
-                },
-                borderRadius: '60px',
-                width: 'calc(100% - 40px)',
-                duration: 1,
-            });
+        gsap.to(".banner_gsap", {
+            scrollTrigger: {
+                trigger: ".content__pin",
+                start: "bottom-=500 top",
+                end: "bottom",
+                scrub: true,
+                markers: false,
+            },
+            borderRadius: '60px',
+            width: 'calc(100% - 40px)',
+            duration: 1,
+        });
     }, []);
 
     return (
@@ -48,7 +58,14 @@ export default function Banner() {
                         <div className={`bg-yellow-500 ${styles.clip3} clip3 w-full`}>
                             <div className={`bg-blue-500 ${styles.clip2} clip2 w-full`}>
                                 <div className={`bg-white ${styles.clip1} clip1 flex justify-center w-full`}>
-                                    <section className={`flex py-[40px] px-[16px] flex-col justify-center items-center gap-[8px] w-full bg-[#31312E] h-screen lg:p-[80px] banner_gsap`}>
+                                    <section className={`flex py-[40px] px-[16px] flex-col justify-center items-center gap-[8px] w-full bg-[#31312E] h-screen lg:p-[80px] banner_gsap relative cursor-default`}
+                                        onMouseMove={handleMouseMove}
+                                        onMouseLeave={handleMouseLeave}>
+                                        {cursorPos.x !== 0 && cursorPos.y !== 0 && (
+                                            <div style={{ position: 'fixed', top: cursorPos.y, left: cursorPos.x }} className='p-[2px] px-[4px] bg-black text-white text-xs'>
+                                                You
+                                            </div>
+                                        )}
                                         <div className="flex flex-col justify-center items-center gap-[80px] self-stretch lg:gap-[200px]">
                                             <div className="flex flex-col justify-center items-center gap-[32px] self-stretch lg:gap-[64px]">
                                                 <div className="flex flex-col justify-center items-center gap-[4px] self-stretch lg:self-auto">

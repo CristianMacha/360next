@@ -7,19 +7,33 @@ export default function Portada() {
             <div className="h-[500px] w-full rounded-[40px] overflow-hidden">
                 <Spline scene="https://prod.spline.design/Ef0Q22KLtkVQU67Y/scene.splinecode" />
             </div>
-            <div className="flex flex-col md:flex-row justify-between w-full">
-                <div className="font-primary font-bold text-[40px] md:text-[70px]">
+            <div className="flex flex-col gap-4 md:flex-row justify-between w-full">
+                <div className="font-primary font-black text-[40px] md:text-[70px]">
                     <h1 className="leading-[normal] md:leading-[65px]"><span className='text-[#797979]'>AGENCIA DE</span> DISEÑO</h1>
                     <h1 className="leading-[normal] md:leading-[65px]">& DESARROLLO</h1>
                     <h1 className="leading-[normal] md:leading-[65px] text-[#797979]">CREATIVO</h1>
                 </div>
-                <div className="bg-[#F6F6F6] w-auto md:w-[700px] py-[58px] px-[25px] h-auto rounded-[40px] flex flex-col md:flex-row items-end">
+                <div className="bg-[#F6F6F6] w-auto md:w-[700px] py-[25px] md:py-[58px] px-[16px] md:px-[25px] h-auto rounded-[40px] flex flex-col md:flex-row items-end">
                     <p className="font-primary text-[24px] md:text-[32px] font-light leading-[32px]">Nos especializamos en crear experiencias innovadoras para pequeñas y grandes empresas.</p>
                     <div className="flex flex-row gap-2">
                         <div className="w-[46px] h-[46px] bg-red-200 rounded-full"></div>
                         <div className="w-[46px] h-[46px] bg-blue-200 rounded-full"></div>
                         <div className="w-[46px] h-[46px] bg-green-200 rounded-full"></div>
                     </div>
+                </div>
+            </div>
+            <div className=" hidden md:flex h-[77px] items-start shrink-0 self-stretch rounded-t-[40px] border-x-[1px] border-t-[1px] border-[#c7c7c7]">
+                <div className="flex justify-center items-center gap-[8px] flex-1 self-stretch border-r-[1px] border-[#c7c7c7]">
+                    <a href="/" className="text-black font-primary text-[24px] not-italic font-normal leading-[33.5px]">Branding</a>
+                </div>
+                <div className="flex justify-center items-center gap-[8px] flex-1 self-stretch border-r-[1px] border-[#c7c7c7]">
+                    <a href="/" className="text-black font-primary text-[24px] not-italic font-normal leading-[33.5px]">Diseño de sistios web</a>
+                </div>
+                <div className="flex justify-center items-center gap-[8px] flex-1 self-stretch border-r-[1px] border-[#c7c7c7]">
+                    <a href="/" className="text-black font-primary text-[24px] not-italic font-normal leading-[33.5px]">Event planer</a>
+                </div>
+                <div className="flex justify-center items-center gap-[8px] flex-1 self-stretch">
+                    <a href="/" className="text-black font-primary text-[24px] not-italic font-normal leading-[33.5px]">Desarrollo web</a>
                 </div>
             </div>
         </section>
