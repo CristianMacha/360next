@@ -11,6 +11,7 @@ import Testimonials from '@/components/home/testimonials'
 import SampleProject from '@/components/home/sampleProject'
 import Galaxy from '@/components/home/galaxy'
 import Reviews from '@/components/home/Reviews'
+import OurValues from '@/components/home/OurValues'
 
 export default function Home() {
   return (
@@ -26,7 +27,8 @@ export default function Home() {
       <Experience />
       <LetsPlay />
       <Banner />
-      <SampleProject />
+      <OurValues />
+      {/* <SampleProject /> */}
       <Galaxy />
     </>
   )

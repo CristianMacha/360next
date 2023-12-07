@@ -8,14 +8,14 @@ export default function Portada() {
                 <Spline scene="https://prod.spline.design/Ef0Q22KLtkVQU67Y/scene.splinecode" />
             </div>
             <div className="flex flex-col gap-4 md:flex-row justify-between w-full">
-                <div className="font-primary font-bold text-[40px] md:text-[70px]">
+                <div className="font-primary font-bold text-[32px] md:text-[70px]">
                     <h1 className="leading-[normal] md:leading-[65px] whitespace-nowrap"><span className='text-[#797979]'>AGENCIA DE</span> DISEÑO</h1>
                     <h1 className="leading-[normal] md:leading-[65px]">& DESARROLLO</h1>
                     <h1 className="leading-[normal] md:leading-[65px] text-[#797979]">CREATIVO</h1>
                 </div>
                 <div className="w-auto md:w-[750px]">
                     <div className="bg-[#F6F6F6] w-auto py-[25px] md:py-[58px] px-[16px] md:px-[25px] h-auto rounded-[40px] flex flex-col md:flex-row items-end">
-                        <p className="font-primary text-[18px] md:text-[24px] font-light leading-[32px]">Nos especializamos en crear experiencias innovadoras para pequeñas y grandes empresas.</p>
+                        <p className="font-primary text-[18px] leading-normal md:text-[24px] font-light md:leading-[32px]">Nos especializamos en crear experiencias innovadoras para pequeñas y grandes empresas.</p>
                         <div className="flex flex-row gap-2">
                             <div className="w-[46px] md:w-[58px]">
                                 <img src="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Ffoto1.jpg?alt=media&token=e47bd562-9d15-4dff-bf90-064c33967668" alt="" />
