@@ -35,7 +35,7 @@ export default function FloatingMenu() {
                     </div>
                     <div className={`flex flex-row gap-6 items-center text-white ${!serviceSelected ? 'block' : 'hidden'}`}>
                         <Link href="/" className="text-[18px] hover:text-[#baef01]">Precios</Link>
-                        <Link href="/" className="text-[18px] hover:text-[#baef01]">Nosotros</Link>
+                        <Link href="/about-us" className="text-[18px] hover:text-[#baef01]">Nosotros</Link>
                         <div className="text-[18px] cursor-pointer hover:text-[#baef01] relative" onClick={handleSelectMenuService}>Servicios
                         <div className="absolute -top-[3px] -right-[9px] bg-[#baef01] text-xs font-medium px-[4px] rounded-full text-black">3</div>
                         </div>
