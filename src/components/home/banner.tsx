@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import styles from './banner.module.css';
+import Comment from '../Comment';
 
 export default function Banner() {
     const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
@@ -85,7 +86,7 @@ export default function Banner() {
                                         onMouseMove={handleMouseMove}
                                         onMouseLeave={handleMouseLeave}>
                                         {cursorPos.x !== 0 && cursorPos.y !== 0 && (
-                                            <div style={{ position: 'fixed', top: cursorPos.y, left: cursorPos.x }} className='p-[2px] px-[4px] bg-black text-white text-xs z-[1]'>
+                                            <div style={{ position: 'fixed', top: cursorPos.y, left: cursorPos.x }} className='hidden md:block p-[2px] px-[4px] bg-black text-white text-xs z-[1]'>
                                                 You
                                             </div>
                                         )}
@@ -162,6 +163,18 @@ export default function Banner() {
                                                     </g>
                                                 </svg>
                                             </div>
+                                        </div>
+                                        <div className='absolute top-10 left-16'>
+                                            <Comment image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Ffoto2.jpg?alt=media&token=b548bd4c-4d5d-42c4-bbb9-0bd20e0794ab' name='Cristian' comment='Hello world' position='right' />
+                                        </div>
+                                        <div className='absolute bottom-20 left-4 md:left-20'>
+                                            <Comment image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Ffoto2.jpg?alt=media&token=b548bd4c-4d5d-42c4-bbb9-0bd20e0794ab' name='Cristian' comment='Hello world' position='right' />
+                                        </div>
+                                        <div className='absolute top-32  md:bottom-32 right-4 md:right-32'>
+                                            <Comment image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Ffoto2.jpg?alt=media&token=b548bd4c-4d5d-42c4-bbb9-0bd20e0794ab' name='Cristian' comment='Hello world' position='left' />
+                                        </div>
+                                        <div className='absolute bottom-40 md:bottom-32 right-4 md:right-64'>
+                                            <Comment image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Ffoto2.jpg?alt=media&token=b548bd4c-4d5d-42c4-bbb9-0bd20e0794ab' name='Cristian' comment='Hello world' position='left' />
                                         </div>
                                     </section>
                                 </div>

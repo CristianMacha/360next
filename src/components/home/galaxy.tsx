@@ -25,10 +25,11 @@ export default function Galaxy() {
             })
         })
     }, []);
+
     return (
         <>
             <section className={`flex py-[80px] px-[16px] flex-col justify-center items-center gap-[8px] self-stretch ${styles.galaxy} lg:hidden`}>
-                <div className="flex flex-col justify-center items-center gap-[8px] ">
+                <div className="flex flex-col justify-center items-center gap-[8px]">
                     <div className="flex items-center gap-[8px] self-stretch">
                         <span className="text-white text-justify font-primary text-[18px] not-italic font-normal leading-[normal]">Comenzando como entusiastas</span>
                         <div className={`${styles.entusiasta} w-[91.2px] h-[34px]`}></div>
@@ -46,7 +47,7 @@ export default function Galaxy() {
                     </div>
                 </div>
             </section>
-            <section className={`py-[139px] px-[40px] hidden lg:flex flex-col justify-center items-start gap-[8px] self-stretch ${styles.galaxy}`}>
+            <section className={`pt-[139px] pb-[300px] px-[40px] hidden lg:flex flex-col justify-center items-start gap-[8px] self-stretch ${styles.galaxy}`}>
                 <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] text-effect1">Comenzando como entusiastas</span>
                 <div className="flex gap-[24px] flex-wrap items-center text-effect2">
                     <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] whitespace-nowrap">que querían crear algo</span>

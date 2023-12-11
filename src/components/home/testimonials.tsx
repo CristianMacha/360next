@@ -1,6 +1,6 @@
 export default function Testimonials() {
     return (
-        <section className="flex py-[24px] px-[16px] items-start gap-[8px] self-stretch bg-white lg:px-[40px] lg:pt-[100px] lg:pb-[36px] lg:justify-center lg:items-center">
+        <section className="flex py-[24px] px-[16px] items-start gap-[8px] self-stretch bg-white lg:px-[40px] lg:pt-[100px] lg:pb-[36px] lg:justify-center lg:items-center" style={{backgroundImage: 'url(https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Ffndazo.jpg?alt=media&token=882653a0-7bbb-4850-ac90-4dbc6623476b)', backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
             <div className="flex flex-col justify-center items-start gap-[100px] flex-1 lg:justify-between lg:items-end lg:flex-row lg:gap-[auto]">
                 <div className="flex flex-col justify-center items-start gap-[40px] self-stretch lg:gap-[200px]">
                     <h2 className="text-black font-primary text-[40px] font-medium not-italic leading-[normal] lg:text-[112px]">Testimonios</h2>

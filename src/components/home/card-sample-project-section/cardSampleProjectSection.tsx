@@ -32,7 +32,7 @@ export default function CardSampleProjectSection() {
                     <section>
                         <CardSampleProject
                             title="Diseño web"
-                            description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
+                            description="Transformamos ideas en experiencias visuales cautivadoras."
                             items={['2023']}
                             position="bottom"
                             url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FGALE%201%20OPT.webp?alt=media&token=7292bc01-3aa9-4dc8-9107-bc71291ede59"} />
@@ -40,7 +40,7 @@ export default function CardSampleProjectSection() {
                     <section>
                         <CardSampleProject
                             title="Redes Sociales"
-                            description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
+                            description="Conectamos marcas con su audiencia de manera auténtica"
                             items={['2023']}
                             position="top"
                             url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FGALE%202%20OPT.webp?alt=media&token=23fb96cc-b8b2-4c93-9c07-b443a10eb335"} />
@@ -48,7 +48,7 @@ export default function CardSampleProjectSection() {
                     <section>
                         <CardSampleProject
                             title="Desarrollo"
-                            description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
+                            description="Más que códigos, construimos soluciones digitales."
                             items={['2023']}
                             position="bottom"
                             url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FGALE%203%20OPT.webp?alt=media&token=09d82f45-90c2-4e7a-8b8e-27665e75157b"} />
@@ -58,17 +58,17 @@ export default function CardSampleProjectSection() {
             <div className="block md:hidden">
                 <CardSample
                     title="Diseño web"
-                    description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
+                    description="Transformamos ideas en experiencias visuales cautivadoras."
                     items={['2023']}
                     url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fmobile%20Disen%CC%83o%20web.jpg?alt=media&token=e79ca2f6-78ce-48a8-a47d-6fc781cb539b"} />
                 <CardSample
                     title="Redes Sociales"
-                    description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
+                    description="Conectamos marcas con su audiencia de manera auténtica"
                     items={['2023']}
                     url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fmobile%20Social%20media.jpg?alt=media&token=db1c5369-f1a4-4091-81c6-4bf9a7995298"} />
                 <CardSample
                     title="Desarrollo"
-                    description="An innovative real-estate development company that focuses on constructing sustainable and cost-effective properties while minimizing environmental impacts."
+                    description="Más que códigos, construimos soluciones digitales."
                     items={['2023']}
                     url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fmobile%20Desarrollo%20web.jpg?alt=media&token=ce2f7091-cb46-43ab-a3cc-6e85f7ec9050"} />
             </div>

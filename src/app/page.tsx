@@ -1,3 +1,4 @@
+// import '../app/lib/firebase-client.config';
 import Banner from '@/components/home/banner'
 import OurProjects from '@/components/home/OurProjects'
 import BannerScroll from '@/components/home/bannerScroll'
@@ -12,6 +13,7 @@ import SampleProject from '@/components/home/sampleProject'
 import Galaxy from '@/components/home/galaxy'
 import Reviews from '@/components/home/Reviews'
 import OurValues from '@/components/home/OurValues'
+import Customers from '@/components/home/Customers'
 
 export default function Home() {
   return (
@@ -30,6 +32,7 @@ export default function Home() {
       <OurValues />
       {/* <SampleProject /> */}
       <Galaxy />
+      <Customers />
     </>
   )
 }
