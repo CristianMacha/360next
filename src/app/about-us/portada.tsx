@@ -7,9 +7,6 @@ export default function Portada() {
             <div className="h-[500px] w-full rounded-[40px] overflow-hidden hidden md:block" >
                 <Spline scene="https://prod.spline.design/hDb-ZfPyU0kaAXNR/scene.splinecode" />
             </div>
-            <div className="h-[90vh] w-full rounded-[40px] overflow-hidden block md:hidden relative" >
-                <Spline scene="https://prod.spline.design/ba95Ud0u3SZl3NyT/scene.splinecode" />
-            </div>
             <div>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6'>
                     <div className='flex flex-col gap-6'>
