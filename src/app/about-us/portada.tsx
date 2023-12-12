@@ -3,11 +3,11 @@ import Spline from '@splinetool/react-spline';
 
 export default function Portada() {
     return (
-        <section className="h-auto md:h-screen px-[16px] md:px-[40px] flex flex-col gap-7 md:gap-14 justify-start items-center py-[16px] md:py-[40px]">
+        <section className="h-auto md:h-screen px-[16px] md:px-[40px] flex flex-col gap-7 md:gap-14 justify-start items-center py-[16px] md:py-[40px] relative">
             <div className="h-[500px] w-full rounded-[40px] overflow-hidden hidden md:block" >
                 <Spline scene="https://prod.spline.design/hDb-ZfPyU0kaAXNR/scene.splinecode" />
             </div>
-            <div className="h-[90vh] w-full rounded-[40px] overflow-hidden block md:hidden" >
+            <div className="h-[90vh] w-full rounded-[40px] overflow-hidden block md:hidden relative" >
                 <Spline scene="https://prod.spline.design/ba95Ud0u3SZl3NyT/scene.splinecode" />
             </div>
             <div>
