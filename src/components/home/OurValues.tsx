@@ -1,8 +1,8 @@
 export default function OurValues() {
     return (
-        <section className="flex flex-col justify-center items-center px-[16px] md:px-[40px] gap-4 py-[40px]">
+        <section className="flex flex-col justify-center items-center content-center px-[16px] md:px-[40px] gap-4 py-[40px]">
             <div className="text-[90px] leading-[80px] md:text-[105px] md:leading-[95px] font-primary font-bold italic mb-[60px]">Nuestros Valores</div>
-            <div className="grid grid-cols-1 gap-4 md:gap-0 md:grid-cols-2 w-full">
+            <div className="grid grid-cols-1 gap-4 md:gap-0 md:grid-cols-2 w-full content-center">
                 <div className="w-[350px] md:w-[389px] h-[514px] rounded-[40px] bg-[#F6F6F6] p-[35px] flex flex-col justify-between">
                     <div>
                         <svg width="294" height="220" viewBox="0 0 294 220" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,7 +23,7 @@ export default function OurValues() {
                     </div>
                     <div className="flex flex-col">
                         <div className="font-primary font-bold text-[32px] md:text-[40px]">Transparencia</div>
-                        <div className="font-primary font-normal text-[18px] md:text-[20px]">Defendemos la comunicación clara y abierta. Mantenemos a nuestros clientes informados durante todas las etapas del proyecto y estamos disponibles para cualquier pregunta.</div>
+                        <div className="font-primary font-normal text-[18px]">Defendemos la comunicación clara y abierta. Mantenemos a nuestros clientes informados durante todas las etapas del proyecto y estamos disponibles para cualquier pregunta.</div>
                     </div>
                 </div>
                 <div className="w-[350px] md:w-[389px] h-[514px] rounded-[40px] bg-[#F6F6F6] p-[35px] flex flex-col justify-between">
@@ -43,7 +43,7 @@ export default function OurValues() {
                     </div>
                     <div className="flex flex-col">
                         <div className="font-primary font-bold text-[32px] md:text-[40px]">Oportunidad</div>
-                        <div className="font-primary font-normal text-[18px] md:text-[20px]">Para seguir siendo competitivas en un panorama en constante evolución, las empresas necesitan innovar. Por eso no trabajamos sólo en los productos de hoy.</div>
+                        <div className="font-primary font-normal text-[18px]">Para seguir siendo competitivas en un panorama en constante evolución, las empresas necesitan innovar. Por eso no trabajamos sólo en los productos de hoy.</div>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@ export default function OurValues() {
                         </div>
                         <div className="flex flex-col">
                             <div className="font-primary font-bold text-[32px] md:text-[40px]">Creatividad</div>
-                            <div className="font-primary font-normal text-[18px] md:text-[20px]">La creatividad es nuestro motor. Pensamos con imaginación y resolvemos problemas innovadores para ofrecer experiencias digitales únicas y atractivas.</div>
+                            <div className="font-primary font-normal text-[18px]">La creatividad es nuestro motor. Pensamos con imaginación y resolvemos problemas innovadores para ofrecer experiencias digitales únicas y atractivas.</div>
                         </div>
                     </div>
                     <div className="w-[350px] md:w-[389px] h-[514px] rounded-[40px] bg-[#F6F6F6] p-[35px] flex flex-col justify-between">
@@ -90,7 +90,7 @@ export default function OurValues() {
                         </div>
                         <div className="flex flex-col">
                             <div className="font-primary font-bold text-[32px] md:text-[40px]">Innovación</div>
-                            <div className="font-primary font-normal text-[18px] md:text-[20px]">Prosperamos superando límites y explorando nuevas tecnologías. Como pioneros dedicados, creamos experiencias digitales preparadas para el futuro que no solo siguen la curva, sino que la definen.</div>
+                            <div className="font-primary font-normal text-[18px]">Prosperamos superando límites y explorando nuevas tecnologías. Como pioneros dedicados, creamos experiencias digitales preparadas para el futuro que no solo siguen la curva, sino que la definen.</div>
                         </div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@ export default function OurValues() {
                         </div>
                         <div className="flex flex-col">
                             <div className="font-primary font-bold text-[32px] md:text-[40px]">Soñar en Grande</div>
-                            <div className="font-primary font-normal text-[18px] md:text-[20px]">Ningún sueño es demasiado ambicioso para nosotros. Alentamos a nuestros clientes a soñar en grande y luego trabajamos incansablemente para convertir esas visiones en realidades digitales.</div>
+                            <div className="font-primary font-normal text-[18px]">Ningún sueño es demasiado ambicioso para nosotros. Alentamos a nuestros clientes a soñar en grande y luego trabajamos incansablemente para convertir esas visiones en realidades digitales.</div>
                         </div>
                     </div>
                 </div>

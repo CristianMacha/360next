@@ -15,6 +15,7 @@ interface Menus {
 export default function FloatingMenu() {
     const pathName = usePathname();
     useEffect(() => {
+        console.log(pathName);
     }, []);
 
     const [serviceSelected, setServiceSelected] = useState(false);
@@ -34,16 +35,16 @@ export default function FloatingMenu() {
                         </svg>
                     </div>
                     <div className={`flex flex-row gap-6 items-center text-white ${!serviceSelected ? 'block' : 'hidden'}`}>
-                        <Link href="/" className="text-[18px] hover:text-[#baef01]">Precios</Link>
-                        <Link href="/about-us" className="text-[18px] hover:text-[#baef01]">Nosotros</Link>
+                        <Link href="/" className={`text-[18px] hover:text-[#baef01] ${pathName === 'prices' ? 'text-[#baef01] font-medium' : ''}`}>Precios</Link>
+                        <Link href="/about-us" className={`text-[18px] hover:text-[#baef01] ${pathName === '/about-us' ? 'text-[#baef01] font-medium' : ''}`}>Nosotros</Link>
                         <div className="text-[18px] cursor-pointer hover:text-[#baef01] relative" onClick={handleSelectMenuService}>Servicios
                         <div className="absolute -top-[3px] -right-[9px] bg-[#baef01] text-xs font-medium px-[4px] rounded-full text-black">3</div>
                         </div>
                     </div>
                     <div className={`flex flex-row gap-6 items-center text-white overflow-x-auto ${serviceSelected ? 'block' : 'hidden'}`}>
-                        <Link href="/" className="text-[18px] hover:text-[#baef01] whitespace-nowrap">Diseño Web</Link>
-                        <Link href="/" className="text-[18px] hover:text-[#baef01] whitespace-nowrap">Redes Sociales</Link>
-                        <Link href="/" className="text-[18px] hover:text-[#baef01] whitespace-nowrap">Desarrollo Web</Link>
+                        <Link href="/" className={`text-[18px] hover:text-[#baef01] whitespace-nowrap ${pathName === 'prices' ? 'text-[#baef01] font-medium' : ''}`}>Diseño Web</Link>
+                        <Link href="/" className={`text-[18px] hover:text-[#baef01] whitespace-nowrap ${pathName === 'prices' ? 'text-[#baef01] font-medium' : ''}`}>Redes Sociales</Link>
+                        <Link href="/" className={`text-[18px] hover:text-[#baef01] whitespace-nowrap ${pathName === 'prices' ? 'text-[#baef01] font-medium' : ''}`}>Desarrollo Web</Link>
                     </div>
                 </div>
             </div>

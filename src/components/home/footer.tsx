@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="flex py-[24px] px-[16px] flex-col items-start gap-[8px] self-stretch lg:py-[80px] lg:px-[40px]">
+        <footer className="flex py-[24px] px-[16px] flex-col items-start gap-[8px] lg:py-[80px] lg:px-[40px] bg-white">
             <div className="flex flex-col items-start gap-[58px] self-stretch lg:justify-between lg:flex-row">
                 <div className="flex flex-col items-start gap-[8px] self-stretch">
                     <span className="self-stretch font-primary text-[28px] not-italic font-bold leading-[normal]">Nos encantaría saber de usted</span>

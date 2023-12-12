@@ -25,7 +25,7 @@ export default function Reviews() {
         });
     }, []);
     return (
-        <section className="flex flex-col py-[24px] px-[16px] items-start gap-[8px] self-stretch">
+        <section className="flex flex-col py-[24px] px-[16px] items-start gap-[8px] relative">
             <div id="my-keen-slider" className="keen-slider">
                 <div className="keen-slider__slide flex justify-center">
                     <div className={`flex w-[366px] h-[566px] py-[24px] px-[48px] justify-center items-center gap-[8px] rounded-[24px] backdrop-blur-[17.5px] ${styles.review} lg:w-[565px] lg:h-[787px]`}>
