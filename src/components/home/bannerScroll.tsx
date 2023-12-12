@@ -7,16 +7,25 @@ export default function BannerScroll() {
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
         gsap.fromTo(".scroll", {
-            x: -600,
+            x: '+100wh'
         }, {
-            scrollTrigger: {
-                trigger: ".scroll",
-                scrub: 1,
-                start: "top center+=300",
-                markers: false
-            },
-            x: -2000,
+            // scrollTrigger: {
+            //     trigger: ".scroll",
+            //     scrub: 1,
+            //     start: "top center+=300",
+            //     markers: false
+            // },
+            duration: 15,
+            repeat: -1,
+            x: '-100%',
+            ease: 'linear'
         })
+        // gsap.to(".scroll", {
+        //     duration: 5,
+        //     x: '-100%',
+        //     repeat: -1,
+        //     ease: 'linear'
+        // })
     }, []);
 
     return (
