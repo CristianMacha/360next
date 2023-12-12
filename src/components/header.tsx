@@ -1,11 +1,34 @@
 'use client'
-import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import styles from './header.module.css';
+
+import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
+
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+import styles from './header.module.css';
 
 export default function Header() {
     const pathName = usePathname();
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        const showAnim = gsap
+            .from(".header__animate", {
+                yPercent: -100,
+                paused: true,
+                duration: 0.2,
+            })
+            .progress(1);
+
+        ScrollTrigger.create({
+            start: "top top-=70",
+            end: "bottom bottom",
+            onUpdate: (self) => {
+                self.direction === -1 ? showAnim.play() : showAnim.reverse();
+            },
+        });
+    }, [])
 
     const [active, setActive] = useState(false);
     const [menuContent, setMenuContent] = useState(false);

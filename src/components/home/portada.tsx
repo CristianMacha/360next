@@ -45,8 +45,13 @@ export default function Portada() {
             <div className="h-[800px] w-full rounded-[20px] overflow-hidden relative" style={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FScreenshot%202023-12-11%20at%2008.40.50.png?alt=media&token=62d0e1ba-02e0-41d4-be53-f8464b041e8e')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
                 <Spline scene="https://prod.spline.design/hDb-ZfPyU0kaAXNR/scene.splinecode" />
                 {/* <div className='absolute top-0 right-0 left-0 bottom-0'></div> */}
-                <div className={`${styles.actions} h-[50px] absolute bottom-2 right-2 left-2 rounded-[20px] flex items-center justify-center`}>
+                <div className={`${styles.actions} hidden h-[50px] absolute bottom-2 right-2 left-2 rounded-[20px] md:flex items-center justify-between px-5`}>
                     <div className='text-white'>Interactúa con nuestra mascota (A, W, S, D)</div>
+                    <div className='w-[35px] h-[35px] rounded-full bg-white flex justify-center items-center pl-[5px]'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18" viewBox="0 0 15 18" fill="none">
+                            <path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="black" />
+                        </svg>
+                    </div>
                 </div>
             </div>
         </section>
