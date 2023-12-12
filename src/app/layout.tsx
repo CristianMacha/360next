@@ -18,9 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className='overflow-x-hidden relative'>
-        {/* <Header /> */}
+        <Header />
         {children}
-        <FloatingMenu />
+        {/* <FloatingMenu /> */}
         <Footer />
       </body>
     </html>
