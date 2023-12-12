@@ -1,0 +1,5 @@
+.actions {
+    -webkit-backdrop-filter: hue-rotate(180deg) invert() blur(15px);
+    backdrop-filter: hue-rotate(180deg) invert() blur(10px);
+    background-color: rgba(44, 41, 41, 0.5);
+}

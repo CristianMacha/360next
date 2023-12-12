@@ -1,118 +1,62 @@
 'use client'
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { useEffect } from 'react';
-
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import styles from './header.module.css';
+import { useEffect, useState } from 'react';
 
 export default function Header() {
     const pathName = usePathname();
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-        const showAnim = gsap
-            .from(".header__animate", {
-                yPercent: -100,
-                paused: true,
-                duration: 0.2,
-            })
-            .progress(1);
 
-        ScrollTrigger.create({
-            start: "top top-=70",
-            end: "bottom bottom",
-            onUpdate: (self) => {
-                self.direction === -1 ? showAnim.play() : showAnim.reverse();
-            },
-        });
-    }, [])
-
-    const showHeaderMobile = () => {
-        const headerMobile = document.getElementById("header-mobile");
-        headerMobile?.classList.toggle("active_header_mobile");
-        // effectExpandX();
+    const [active, setActive] = useState(false);
+    const [menuContent, setMenuContent] = useState(false);
+    const toggleActiveMenu = (value: boolean) => {
+        setActive(value);
+        if (value) {
+            setTimeout(() => {
+                setMenuContent(true);
+            }, 500);
+        } else {
+            setMenuContent(false);
+        }
     };
 
-    const handleDropdown = () => {
-        const dropdown = document.getElementById("dropdown_mobile");
-        dropdown?.classList.toggle("active");
-    }
 
     return (
         <div>
             <header className={`flex h-[64px] px-[16px] lg:px-[40px] items-center justify-center w-full header__animate fixed z-50 backdrop-blur-md bg-white/30`}>
                 <div className='flex justify-between items-center w-full'>
                     <div className='flex items-center gap-[96px]'>
-                        <Link href='/' className='flex flex-row gap-4 items-center text-[30px] font-bold'>
+                        <Link href='/' className='flex flex-row gap-4 items-center text-[18px] md:text-[30px] font-bold'>
                             <img
                                 src="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Flogo360Black.png?alt=media&token=4de7eb5c-2891-456a-8a44-73b726ffd991"
                                 alt="logo"
-                                className='w-[56px] h-[32px]' />
-                                Virtual solutions
+                                className='w-[46px] h-[22px] md:w-[56px] md:h-[32px]' />
+                            Virtual solutions
                         </Link>
                     </div>
-                    <div className='flex justify-center items-center'>
-                        <button>Menu</button>
-                    </div>
-                </div>
-            </header>
-            <div
-                className="active_header_mobile fixed top-0 bottom-0 right-0 left-0 z-50 flex flex-col justify-between items-center px-[16px] pb-[16px] bg-white"
-                id="header-mobile"
-            >
-                <header className="flex h-[86px] items-center justify-center w-full bg-white">
-                    <div className="flex justify-between items-center w-full">
-                        <div className="flex items-center gap-[96px]">
-                            <img
-                                src="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Flogo360-black.png?alt=media&token=9f3c6088-efe7-4c26-a1da-b6806082faeb"
-                                alt="logo"
-                                className="w-[90px] h-[56px] lg:w-[128.913px] lg:h-[80.01px]"
-                            />
-                        </div>
-                        <div className="flex justify-center items-center">
-                            <button id="btn_close_header_mobile" onClick={showHeaderMobile} className='flex w-[46px] h-[46px] justify-center items-center'>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="14"
-                                    height="14"
-                                    viewBox="0 0 14 14"
-                                    fill="none"
-                                >
-                                    <path
-                                        d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z"
-                                        fill="#1C1B1F"></path>
+                    <div className='flex justify-center items-center gap-28'>
+                        <div className='font-primary text-[#5E5E5E] hidden md:block'>Huancayo, Peru</div>
+                        <div className='flex flex-row items-center gap-6'>Menu
+                            <button onClick={() => toggleActiveMenu(true)} className='w-[43px] h-[43px] rounded-full border flex justify-center items-center border-black'>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
                                 </svg>
                             </button>
                         </div>
                     </div>
-                </header>
-                <div className="flex flex-col items-start gap-[16px]">
-                    <a
-                        href="/portfolio"
-                        className={`font-primary text-[32px] not-italic font-medium leading-[normal] ${pathName == '/portfolio' ? 'text-blue-500 font-bold text-[40px]' : ''}`}>Portafolio</a>
-                    <div className="dropdown" id="dropdown_mobile">
-                        <span
-                            id="btn_services"
-                            onClick={handleDropdown}
-                            className={`font-primary text-[32px] not-italic font-medium leading-[normal] cursor-pointer dropdown ${(pathName == '/design-web' || pathName == '/social-media') ? 'text-blue-500 font-bold text-[40px]' : ''}`}>Servicios</span>
-                        <div className="dropdown_mobile">
-                            <div className="flex flex-col gap-[10px] my-[8px]">
-                                <a
-                                    href="/design-web"
-                                    className={`pl-[10px] font-primary text-[28px] text-black not-italic font-medium leading-[normal] ${pathName == '/design-web' ? 'text-blue-500 font-bold text-[30px]' : ''}`}>Diseño web</a>
-                                <a
-                                    href="/social-media"
-                                    className={`pl-[10px] font-primary text-[28px] text-black not-italic font-medium leading-[normal] ${pathName == '/social-media' ? 'text-blue-500 font-bold text-[30px]' : ''}`}>Social media</a>
-                                <a
-                                    href="/branding"
-                                    className={`pl-[10px] font-primary text-[28px] text-black not-italic font-medium leading-[normal] ${pathName == '/branding' ? 'text-blue-500 font-bold text-[30px]' : ''}`}>Branding</a>
-                            </div>
+                </div>
+            </header>
+            <div className={`${styles.menu} ${active ? styles.active : ''}`}>
+                <div className={`${menuContent ? 'block p-10' : 'hidden'}`}>
+                    <div className='flex justify-between items-center'>Huancayo, Perú
+                        <div className='flex flex-row items-center gap-6'>Close
+                            <button onClick={() => toggleActiveMenu(false)} className='w-[43px] h-[43px] rounded-full border flex justify-center items-center border-black'>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div className="w-full flex justify-center">
-                    <button
-                        className="px-[16px] py-[8px] bg-[#bcf500] text-black font-medium rounded-full effect_expand_x">CONTACTO</button>
                 </div>
             </div>
         </div>

@@ -1,5 +1,6 @@
 'use client'
 import Spline from '@splinetool/react-spline';
+import styles from './portada.module.css';
 
 export default function Portada() {
     return (
@@ -41,9 +42,12 @@ export default function Portada() {
                     <a href="/" className="text-black font-primary text-[24px] not-italic font-normal leading-[33.5px]">Desarrollo web</a>
                 </div>
             </div>
-            <div className="h-[800px] w-full rounded-[40px] overflow-hidden relative" style={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FScreenshot%202023-12-11%20at%2008.40.50.png?alt=media&token=62d0e1ba-02e0-41d4-be53-f8464b041e8e')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+            <div className="h-[800px] w-full rounded-[20px] overflow-hidden relative" style={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FScreenshot%202023-12-11%20at%2008.40.50.png?alt=media&token=62d0e1ba-02e0-41d4-be53-f8464b041e8e')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
                 <Spline scene="https://prod.spline.design/hDb-ZfPyU0kaAXNR/scene.splinecode" />
-                <div className='absolute top-0 right-0 left-0 bottom-0'></div>
+                {/* <div className='absolute top-0 right-0 left-0 bottom-0'></div> */}
+                <div className={`${styles.actions} h-[50px] absolute bottom-2 right-2 left-2 rounded-[20px] flex items-center justify-center`}>
+                    <div className='text-white'>Interactúa con nuestra mascota (A, W, S, D)</div>
+                </div>
             </div>
         </section>
     )
