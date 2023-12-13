@@ -90,26 +90,31 @@ export default function Header() {
                             className={`font-primary text-[32px] not-italic font-normal leading-[normal] ${pathName == '/' ? 'text-blue-500 font-bold text-[40px]' : ''}`}>Inicio</Link>
                         <Link
                             href="/prices"
+                            onClick={() => toggleActiveMenu(false)}
                             className={`font-primary text-[32px] not-italic font-normal leading-[normal] ${pathName == '/prices' ? 'text-blue-500 font-bold text-[40px]' : ''}`}>Precios</Link>
                         <Link
                             href="/about-us"
+                            onClick={() => toggleActiveMenu(false)}
                             className={`font-primary text-[32px] not-italic font-normal leading-[normal] ${pathName == '/about-us' ? 'text-blue-500 font-bold text-[40px]' : ''}`}>Nosotros</Link>
                         <div className={`dropdown ${dropdown ? 'active' : ''}`} id="dropdown_mobile">
                             <span
                                 id="btn_services"
                                 onClick={handleDropdown}
-                                className={`font-primary text-[32px] not-italic font-normal leading-[normal] cursor-pointer dropdown ${(pathName == '/design-web' || pathName == '/social-media') ? 'text-blue-500 font-bold text-[40px]' : ''}`}>Servicios</span>
+                                className={`font-primary text-[32px] not-italic font-normal leading-[normal] cursor-pointer dropdown ${(pathName == '/design-web' || pathName == '/social-networks' || pathName == '/development') ? 'text-blue-500 font-bold text-[40px]' : ''}`}>Servicios</span>
                             <div className="dropdown_mobile">
                                 <div className="flex flex-col gap-[10px] my-[8px]">
                                     <Link
                                         href="/design-web"
+                                        onClick={() => toggleActiveMenu(false)}
                                         className={`pl-[10px] font-primary text-[28px] text-black not-italic font-normal leading-[normal] ${pathName == '/design-web' ? 'text-blue-500 font-bold text-[30px]' : ''}`}>Diseño web</Link>
                                     <Link
-                                        href="/social-media"
-                                        className={`pl-[10px] font-primary text-[28px] text-black not-italic font-normal leading-[normal] ${pathName == '/social-media' ? 'text-blue-500 font-bold text-[30px]' : ''}`}>Social media</Link>
+                                        href="/social-networks"
+                                        onClick={() => toggleActiveMenu(false)}
+                                        className={`pl-[10px] font-primary text-[28px] text-black not-italic font-normal leading-[normal] ${pathName == '/social-networks' ? 'text-blue-500 font-bold text-[30px]' : ''}`}>Redes Sociales</Link>
                                     <Link
-                                        href="/branding"
-                                        className={`pl-[10px] font-primary text-[28px] text-black not-italic font-normal leading-[normal] ${pathName == '/branding' ? 'text-blue-500 font-bold text-[30px]' : ''}`}>Branding</Link>
+                                        href="/development"
+                                        onClick={() => toggleActiveMenu(false)}
+                                        className={`pl-[10px] font-primary text-[28px] text-black not-italic font-normal leading-[normal] ${pathName == '/development' ? 'text-blue-500 font-bold text-[30px]' : ''}`}>Desarrollo</Link>
                                 </div>
                             </div>
                         </div>

@@ -9,7 +9,7 @@ interface CardSampleProjectProps {
 
 export default function CardSampleProject({ url, title, description, items, position }: CardSampleProjectProps) {
     return (
-        <div className={`flex ${position === 'top' ? 'items-start' : 'items-end'} w-screen h-screen px-[20px] pb-[20px] md:px-[40px] md:pb-[40px]`} style={{backgroundImage: `url(${url})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
+        <div className={`flex ${position === 'top' ? 'items-start' : 'items-end'} w-screen h-screen px-[20px] pb-[20px] md:px-[40px] md:pb-[40px] card`} style={{backgroundImage: `url(${url})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
             <div className="flex flex-col md:flex-row gap-1">
                 <div className="flex flex-col gap-4">
                     <div className="font-primary text-black text-[32px] md:text-[60px] font-medium">{title}</div>

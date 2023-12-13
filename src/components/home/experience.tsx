@@ -1,10 +1,10 @@
 export default function Experience() {
     return (
-        <section className="flex py-[24px] px-[16px] flex-col items-start gap-[8px] bg-white self-stretch lg:px-[40px] experience-card">
+        <section className="flex justify-center h-auto md:h-screen py-[40px] px-[16px] flex-col items-start gap-[8px] bg-white md:px-[40px] experience-card">
             <div className="flex flex-col items-start gap-[60px] self-stretch lg:flex-row lg:justify-between lg:items-center">
                 <div className="flex flex-col items-start gap-[70px] self-stretch lg:gap-[140px]">
                     <h2 className="text-black font-primary text-[40px] not-italic font-bold leading-[normal] lg:text-[112px] lg:leading-[95px]">
-                        Experiencia
+                        Nuestra Experiencia
                     </h2>
                     <div className="flex justify-between items-start self-stretch">
                         <div className="flex flex-col items-start gap-[24px] flex-1 lg:gap-[40px]">
@@ -51,12 +51,12 @@ export default function Experience() {
                     <div className="flex flex-col justify-center items-start gap-[28px] self-stretch lg:self-auto">
                         <div className="flex flex-col items-start gap-[44px] self-stretch lg:self-auto">
                             <span className="font-primary text-[16px] not-italic font-normal leading-[normal] text text-black">Experiencia</span>
-                            <p className="self-stretch font-primary text-black text-[32px] not-italic font-medium leading-[normal] lg:text-[36px] text uppercase">
+                            <h3 className="self-stretch font-primary text-black text-[32px] not-italic font-medium leading-[normal] lg:text-[36px] text uppercase">
                                 Nuestro equipo cuenta con una gran cantidad de
                                 experiencia, por lo que puedes estar seguro de que
                                 presentaremos proyectos impresionantes y que nuestra
                                 comunicación sea impecable.
-                            </p>
+                            </h3>
                         </div>
                     </div>
                 </div>

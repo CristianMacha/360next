@@ -63,7 +63,7 @@ export default function Customers() {
         );
     }, []);
     return (
-        <section className="flex flex-col justify-center items-center px-[16px] gap-[8px] w-full h-auto md:h-[160vh] relative overflow-hidden">
+        <section className="flex flex-col justify-center items-center py-[40px] px-[16px] gap-[8px] w-full h-auto md:h-[160vh] relative overflow-hidden">
             {/* <div className='bg-red-500 rounded-full' id='customerOneFloat'>Hola</div> */}
             {/* <svg className=''>
                 <path id='custumerPathCircle' d="M 200, 200 m -160, 0 a 160,160 0 1,0 320,0 a 160,160 0 1,0 -320,0" stroke="black" stroke-width="0.5" fill="none" />
@@ -76,13 +76,13 @@ export default function Customers() {
             <div className='border border-[#A3A2A2] w-[400px] h-[400px] md:w-[900px] md:h-[900px] rounded-full absolute'></div>
             <div className='border border-[#A3A2A2] w-[700px] h-[700px] md:w-[1300px] md:h-[1300px] rounded-full absolute'></div>
             <div className='flex justify-center w-full mb-0 md:mb-16'>
-                <div className='w-[581px] font-primary font-medium text-[64px] leading-[60px] text-center'>Mas de 12 clientes confian en nosotros</div>
+                <h3 className='w-[581px] font-primary font-medium text-[40px] leading-[40px] md:text-[64px] md:leading-[60px] text-center z-[1]'>Mas de 12 clientes confian en nosotros</h3>
             </div>
             <div id="my-keen-slider-two" className="keen-slider w-full">
                 <div className="keen-slider__slide flex justify-center items-center h-[700px] md:h-[500px]">
                     <div className="flex w-[320px] h-[500px] py-[24px] px-[24px] lg:px-[48px] flex-col justify-between rounded-[40px] bg-[#F0ECEC] md:w-[368px] md:h-[406px] rotate-0 md:-rotate-[5deg]">
-                        <div className='text-[24px] font-primary font-normal'>Google reviews</div>
-                        <div className='text-[24px] font-primary font-light'>Muy bonito, me gusto el trabajo que hicieron para mi tienda virtual de venta de niños. Se vendieron niños rapidito. </div>
+                        <h2 className='text-[24px] font-primary font-normal'>Google reviews</h2>
+                        <h3 className='text-[24px] font-primary font-light'>Muy bonito, me gusto el trabajo que hicieron para mi tienda virtual de venta de niños. Se vendieron niños rapidito. </h3>
                         <div className='flex flex-row gap-4 items-center'>
                             <div className='w-[60px] h-[60px] rounded-full bg-gray-600'></div>
                             <div className='text-[24px] font-primary font-normal'>Juan Perez</div>
@@ -91,8 +91,8 @@ export default function Customers() {
                 </div>
                 <div className="keen-slider__slide flex justify-center items-center h-[700px] md:h-[500px]">
                     <div className="flex w-[320px] h-[500px] py-[24px] px-[24px] lg:px-[48px] flex-col justify-between rounded-[40px] bg-[#F0ECEC] md:w-[368px] md:h-[406px] mb-0 md:mb-16">
-                        <div className='text-[24px] font-primary font-normal'>Google reviews</div>
-                        <div className='text-[24px] font-primary font-light'>Muy bonito, me gusto el trabajo que hicieron para mi tienda virtual de venta de niños. Se vendieron niños rapidito. </div>
+                        <h2 className='text-[24px] font-primary font-normal'>Google reviews</h2>
+                        <h3 className='text-[24px] font-primary font-light'>Muy bonito, me gusto el trabajo que hicieron para mi tienda virtual de venta de niños. Se vendieron niños rapidito. </h3>
                         <div className='flex flex-row gap-4 items-center'>
                             <div className='w-[60px] h-[60px] rounded-full bg-gray-600'></div>
                             <div className='text-[24px] font-primary font-normal'>Juan Perez</div>
@@ -101,8 +101,8 @@ export default function Customers() {
                 </div>
                 <div className="keen-slider__slide flex justify-center items-center h-[700px] md:h-[500px]">
                     <div className="flex w-[320px] h-[500px] py-[24px] px-[24px] lg:px-[48px] flex-col justify-between rounded-[40px] bg-[#F0ECEC] md:w-[368px] md:h-[406px] rotate-0 md:rotate-[5deg]">
-                        <div className='text-[24px] font-primary font-normal'>Google reviews</div>
-                        <div className='text-[24px] font-primary font-light'>Muy bonito, me gusto el trabajo que hicieron para mi tienda virtual de venta de niños. Se vendieron niños rapidito. </div>
+                        <h2 className='text-[24px] font-primary font-normal'>Google reviews</h2>
+                        <h3 className='text-[24px] font-primary font-light'>Muy bonito, me gusto el trabajo que hicieron para mi tienda virtual de venta de niños. Se vendieron niños rapidito. </h3>
                         <div className='flex flex-row gap-4 items-center'>
                             <div className='w-[60px] h-[60px] rounded-full bg-gray-600'></div>
                             <div className='text-[24px] font-primary font-normal'>Juan Perez</div>
@@ -111,8 +111,8 @@ export default function Customers() {
                 </div>
                 <div className="keen-slider__slide flex justify-center items-center h-[700px] md:h-[500px]">
                     <div className="flex w-[320px] h-[500px] py-[24px] px-[24px] lg:px-[48px] flex-col justify-between rounded-[40px] bg-[#F0ECEC] md:w-[368px] md:h-[406px] rotate-0 md:-rotate-[5deg]">
-                        <div className='text-[24px] font-primary font-normal'>Google reviews</div>
-                        <div className='text-[24px] font-primary font-light'>Muy bonito, me gusto el trabajo que hicieron para mi tienda virtual de venta de niños. Se vendieron niños rapidito. </div>
+                        <h2 className='text-[24px] font-primary font-normal'>Google reviews</h2>
+                        <h3 className='text-[24px] font-primary font-light'>Muy bonito, me gusto el trabajo que hicieron para mi tienda virtual de venta de niños. Se vendieron niños rapidito. </h3>
                         <div className='flex flex-row gap-4 items-center'>
                             <div className='w-[60px] h-[60px] rounded-full bg-gray-600'></div>
                             <div className='text-[24px] font-primary font-normal'>Juan Perez</div>
@@ -121,8 +121,8 @@ export default function Customers() {
                 </div>
                 <div className="keen-slider__slide flex justify-center items-center h-[700px] md:h-[500px]">
                     <div className="flex w-[320px] h-[500px] py-[24px] px-[24px] lg:px-[48px] flex-col justify-between rounded-[40px] bg-[#F0ECEC] md:w-[368px] md:h-[406px] mb-0 md:mb-16">
-                        <div className='text-[24px] font-primary font-normal'>Google reviews</div>
-                        <div className='text-[24px] font-primary font-light'>Muy bonito, me gusto el trabajo que hicieron para mi tienda virtual de venta de niños. Se vendieron niños rapidito. </div>
+                        <h2 className='text-[24px] font-primary font-normal'>Google reviews</h2>
+                        <h3 className='text-[24px] font-primary font-light'>Muy bonito, me gusto el trabajo que hicieron para mi tienda virtual de venta de niños. Se vendieron niños rapidito. </h3>
                         <div className='flex flex-row gap-4 items-center'>
                             <div className='w-[60px] h-[60px] rounded-full bg-gray-600'></div>
                             <div className='text-[24px] font-primary font-normal'>Juan Perez</div>
@@ -131,8 +131,8 @@ export default function Customers() {
                 </div>
                 <div className="keen-slider__slide flex justify-center items-center h-[700px] md:h-[500px]">
                     <div className="flex w-[320px] h-[500px] py-[24px] px-[24px] lg:px-[48px] flex-col justify-between rounded-[40px] bg-[#F0ECEC] md:w-[368px] md:h-[406px] rotate-0 md:rotate-[5deg]">
-                        <div className='text-[24px] font-primary font-normal'>Google reviews</div>
-                        <div className='text-[24px] font-primary font-light'>Muy bonito, me gusto el trabajo que hicieron para mi tienda virtual de venta de niños. Se vendieron niños rapidito. </div>
+                        <h2 className='text-[24px] font-primary font-normal'>Google reviews</h2>
+                        <h3 className='text-[24px] font-primary font-light'>Muy bonito, me gusto el trabajo que hicieron para mi tienda virtual de venta de niños. Se vendieron niños rapidito. </h3>
                         <div className='flex flex-row gap-4 items-center'>
                             <div className='w-[60px] h-[60px] rounded-full bg-gray-600'></div>
                             <div className='text-[24px] font-primary font-normal'>Juan Perez</div>

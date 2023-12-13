@@ -5,16 +5,31 @@ const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 export default function Portada() {
     return (
-        <section className="h-auto md:h-screen px-[16px] md:px-[40px] flex flex-col gap-7 md:gap-14 justify-start items-center py-[16px] md:py-[40px] relative">
-            <div className="h-[500px] w-full rounded-[40px] overflow-hidden hidden md:block" >
-                <Suspense fallback={<div>Loading...</div>}>
+        <section className="h-auto px-[16px] md:px-[40px] flex flex-col gap-7 md:gap-11 justify-start items-center py-[16px] md:pb-[40px] md:pt-[70px] relative">
+            <div className="h-[600px] w-full rounded-[20px] overflow-hidden hidden md:block relative" style={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FSTATIC%203D.webp?alt=media&token=dbaadf1c-a177-41b4-a0bb-9d0d7a750b3b')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+                {/* <Suspense fallback={<div>Loading...</div>}>
                     <Spline scene="https://prod.spline.design/hDb-ZfPyU0kaAXNR/scene.splinecode" />
-                </Suspense>
+                </Suspense> */}
+            <div className='flex justify-center w-full absolute top-2'>
+                    <div className='flex flex-row items-center gap-2 font-medium bg-[#D9FE95] px-3 py-1 rounded-[20px]'>360 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+                        <g clipPath="url(#clip0_2105_269)">
+                            <path d="M30.2764 35.539C25.5661 35.539 18.1244 31.3536 11.1574 24.3897C2.03689 15.2735 -2.32156 5.34722 1.23945 1.79107C3.01835 0.0162235 6.39857 0.132395 10.757 2.12345C14.9218 4.02738 19.5708 7.42863 23.8453 11.7012C32.9658 20.8174 37.321 30.7405 33.76 34.2998C32.9206 35.1389 31.726 35.539 30.2732 35.539H30.2764ZM4.74559 1.82657C3.62208 1.82657 2.73747 2.117 2.14989 2.70108C-0.474871 5.32463 2.88598 14.2957 12.0646 23.4733C16.2325 27.6393 20.7492 30.9502 24.7783 32.7896C28.5557 34.516 31.5 34.7322 32.8463 33.3834C35.4711 30.7598 32.1102 21.7888 22.9316 12.6112C18.7637 8.44514 14.247 5.13424 10.2179 3.29485C8.08061 2.31707 6.20809 1.82334 4.74236 1.82334L4.74559 1.82657Z" fill="black" />
+                            <path d="M1.23816 34.2999C-2.31963 30.7437 2.0356 20.8175 11.1528 11.7012C15.4274 7.42869 20.0764 4.02744 24.2411 2.12351C28.6028 0.132452 31.983 0.0130535 33.7587 1.79113C37.3165 5.34728 32.9613 15.2735 23.844 24.3898C16.8769 31.3536 9.43529 35.5391 4.72493 35.5391C3.27211 35.5391 2.07757 35.1389 1.23816 34.2999ZM24.7803 3.29814C20.7511 5.13752 16.2345 8.44842 12.0665 12.6145C2.88469 21.792 -0.472934 30.7631 2.1486 33.3866C3.4981 34.7355 6.43925 34.5161 10.2166 32.7929C14.2457 30.9503 18.7624 27.6426 22.9304 23.4765C32.1122 14.299 35.4698 5.32792 32.845 2.70437C32.2607 2.12028 31.3728 1.82985 30.2493 1.82985C28.7836 1.82985 26.9143 2.32358 24.7738 3.30136L24.7803 3.29814Z" fill="black" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_2105_269">
+                                <rect width="35" height="35" fill="white" transform="translate(0 0.539062)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                        Virtual Solutions
+                    </div>
+                </div>
             </div>
             <div>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6'>
                     <div className='flex flex-col gap-6'>
-                        <h1 className='font-primary font-medium text-[32px]'>Nosotros</h1>
+                        <h1 className='font-primary font-medium text-[32px]'>Sobre Nosotros</h1>
                         <div className='flex flex-row gap-4'>
                             <div className='flex items-center'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
@@ -29,7 +44,7 @@ export default function Portada() {
                                     </defs>
                                 </svg>
                             </div>
-                            <p className='font-primary font-normal text-[20px]'>Lanzando experiencias digitales que transformen empresas e industrias. Para seguir siendo competitivas en un panorama en evolución, las empresas necesitan innovar.</p>
+                            <p className='font-primary font-normal text-[20px]'>Somos una empresa de marketing que conecta marcas con consumidores a través de interfaces digitales.</p>
                         </div>
                         <div>
                             <button className='py-[17px] px-[33px] rounded-full bg-[#D9FE95] font-primary font-medium text-[20px] flex flex-row gap-4 items-center'>Trabajemos! <svg xmlns="http://www.w3.org/2000/svg" width="33" height="16" viewBox="0 0 33 16" fill="none">
@@ -37,8 +52,8 @@ export default function Portada() {
                             </svg></button>
                         </div>
                     </div>
-                    <div className='flex items-center'>
-                        <p className='font-primary font-medium text-[24px] leading-normal'>Somos una empresa de marketing que conecta marcas con consumidores a través de interfaces digitales.</p>
+                    <div className='flex items-start justify-end'>
+                        <div className='font-primary font-medium text-[24px]'>2024</div>
                     </div>
                 </div>
             </div>
