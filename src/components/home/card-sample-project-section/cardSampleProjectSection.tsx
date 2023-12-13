@@ -27,6 +27,9 @@ export default function CardSampleProjectSection() {
 
     return (
         <>
+            <div className="px-[16px] md:px-[40px]">
+                <h2 className="font-primary font-medium text-[96px]">Nuestros Servicios</h2>
+            </div>
             <div className="overflow-x-hidden relative hidden md:block">
                 <div className="container_scroll flex flex-row">
                     <section>

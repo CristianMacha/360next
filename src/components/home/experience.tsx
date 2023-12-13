@@ -47,7 +47,7 @@ export default function Experience() {
                         </div>
                     </div>
                 </div>
-                <div className="flex w-auto py-[31px] px-[34px] flex-col justify-center items-center gap-[8px] self-stretch rounded-[40px] bg-[#baef01] lg:self-auto lg:w-[690px] overflow-hidden experience-desktop">
+                <div className="flex w-auto py-[31px] px-[34px] flex-col justify-center items-center gap-[8px] self-stretch rounded-[40px] bg-[#ABABE7] lg:self-auto lg:w-[690px] overflow-hidden experience-desktop">
                     <div className="flex flex-col justify-center items-start gap-[28px] self-stretch lg:self-auto">
                         <div className="flex flex-col items-start gap-[44px] self-stretch lg:self-auto">
                             <span className="font-primary text-[16px] not-italic font-normal leading-[normal] text text-black">Experiencia</span>

@@ -36,18 +36,18 @@ export default function Banner() {
             .to(".clip4", { clipPath: "circle(100.7% at 50% 50%)" }, "-=0.8")
             .to(".clip5", { clipPath: "circle(100.7% at 50% 50%)" }, "-=0.9");
 
-        gsap.to(".banner_gsap", {
-            scrollTrigger: {
-                trigger: ".content__pin",
-                start: "bottom-=500 top",
-                end: "bottom",
-                scrub: true,
-                markers: false,
-            },
-            borderRadius: '60px',
-            width: 'calc(100% - 40px)',
-            duration: 1,
-        });
+        // gsap.to(".banner_gsap", {
+        //     scrollTrigger: {
+        //         trigger: ".content__pin",
+        //         start: "bottom-=500 top",
+        //         end: "bottom",
+        //         scrub: true,
+        //         markers: false,
+        //     },
+        //     borderRadius: '60px',
+        //     width: 'calc(100% - 40px)',
+        //     duration: 1,
+        // });
 
         const cursorGreen = gsap.timeline({ repeat: -1 });
         const cursorBlue = gsap.timeline({ repeat: -1 });
@@ -82,7 +82,7 @@ export default function Banner() {
                         <div className={`bg-yellow-500 ${styles.clip3} clip3 w-full`}>
                             <div className={`bg-blue-500 ${styles.clip2} clip2 w-full`}>
                                 <div className={`bg-white ${styles.clip1} clip1 flex justify-center w-full`}>
-                                    <section className={`flex py-[40px] px-[16px] flex-col justify-center items-center gap-[8px] w-full bg-[#31312E] h-screen lg:p-[80px] banner_gsap relative cursor-default overflow-hidden`}
+                                    <section className={`flex py-[40px] px-[16px] flex-col justify-center items-center gap-[8px] w-full bg-[#28283B] h-screen lg:p-[80px] banner_gsap relative cursor-default overflow-hidden`}
                                         onMouseMove={handleMouseMove}
                                         onMouseLeave={handleMouseLeave}>
                                         {cursorPos.x !== 0 && cursorPos.y !== 0 && (

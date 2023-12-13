@@ -1,11 +1,15 @@
 'use client'
-import Spline from '@splinetool/react-spline';
+
+import React, { Suspense } from 'react';
+const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 export default function Portada() {
     return (
         <section className="h-auto md:h-screen px-[16px] md:px-[40px] flex flex-col gap-7 md:gap-14 justify-start items-center py-[16px] md:py-[40px] relative">
             <div className="h-[500px] w-full rounded-[40px] overflow-hidden hidden md:block" >
-                <Spline scene="https://prod.spline.design/hDb-ZfPyU0kaAXNR/scene.splinecode" />
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Spline scene="https://prod.spline.design/hDb-ZfPyU0kaAXNR/scene.splinecode" />
+                </Suspense>
             </div>
             <div>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6'>

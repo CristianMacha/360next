@@ -14,6 +14,7 @@ export default function Customers() {
         // gsap.to('#customerOneFloat', { duration: 5, motionPath: '#custumerPathCircle', repeat: -1, ease: 'linear'});
 
         new KeenSlider("#my-keen-slider-two", {
+            loop: true,
             breakpoints: {
                 "(min-width: 640px)": {
                     slides: { perView: 1, spacing: 16 },
@@ -28,7 +29,38 @@ export default function Customers() {
             slides: {
                 perView: 1,
             },
-        });
+        },
+            [
+                (slider) => {
+                    let timeout: any
+                    let mouseOver = false
+                    function clearNextTimeout() {
+                        clearTimeout(timeout)
+                    }
+                    function nextTimeout() {
+                        clearTimeout(timeout)
+                        if (mouseOver) return
+                        timeout = setTimeout(() => {
+                            slider.next()
+                        }, 3000)
+                    }
+                    slider.on("created", () => {
+                        slider.container.addEventListener("mouseover", () => {
+                            mouseOver = true
+                            clearNextTimeout()
+                        })
+                        slider.container.addEventListener("mouseout", () => {
+                            mouseOver = false
+                            nextTimeout()
+                        })
+                        nextTimeout()
+                    })
+                    slider.on("dragStarted", clearNextTimeout)
+                    slider.on("animationEnded", nextTimeout)
+                    slider.on("updated", nextTimeout)
+                },
+            ]
+        );
     }, []);
     return (
         <section className="flex flex-col justify-center items-center px-[16px] gap-[8px] w-full h-auto md:h-[160vh] relative overflow-hidden">

@@ -1,8 +1,13 @@
 'use client'
-import Spline from '@splinetool/react-spline';
+import React, { Suspense } from 'react';
+const Spline = React.lazy(() => import('@splinetool/react-spline'));
+
 import styles from './portada.module.css';
 
 export default function Portada() {
+    const [game, setGame] = React.useState(false);
+    const handlePlayGame = () => setGame(true);
+   
     return (
         <section className="h-auto px-[16px] md:px-[40px] flex flex-col gap-20 md:gap-14 justify-start items-center py-[16px] md:pb-[40px] md:pt-[70px]">
             <div className="flex flex-col gap-4 md:flex-row justify-between w-full items-center py-40">
@@ -42,12 +47,18 @@ export default function Portada() {
                     <a href="/" className="text-black font-primary text-[24px] not-italic font-normal leading-[33.5px]">Desarrollo web</a>
                 </div>
             </div>
-            <div className="h-[800px] w-full rounded-[20px] overflow-hidden relative" style={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FScreenshot%202023-12-11%20at%2008.40.50.png?alt=media&token=62d0e1ba-02e0-41d4-be53-f8464b041e8e')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
-                <Spline scene="https://prod.spline.design/hDb-ZfPyU0kaAXNR/scene.splinecode" />
+            <div className="h-[800px] w-full rounded-[20px] overflow-hidden relative" style={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FSTATIC%203ED.webp?alt=media&token=c7af6111-7129-44e9-84b2-885f1ea78790')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+                {
+                    game && (
+                        <Suspense fallback={<div className='text-white flex justify-center items-center text-[24px]'>Loading...</div>}>
+                            <Spline scene="https://prod.spline.design/hDb-ZfPyU0kaAXNR/scene.splinecode" />
+                        </Suspense>
+                    )
+                }
                 {/* <div className='absolute top-0 right-0 left-0 bottom-0'></div> */}
                 <div className={`${styles.actions} hidden h-[50px] absolute bottom-2 right-2 left-2 rounded-[20px] md:flex items-center justify-between px-5`}>
                     <div className='text-white'>Interactúa con nuestra mascota (A, W, S, D)</div>
-                    <div className='w-[35px] h-[35px] rounded-full bg-white flex justify-center items-center pl-[5px]'>
+                    <div className={`w-[35px] h-[35px] rounded-full bg-white flex justify-center items-center pl-[5px] cursor-pointer animate-pulse ${game ? 'hidden' : 'block'}`} onClick={handlePlayGame}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18" viewBox="0 0 15 18" fill="none">
                             <path d="M15 9L-8.15666e-07 17.6603L-5.85621e-08 0.339745L15 9Z" fill="black" />
                         </svg>

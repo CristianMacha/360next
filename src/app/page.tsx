@@ -20,19 +20,19 @@ export default function Home() {
     <>
       <Portada />
       {/* <Hand /> */}
-      <OurProjects />
+      {/* <OurProjects /> */}
       <CardSampleProjectSection />
       <Testimonials />
-      <Reviews />
+      <Customers />
+      {/* <Reviews /> */}
       <BannerScroll />
       <Services />
       <Experience />
       <LetsPlay />
       <Banner />
-      <OurValues />
-      {/* <SampleProject /> */}
       <Galaxy />
-      <Customers />
+      {/* <OurValues /> */}
+      {/* <SampleProject /> */}
     </>
   )
 }

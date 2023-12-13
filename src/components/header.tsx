@@ -11,6 +11,23 @@ import styles from './header.module.css';
 
 export default function Header() {
     const pathName = usePathname();
+
+    const [active, setActive] = useState(false);
+    const [dropdown, setDropdown] = useState(false);
+
+    const toggleActiveMenu = (value: boolean) => {
+        setActive(value);
+        // if (value) {
+        //     setTimeout(() => {
+        //         setMenuContent(true);
+        //     }, 500);
+        // } else {
+        //     setMenuContent(false);
+        // }
+    };
+
+    const handleDropdown = () => setDropdown(!dropdown);
+
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
         const showAnim = gsap
@@ -29,20 +46,6 @@ export default function Header() {
             },
         });
     }, [])
-
-    const [active, setActive] = useState(false);
-    const [menuContent, setMenuContent] = useState(false);
-    const toggleActiveMenu = (value: boolean) => {
-        setActive(value);
-        if (value) {
-            setTimeout(() => {
-                setMenuContent(true);
-            }, 500);
-        } else {
-            setMenuContent(false);
-        }
-    };
-
 
     return (
         <div>
@@ -70,7 +73,7 @@ export default function Header() {
                 </div>
             </header>
             <div className={`${styles.menu} ${active ? styles.active : ''}`}>
-                <div className={`${menuContent ? 'block p-10' : 'hidden'}`}>
+                <div className={`block p-10`}>
                     <div className='flex justify-between items-center'>Huancayo, Perú
                         <div className='flex flex-row items-center gap-6'>Close
                             <button onClick={() => toggleActiveMenu(false)} className='w-[43px] h-[43px] rounded-full border flex justify-center items-center border-black'>
@@ -80,8 +83,40 @@ export default function Header() {
                             </button>
                         </div>
                     </div>
+                    <div className='flex flex-col gap-2 py-10'>
+                        <Link
+                            href="/"
+                            onClick={() => toggleActiveMenu(false)}
+                            className={`font-primary text-[32px] not-italic font-normal leading-[normal] ${pathName == '/' ? 'text-blue-500 font-bold text-[40px]' : ''}`}>Inicio</Link>
+                        <Link
+                            href="/prices"
+                            className={`font-primary text-[32px] not-italic font-normal leading-[normal] ${pathName == '/prices' ? 'text-blue-500 font-bold text-[40px]' : ''}`}>Precios</Link>
+                        <Link
+                            href="/about-us"
+                            className={`font-primary text-[32px] not-italic font-normal leading-[normal] ${pathName == '/about-us' ? 'text-blue-500 font-bold text-[40px]' : ''}`}>Nosotros</Link>
+                        <div className={`dropdown ${dropdown ? 'active' : ''}`} id="dropdown_mobile">
+                            <span
+                                id="btn_services"
+                                onClick={handleDropdown}
+                                className={`font-primary text-[32px] not-italic font-normal leading-[normal] cursor-pointer dropdown ${(pathName == '/design-web' || pathName == '/social-media') ? 'text-blue-500 font-bold text-[40px]' : ''}`}>Servicios</span>
+                            <div className="dropdown_mobile">
+                                <div className="flex flex-col gap-[10px] my-[8px]">
+                                    <Link
+                                        href="/design-web"
+                                        className={`pl-[10px] font-primary text-[28px] text-black not-italic font-normal leading-[normal] ${pathName == '/design-web' ? 'text-blue-500 font-bold text-[30px]' : ''}`}>Diseño web</Link>
+                                    <Link
+                                        href="/social-media"
+                                        className={`pl-[10px] font-primary text-[28px] text-black not-italic font-normal leading-[normal] ${pathName == '/social-media' ? 'text-blue-500 font-bold text-[30px]' : ''}`}>Social media</Link>
+                                    <Link
+                                        href="/branding"
+                                        className={`pl-[10px] font-primary text-[28px] text-black not-italic font-normal leading-[normal] ${pathName == '/branding' ? 'text-blue-500 font-bold text-[30px]' : ''}`}>Branding</Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div onClick={() => toggleActiveMenu(false)} className={`fixed bg-black/30 z-[51] transition-all ${active ? 'top-0 bottom-0 right-0 left-0' : 'top-0'}`}></div>
         </div>
     )
 }
