@@ -106,7 +106,7 @@ html {
 
 .dropdown.active .dropdown_mobile {
   transition: all 0.3s ease-in-out;
-  height: 155px;
+  height: 130px;
 }
 
 .panel__expand {
@@ -123,6 +123,10 @@ html {
   border: 0;
 }
 
+.panel__expand.pannel__active.small {
+  height: 250px;
+}
+
 .panel__expand.pannel__active.medium {
   height: 300px;
 }
@@ -133,6 +137,7 @@ html {
 
 .panel__expand.pannel__active .panel__expand__button {
   transform: rotate(-90deg);
+  background-color: #D9FE95;
 }
 
 .panel__expand__button {

@@ -51,7 +51,7 @@ export default function Experience() {
                     <div className="flex flex-col justify-center items-start gap-[28px] self-stretch lg:self-auto">
                         <div className="flex flex-col items-start gap-[44px] self-stretch lg:self-auto">
                             <span className="font-primary text-[16px] not-italic font-normal leading-[normal] text text-black">Experiencia</span>
-                            <h3 className="self-stretch font-primary text-black text-[32px] not-italic font-medium leading-[normal] lg:text-[36px] text uppercase">
+                            <h3 className="self-stretch font-primary text-black text-[32px] not-italic font-medium leading-[normal] lg:text-[36px] text">
                                 Nuestro equipo cuenta con una gran cantidad de
                                 experiencia, por lo que puedes estar seguro de que
                                 presentaremos proyectos impresionantes y que nuestra
