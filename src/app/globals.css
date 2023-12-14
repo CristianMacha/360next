@@ -97,10 +97,6 @@ html {
   src: url("../assets/fonts/Ole.otf") format("opentype");
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
 
 .dropdown_mobile {
   transition: all 0.3s ease-in-out;
@@ -113,24 +109,41 @@ html {
   height: 155px;
 }
 
-.dropdown_content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 10%);
-  z-index: 1;
+.panel__expand {
+  border: 1px solid #000;
+  padding: .5rem 1rem .5rem 1rem;
+  border-radius: 20px;
+  height: 96px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
 }
 
-.dropdown:hover .dropdown_content {
-  display: block;
+.pannel__active {
+  background-color: #F1F1F1;
+  border: 0;
 }
 
-.active_header_mobile {
-  display: none;
+.panel__expand.pannel__active.medium {
+  height: 300px;
 }
+
+.panel__expand.pannel__active.large {
+  height: 500px;
+}
+
+.panel__expand.pannel__active .panel__expand__button {
+  transform: rotate(-90deg);
+}
+
+.panel__expand__button {
+  background-color: #fff;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
 
 .bg__blur__negative {
   -webkit-backdrop-filter: hue-rotate(180deg) invert() blur(15px);

@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Header from '../components/header'
 import Footer from '@/components/home/footer'
-import FloatingMenu from '@/components/FloatingMenu'
 
 
 export const metadata: Metadata = {
