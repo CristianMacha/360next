@@ -14,6 +14,7 @@ import Galaxy from '@/components/home/galaxy'
 import Reviews from '@/components/home/Reviews'
 import OurValues from '@/components/home/OurValues'
 import Customers from '@/components/home/Customers'
+import Faq from './faq/page'
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <LetsPlay />
       <Banner />
       <Galaxy />
+      <Faq />
       {/* <OurValues /> */}
       {/* <SampleProject /> */}
     </>

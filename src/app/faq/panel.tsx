@@ -4,10 +4,11 @@ interface PanelProps {
     question: string;
     size: 'small' | 'medium' | 'large';
     answer: string;
+    opend?: boolean
 }
 
-export default function Panel({ size, question, answer }: PanelProps) {
-    const [panelActive, setPanelActive] = useState(false);
+export default function Panel({ size, question, answer, opend = false }: PanelProps) {
+    const [panelActive, setPanelActive] = useState(opend);
     const handlePanelActive = () => setPanelActive(!panelActive);
     return (
         <div className={`panel__expand ${size} ${panelActive ? 'pannel__active' : ''}`}>

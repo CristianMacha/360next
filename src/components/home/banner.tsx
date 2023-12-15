@@ -69,7 +69,7 @@ export default function Banner() {
                         <div className={`bg-yellow-500 ${styles.clip3} clip3 w-full`}>
                             <div className={`bg-blue-500 ${styles.clip2} clip2 w-full`}>
                                 <div className={`bg-white ${styles.clip1} clip1 flex justify-center w-full`}>
-                                    <section className={`flex py-[40px] px-[16px] flex-col justify-center items-center gap-[8px] w-full bg-[#28283B] h-screen lg:p-[80px] banner_gsap relative cursor-default overflow-hidden`}
+                                    <section className={`flex py-[40px] px-[16px] flex-col justify-center items-center gap-[8px] w-full bg-[#B6B9FE] h-screen md:p-[80px] banner_gsap relative cursor-default`}
                                         onMouseMove={handleMouseMove}
                                         onMouseLeave={handleMouseLeave}>
                                         {cursorPos.x !== 0 && cursorPos.y !== 0 && (
@@ -107,61 +107,101 @@ export default function Banner() {
                                             </div>
                                             <div className='py-[2px] px-[4px] bg-blue-500 text-white text-xs ml-4'>Zain</div>
                                         </div>
-                                        <div className="flex flex-col justify-center items-center gap-[80px] self-stretch lg:gap-[200px]">
-                                            <div className="flex flex-col justify-center items-center gap-[32px] self-stretch lg:gap-[64px]">
-                                                <div className="flex flex-col justify-center items-center gap-[4px] self-stretch lg:self-auto">
-                                                    <h2 className="self-stretch text-white text-center font-primary text-[32px] not-italic font-bold leading-[normal] lg:self-auto lg:text-[100px]">
+                                        <div className="flex flex-col justify-center items-center gap-[80px] md:gap-[200px] w-full">
+                                            <div className="flex flex-col justify-center items-center gap-[32px]  md:gap-[64px] w-[900px]">
+                                                <div className="flex flex-col justify-center items-center gap-[4px]  md:self-auto">
+                                                    <h2 className=" text-white text-center font-primary text-[32px] not-italic font-bold leading-[normal] md:self-auto md:text-[72px]">
                                                         Qué sucede tras bastidores?
                                                     </h2>
-                                                    <h2 className="self-stretch text-white text-center font-primary text-[32px] not-italic font-bold leading-[normal] lg:self-auto lg:text-[100px]">
+                                                    <h2 className=" text-white text-center font-primary text-[32px] not-italic font-bold leading-[normal] md:self-auto md:text-[72px]">
                                                         !Descubrelo por ti mismo!
                                                     </h2>
                                                 </div>
-                                                <div className="flex flex-col items-center gap-[12px] self-stretch">
-                                                    <h3 className="self-stretch text-white text-center font-primary text-[16px] not-italic font-bold leading-[normal] lg:self-auto lg:text-[40px]">
+                                                <div className="flex flex-col items-center gap-[12px] ">
+                                                    <h3 className=" text-white text-center font-primary text-[16px] not-italic font-bold leading-[normal] md:self-auto md:text-[32px]">
                                                         Esto es un tablero. Puedes hacer click en nuestros
                                                         comentarios y leerlos, si, eso es todo.
                                                     </h3>
-                                                    <h3 className="text-white text-center font-primary text-[16px] not-italic font-bold leading-[normal] lg:self-auto lg:text-[40px]">
+                                                    <h3 className="text-white text-center font-primary text-[16px] not-italic font-bold leading-[normal] md:self-auto md:text-[24px]">
                                                         ... o explora mas a fondo
                                                     </h3>
                                                 </div>
-                                            </div>
-                                            <div className="flex p-[4px] items-start gap-[8px] rounded-full border border-white bg-transparent">
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="24"
-                                                    height="24"
-                                                    viewBox="0 0 24 24"
-                                                    fill="none">
-                                                    <mask id="mask0_1166_402" mask-type="alpha"
-                                                        maskUnits="userSpaceOnUse"
-                                                        x="0"
-                                                        y="0"
+                                                <div className="flex p-[4px] items-start gap-[8px] rounded-full border border-white bg-transparent">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
                                                         width="24"
                                                         height="24"
-                                                    >
-                                                        <rect width="24" height="24" fill="#D9D9D9"></rect>
-                                                    </mask>
-                                                    <g mask="url(#mask0_1166_402)">
-                                                        <path
-                                                            d="M11 4V16.175L5.4 10.575L4 12L12 20L20 12L18.6 10.575L13 16.175V4H11Z"
-                                                            fill="white"></path>
-                                                    </g>
-                                                </svg>
+                                                        viewBox="0 0 24 24"
+                                                        fill="none">
+                                                        <mask id="mask0_1166_402" mask-type="alpha"
+                                                            maskUnits="userSpaceOnUse"
+                                                            x="0"
+                                                            y="0"
+                                                            width="24"
+                                                            height="24"
+                                                        >
+                                                            <rect width="24" height="24" fill="#D9D9D9"></rect>
+                                                        </mask>
+                                                        <g mask="url(#mask0_1166_402)">
+                                                            <path
+                                                                d="M11 4V16.175L5.4 10.575L4 12L12 20L20 12L18.6 10.575L13 16.175V4H11Z"
+                                                                fill="white"></path>
+                                                        </g>
+                                                    </svg>
+                                                </div>
                                             </div>
                                         </div>
                                         <div className='absolute top-10 left-16'>
-                                            <Comment image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Ffoto2.jpg?alt=media&token=b548bd4c-4d5d-42c4-bbb9-0bd20e0794ab' name='Cristian' comment='Hello world' position='right' />
+                                            <Comment
+                                                image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FavatarZain.jpg?alt=media&token=1b25d827-ed8c-4161-9a3a-21bdbe355c80'
+                                                name='Zain' comment='Cuando los clientes dicen "hazlo impactante", respiro y luego me detengo. ¿Lo quieren grande, brillante o atrevido? Desearía que sus instrucciones no fueran tan frías, pero agregaré un poco de brillo, una pizca de dinamismo, y espero que les guste, no hay necesidad de jazz. Así que "impactante", siempre dicen, haré lo mejor que pueda, pase lo que pase. !”'
+                                                position='right' />
                                         </div>
                                         <div className='absolute bottom-20 left-4 md:left-20'>
-                                            <Comment image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Ffoto2.jpg?alt=media&token=b548bd4c-4d5d-42c4-bbb9-0bd20e0794ab' name='Cristian' comment='Hello world' position='right' />
+                                            <Comment
+                                                image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FavatarElihu.jpg?alt=media&token=1841dc22-eaeb-4412-904f-5bb2d0d5ff1c'
+                                                name='Elihu'
+                                                comment='Elihu: Vendedor de niños profesional, ayudante de Karboncito, el payasito más rico del Perú, diseño con alegría hasta que mi jefe me dice que le ponga más diseño.'
+                                                position='right' />
                                         </div>
                                         <div className='absolute top-32  md:bottom-32 right-4 md:right-32'>
-                                            <Comment image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Ffoto2.jpg?alt=media&token=b548bd4c-4d5d-42c4-bbb9-0bd20e0794ab' name='Cristian' comment='Hello world' position='left' />
+                                            <Comment
+                                                image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FavatarCristian.jpg?alt=media&token=989557fe-62c5-41f6-8de8-1ec24e981dd7'
+                                                name='Cristian'
+                                                comment='function singSong() {
+                                                    const lyrics = [
+                                                      "Algún código tiene problemas reales",
+                                                      "Algún código tiene mala suerte",
+                                                      "Algún código piensa que puedo resolverlos",
+                                                      "Señor depurador arriba",
+                                                      "",
+                                                      "Solo soy un desarrollador, después de todo",
+                                                      "Solo soy un desarrollador, después de todo",
+                                                      "No pongas tus errores en mí",
+                                                      "No pongas tus errores en mí",
+                                                      "",
+                                                      "Solo soy un humano, cometo errores",
+                                                      "Solo soy un humano, eso es todo lo que se necesita",
+                                                      "Para crear algunos errores en el código",
+                                                      "No pongas tus errores en mí",
+                                                      "",
+                                                      "No soy un mago del código o un mago",
+                                                      "Debería buscar en alguna documentación",
+                                                      "Solo soy un desarrollador después de todo",
+                                                      "Solo soy un desarrollador después de todo",
+                                                      "No pongas tus errores en mí",
+                                                      "No pongas tus errores en mí"
+                                                    ];
+                                                  }
+                                                  '
+                                                position='left' />
                                         </div>
                                         <div className='absolute bottom-40 md:bottom-32 right-4 md:right-64'>
-                                            <Comment image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Ffoto2.jpg?alt=media&token=b548bd4c-4d5d-42c4-bbb9-0bd20e0794ab' name='Cristian' comment='Hello world' position='left' />
+                                            <Comment
+                                                image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FavatarAlex.jpg?alt=media&token=2ee3969f-41f4-46c7-a402-24d00f6ed770'
+                                                name='Alex'
+                                                comment='Alex: A veces solo hay que mirar el panorama general, y con eso me refiero al cartel de la oficina que dice "El éxito es un viaje, no un destino". Eso es lo que me digo a mí mismo cada vez que borro accidentalmente una página web.'
+                                                position='left' />
                                         </div>
                                     </section>
                                 </div>
