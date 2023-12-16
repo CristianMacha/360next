@@ -3,6 +3,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 
+import styles from './bannerScroll.module.css';
+
 export default function BannerScroll() {
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -20,21 +22,14 @@ export default function BannerScroll() {
         <div className="flex h-[141px] flex-col justify-center items-center gap-[8px] self-stretch border-y border-[#c7c7c7] bg-white overflow-hidden lg:h-auto">
             <div className="flex items-center gap-[40px] flex-1 self-stretch">
                 <div className="flex py-[40px] items-center gap-[8px] flex-1 self-stretch">
-                    <h4 className="overflow-hidden flex flex-row gap-4 items-center text-[#1a1a1a] text-ellipsis font-primary text-[80px] not-italic font-bold leading-[95px] whitespace-nowrap ml-10 lg:text-[200px] lg:leading-[200px] scroll uppercase"><span className="text-white" style={{ WebkitTextStrokeWidth: 2, WebkitTextStrokeColor: '#000000' }}>360 Virtual Solutions </span> <span><svg xmlns="http://www.w3.org/2000/svg" width="109" height="109" viewBox="0 0 109 109" fill="none">
-                        <g clipPath="url(#clip0_2083_139)">
-                            <path d="M90.9187 54.2601C90.1087 55.3601 89.2688 56.4601 88.4088 57.5601C103.409 78.0901 107.929 95.6201 101.759 101.8C97.5788 105.97 88.4688 105.3 76.7588 99.9501C70.6088 97.1401 64.0887 93.2301 57.5287 88.4301C56.4287 89.3101 55.3188 90.1501 54.2188 90.9601C69.2788 102.14 83.5887 108.46 93.7787 108.46C98.2887 108.46 101.989 107.23 104.589 104.63C113.069 96.1401 107.039 75.9701 90.9187 54.2601ZM73.8688 34.6001C68.5488 29.2801 63.0487 24.4001 57.5287 20.0801C56.4187 20.8801 55.3188 21.7101 54.2188 22.5701C59.8888 26.9501 65.5588 31.9501 71.0387 37.4301C76.7288 43.1101 81.6887 48.7701 85.9287 54.2501C86.7887 53.1401 87.6188 52.0401 88.4088 50.9501C84.1488 45.5101 79.2788 40.0101 73.8688 34.6001Z" fill="black" />
-                            <path d="M54.2195 85.94C53.1195 86.79 52.0095 87.62 50.8995 88.43C45.4595 84.18 39.9595 79.31 34.5595 73.91C29.1495 68.5 24.2795 63 20.0195 57.56C20.8095 56.46 21.6395 55.36 22.4995 54.25C26.7395 59.73 31.6995 65.39 37.3895 71.08C42.8695 76.56 48.5495 81.57 54.2195 85.94Z" fill="black" />
-                            <path d="M54.2192 17.5601C53.1092 18.3701 52.0092 19.2101 50.8992 20.0801C44.3292 15.2801 37.8092 11.3701 31.6592 8.56013C25.0392 5.53013 19.2492 4.00013 14.7092 4.00013C11.2292 4.00013 8.48923 4.90013 6.66923 6.71013C0.489227 12.8901 5.01923 30.4101 20.0192 50.9501C19.1492 52.0501 18.3092 53.1601 17.5092 54.2601C1.38923 32.5401 -4.64077 12.3701 3.83923 3.88013C9.34923 -1.61987 19.8192 -1.25987 33.3292 4.92013C40.0092 7.98013 47.0992 12.2801 54.2192 17.5601Z" fill="black" />
-                            <path d="M104.589 3.88013C99.0787 -1.61987 88.6087 -1.25987 75.0987 4.92013C68.4187 7.98013 61.3387 12.2801 54.2188 17.5601C55.3188 18.3801 56.4287 19.2201 57.5287 20.0801C64.0887 15.2801 70.6088 11.3701 76.7588 8.56013C83.3888 5.53013 89.1787 4.00013 93.7188 4.00013C97.1987 4.00013 99.9388 4.90013 101.759 6.71013C107.929 12.8901 103.409 30.4101 88.4088 50.9501C89.2788 52.0501 90.1187 53.1601 90.9187 54.2601C107.039 32.5401 113.069 12.3701 104.589 3.88013ZM85.9287 54.2501C81.6887 59.7301 76.7288 65.3901 71.0387 71.0801C65.5588 76.5501 59.8888 81.5601 54.2188 85.9401C55.3188 86.8001 56.4187 87.6301 57.5287 88.4301C62.9687 84.1801 68.4688 79.3101 73.8688 73.9101C79.2788 68.5001 84.1488 63.0001 88.4088 57.5601C87.6188 56.4701 86.7887 55.3601 85.9287 54.2501Z" fill="black" />
-                            <path d="M54.2192 90.9603C39.1592 102.13 24.8392 108.46 14.6492 108.46C10.1392 108.46 6.43923 107.22 3.83923 104.63C-4.64077 96.1403 1.38923 75.9703 17.5092 54.2603C18.3192 55.3603 19.1592 56.4603 20.0192 57.5603C9.35923 72.1503 3.98923 85.2203 3.98923 93.7803C3.98923 97.2703 4.87923 100.01 6.66923 101.8C10.8492 105.97 19.9592 105.3 31.6592 99.9503C37.8092 97.1403 44.3292 93.2303 50.8992 88.4303C52.0092 89.3103 53.1192 90.1503 54.2192 90.9603Z" fill="black" />
-                            <path d="M54.2195 22.5701C48.5495 26.9401 42.8695 31.9401 37.3895 37.4301C31.6995 43.1101 26.7395 48.7701 22.4995 54.2501C21.6395 53.1401 20.8095 52.0401 20.0195 50.9501C24.2795 45.5101 29.1495 40.0101 34.5595 34.6001C39.8795 29.2801 45.3795 24.4001 50.8995 20.0801C50.9995 20.1501 51.0895 20.2201 51.1895 20.2901C52.1995 21.0301 53.2095 21.7901 54.2195 22.5701Z" fill="black" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_2083_139">
-                                <rect width="108.42" height="108.46" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg></span> 360 Virtual Solutions</h4>
+                <div className={`${styles.content_section} ${styles.text_move} font-primary`}>
+            <div className={`${styles.text_wrapper}`}>
+                <div className={`${styles.text}`}> 360 VIRTUAL SOLUTIONS X <span className="text-white" style={{ WebkitTextStrokeWidth: 1, WebkitTextStrokeColor: '#000000' }}> 360 VIRTUAL SOLUTIONS X </span> </div>
+                <div className={`${styles.text}`}> 360 VIRTUAL SOLUTIONS X <span className="text-white" style={{ WebkitTextStrokeWidth: 1, WebkitTextStrokeColor: '#000000' }}> 360 VIRTUAL SOLUTIONS X </span> </div>
+                <div className={`${styles.text}`}> 360 VIRTUAL SOLUTIONS X <span className="text-white" style={{ WebkitTextStrokeWidth: 1, WebkitTextStrokeColor: '#000000' }}> 360 VIRTUAL SOLUTIONS X </span> </div>
+                <div className={`${styles.text}`}> 360 VIRTUAL SOLUTIONS X <span className="text-white" style={{ WebkitTextStrokeWidth: 1, WebkitTextStrokeColor: '#000000' }}> 360 VIRTUAL SOLUTIONS X </span> </div>
+            </div>
+        </div>
                 </div>
             </div>
         </div>

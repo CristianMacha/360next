@@ -1,8 +1,9 @@
 export default function Feature() {
+    const phoneUrl = "https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FdesignWebPhone.png?alt=media&token=4b89e043-df2e-4b97-aa8b-a23735359223";
     return (
-        <section className="h-auto md:h-[200vh] px-[16px] md:px-[40px] relative py-[96px] flex justify-center">
+        <section className="h-auto md:h-[200vh] px-[16px] md:px-[40px] relative py-[96px] flex justify-center bg-scroll bg-bottom md:bg-center" style={{backgroundImage: `url(${phoneUrl})`, backgroundSize:'contain', backgroundRepeat: 'no-repeat'}}>
             <div className="flex flex-col gap-4">
-                <div className="static md:absolute w-[350px] bg-[#F6F6F6] rounded-[20px] p-4 flex flex-col justify-center top-[150px] left-[75px]">
+                <div className="static md:absolute w-[350px] bg-[#F6F6F6] rounded-[20px] p-4 flex flex-col justify-center top-[150px] left-[175px] shadow-md">
                     <div>
                         <svg width="294" height="220" viewBox="0 0 294 220" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M73 36.5C73 56.0933 56.8951 72 37 72C17.1049 72 1 56.0933 1 36.5C1 16.9067 17.1049 1 37 1C56.8951 1 73 16.9067 73 36.5Z" stroke="#ABABE7" strokeWidth="2" />
@@ -24,7 +25,7 @@ export default function Feature() {
                         <p className="text-[20px]">Nuestros diseños web están cuidadosamente creados para ofrecer una experiencia responsiva excepcional, adaptándose perfectamente a cualquier dispositivo y garantizando la máxima accesibilidad para tus usuarios.</p>
                     </div>
                 </div>
-                <div className="static md:absolute w-[350px] bg-[#F6F6F6] rounded-[20px] p-4 flex flex-col justify-center bottom-[50px] left-[75px]">
+                <div className="static md:absolute w-[350px] bg-[#F6F6F6] rounded-[20px] p-4 flex flex-col justify-center bottom-[50px] left-[275px] shadow-md">
                     <div>
                         <svg width="294" height="220" viewBox="0 0 294 220" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M73 36.5C73 56.0933 56.8951 72 37 72C17.1049 72 1 56.0933 1 36.5C1 16.9067 17.1049 1 37 1C56.8951 1 73 16.9067 73 36.5Z" stroke="#ABABE7" strokeWidth="2" />
@@ -42,11 +43,11 @@ export default function Feature() {
                         </svg>
                     </div>
                     <div className="font-primary">
-                        <h2 className="font-medium text-[40px]">Responsivo</h2>
-                        <p className="text-[20px]">Nuestros diseños web están cuidadosamente creados para ofrecer una experiencia responsiva excepcional, adaptándose perfectamente a cualquier dispositivo y garantizando la máxima accesibilidad para tus usuarios.</p>
+                        <h2 className="font-medium text-[40px]">Funcional</h2>
+                        <p className="text-[20px]">En nuestros diseños web, resaltamos la importancia de la funcionalidad para tejer una experiencia del usuario excepcional.</p>
                     </div>
                 </div>
-                <div className="static md:absolute w-[350px] bg-[#F6F6F6] rounded-[20px] p-4 flex flex-col justify-center bottom-[500px] right-[75px]">
+                <div className="static md:absolute w-[350px] bg-[#F6F6F6] rounded-[20px] p-4 flex flex-col justify-center bottom-[500px] right-[175px] shadow-md">
                     <div>
                         <svg width="294" height="220" viewBox="0 0 294 220" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M73 36.5C73 56.0933 56.8951 72 37 72C17.1049 72 1 56.0933 1 36.5C1 16.9067 17.1049 1 37 1C56.8951 1 73 16.9067 73 36.5Z" stroke="#ABABE7" strokeWidth="2" />
@@ -64,8 +65,8 @@ export default function Feature() {
                         </svg>
                     </div>
                     <div className="font-primary">
-                        <h2 className="font-medium text-[40px]">Responsivo</h2>
-                        <p className="text-[20px]">Nuestros diseños web están cuidadosamente creados para ofrecer una experiencia responsiva excepcional, adaptándose perfectamente a cualquier dispositivo y garantizando la máxima accesibilidad para tus usuarios.</p>
+                        <h2 className="font-medium text-[40px]">Interactivo</h2>
+                        <p className="text-[20px]">Con un enfoque centrado en la interactividad, nuestros productos ofrecen una experiencia única que cautiva a los usuarios y fomenta un mayor compromiso con tu marca.</p>
                     </div>
                 </div>
             </div>

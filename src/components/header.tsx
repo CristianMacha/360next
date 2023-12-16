@@ -131,24 +131,37 @@ export default function Header() {
                                     onClick={toggleActiveMenu}
                                     className={`font-primary text-[32px] not-italic font-normal leading-[normal] ${pathName == '/blog' ? 'text-blue-500 font-bold text-[40px]' : ''}`}>Blog</Link>
                             </div>
+                            <div>
+                                <Link
+                                    href="/contact"
+                                    onClick={toggleActiveMenu}
+                                    className={`font-primary text-[32px] not-italic font-normal leading-[normal] ${pathName == '/contact' ? 'text-blue-500 font-bold text-[40px]' : ''}`}>Contacto</Link>
+                            </div>
                         </div>
                     </div>
-                    <div className='flex justify-end flex-col items-end gap-2'>
-                        <Link href="https://facebook.com" className='flex flex-row gap-4 items-center font-medium'>facebook<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-                            <path d="M16.268 1.23215C16.268 0.67987 15.8203 0.232155 15.268 0.232155L6.26797 0.232155C5.71568 0.232155 5.26797 0.679871 5.26797 1.23216C5.26797 1.78444 5.71568 2.23215 6.26797 2.23216L14.268 2.23215L14.268 10.2322C14.268 10.7844 14.7157 11.2322 15.268 11.2322C15.8203 11.2322 16.268 10.7844 16.268 10.2322L16.268 1.23215ZM1.9532 15.9611L15.9751 1.93926L14.5609 0.525048L0.538987 14.5469L1.9532 15.9611Z" fill="black" />
-                        </svg></Link>
+                    <div className='flex justify-between flex-row items-end'>
+                        <div>
+                            <a href='maito:info@360virtualsol.com' className='flex flex-row gap-4 items-center font-medium'>info@360virtualsol.com <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                <path d="M16.268 1.23215C16.268 0.67987 15.8203 0.232155 15.268 0.232155L6.26797 0.232155C5.71568 0.232155 5.26797 0.679871 5.26797 1.23216C5.26797 1.78444 5.71568 2.23215 6.26797 2.23216L14.268 2.23215L14.268 10.2322C14.268 10.7844 14.7157 11.2322 15.268 11.2322C15.8203 11.2322 16.268 10.7844 16.268 10.2322L16.268 1.23215ZM1.9532 15.9611L15.9751 1.93926L14.5609 0.525048L0.538987 14.5469L1.9532 15.9611Z" fill="black" />
+                            </svg></a>
+                        </div>
+                        <div className='flex flex-col gap-2'>
+                            <Link href="https://facebook.com" className='flex flex-row gap-4 justify-between items-center font-medium'>facebook<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                <path d="M16.268 1.23215C16.268 0.67987 15.8203 0.232155 15.268 0.232155L6.26797 0.232155C5.71568 0.232155 5.26797 0.679871 5.26797 1.23216C5.26797 1.78444 5.71568 2.23215 6.26797 2.23216L14.268 2.23215L14.268 10.2322C14.268 10.7844 14.7157 11.2322 15.268 11.2322C15.8203 11.2322 16.268 10.7844 16.268 10.2322L16.268 1.23215ZM1.9532 15.9611L15.9751 1.93926L14.5609 0.525048L0.538987 14.5469L1.9532 15.9611Z" fill="black" />
+                            </svg></Link>
 
-                        <Link href="https://instagram.com" className='flex flex-row gap-4 items-center font-medium'>instagram<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-                            <path d="M16.268 1.23215C16.268 0.67987 15.8203 0.232155 15.268 0.232155L6.26797 0.232155C5.71568 0.232155 5.26797 0.679871 5.26797 1.23216C5.26797 1.78444 5.71568 2.23215 6.26797 2.23216L14.268 2.23215L14.268 10.2322C14.268 10.7844 14.7157 11.2322 15.268 11.2322C15.8203 11.2322 16.268 10.7844 16.268 10.2322L16.268 1.23215ZM1.9532 15.9611L15.9751 1.93926L14.5609 0.525048L0.538987 14.5469L1.9532 15.9611Z" fill="black" />
-                        </svg></Link>
+                            <Link href="https://instagram.com" className='flex flex-row gap-4 justify-between items-center font-medium'>instagram<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                <path d="M16.268 1.23215C16.268 0.67987 15.8203 0.232155 15.268 0.232155L6.26797 0.232155C5.71568 0.232155 5.26797 0.679871 5.26797 1.23216C5.26797 1.78444 5.71568 2.23215 6.26797 2.23216L14.268 2.23215L14.268 10.2322C14.268 10.7844 14.7157 11.2322 15.268 11.2322C15.8203 11.2322 16.268 10.7844 16.268 10.2322L16.268 1.23215ZM1.9532 15.9611L15.9751 1.93926L14.5609 0.525048L0.538987 14.5469L1.9532 15.9611Z" fill="black" />
+                            </svg></Link>
 
-                        <Link href="https://instagram.com" className='flex flex-row gap-4 items-center font-medium'>youtube<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-                            <path d="M16.268 1.23215C16.268 0.67987 15.8203 0.232155 15.268 0.232155L6.26797 0.232155C5.71568 0.232155 5.26797 0.679871 5.26797 1.23216C5.26797 1.78444 5.71568 2.23215 6.26797 2.23216L14.268 2.23215L14.268 10.2322C14.268 10.7844 14.7157 11.2322 15.268 11.2322C15.8203 11.2322 16.268 10.7844 16.268 10.2322L16.268 1.23215ZM1.9532 15.9611L15.9751 1.93926L14.5609 0.525048L0.538987 14.5469L1.9532 15.9611Z" fill="black" />
-                        </svg></Link>
+                            <Link href="https://instagram.com" className='flex flex-row gap-4 justify-between items-center font-medium'>youtube<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                <path d="M16.268 1.23215C16.268 0.67987 15.8203 0.232155 15.268 0.232155L6.26797 0.232155C5.71568 0.232155 5.26797 0.679871 5.26797 1.23216C5.26797 1.78444 5.71568 2.23215 6.26797 2.23216L14.268 2.23215L14.268 10.2322C14.268 10.7844 14.7157 11.2322 15.268 11.2322C15.8203 11.2322 16.268 10.7844 16.268 10.2322L16.268 1.23215ZM1.9532 15.9611L15.9751 1.93926L14.5609 0.525048L0.538987 14.5469L1.9532 15.9611Z" fill="black" />
+                            </svg></Link>
 
-                        <Link href="https://instagram.com" className='flex flex-row gap-4 items-center font-medium'>tiktok<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-                            <path d="M16.268 1.23215C16.268 0.67987 15.8203 0.232155 15.268 0.232155L6.26797 0.232155C5.71568 0.232155 5.26797 0.679871 5.26797 1.23216C5.26797 1.78444 5.71568 2.23215 6.26797 2.23216L14.268 2.23215L14.268 10.2322C14.268 10.7844 14.7157 11.2322 15.268 11.2322C15.8203 11.2322 16.268 10.7844 16.268 10.2322L16.268 1.23215ZM1.9532 15.9611L15.9751 1.93926L14.5609 0.525048L0.538987 14.5469L1.9532 15.9611Z" fill="black" />
-                        </svg></Link>
+                            <Link href="https://instagram.com" className='flex flex-row gap-4 justify-between items-center font-medium'>tiktok<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                <path d="M16.268 1.23215C16.268 0.67987 15.8203 0.232155 15.268 0.232155L6.26797 0.232155C5.71568 0.232155 5.26797 0.679871 5.26797 1.23216C5.26797 1.78444 5.71568 2.23215 6.26797 2.23216L14.268 2.23215L14.268 10.2322C14.268 10.7844 14.7157 11.2322 15.268 11.2322C15.8203 11.2322 16.268 10.7844 16.268 10.2322L16.268 1.23215ZM1.9532 15.9611L15.9751 1.93926L14.5609 0.525048L0.538987 14.5469L1.9532 15.9611Z" fill="black" />
+                            </svg></Link>
+                        </div>
                     </div>
                 </div>
             </div>

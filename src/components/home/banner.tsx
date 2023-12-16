@@ -69,7 +69,7 @@ export default function Banner() {
                         <div className={`bg-yellow-500 ${styles.clip3} clip3 w-full`}>
                             <div className={`bg-blue-500 ${styles.clip2} clip2 w-full`}>
                                 <div className={`bg-white ${styles.clip1} clip1 flex justify-center w-full`}>
-                                    <section className={`flex py-[40px] px-[16px] flex-col justify-center items-center gap-[8px] w-full bg-[#B6B9FE] h-screen md:p-[80px] banner_gsap relative cursor-default`}
+                                    <section className={`flex py-[40px] px-[16px] flex-col justify-center items-center gap-[8px] w-full bg-[#B6B9FE] h-screen md:p-[80px] banner_gsap relative cursor-default overflow-x-hidden`}
                                         onMouseMove={handleMouseMove}
                                         onMouseLeave={handleMouseLeave}>
                                         {cursorPos.x !== 0 && cursorPos.y !== 0 && (

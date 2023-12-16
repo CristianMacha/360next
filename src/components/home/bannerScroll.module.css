@@ -1,0 +1,37 @@
+.text_move {
+    gap: 0;
+    overflow: hidden;
+}
+
+.text_white {
+    color: white
+}
+
+.text_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    gap: 1rem;
+}
+
+.text {
+    color: #000;
+    text-align: center;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 200px; /* 100% */
+    white-space: nowrap;
+    letter-spacing: 1px;
+    animation: move-rtl 9000ms linear infinite;
+}
+
+
+@keyframes move-rtl {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%)
+    }
+}
