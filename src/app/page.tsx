@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Banner from '@/components/home/banner'
 import BannerScroll from '@/components/home/bannerScroll'
 import CardSampleProjectSection from '@/components/home/card-sample-project-section/cardSampleProjectSection'
@@ -9,19 +10,15 @@ import Testimonials from '@/components/home/testimonials'
 import Galaxy from '@/components/home/galaxy'
 import Customers from '@/components/home/Customers'
 import Faqs from './faq/faqs'
-import Form from './contact/form'
-import Contact from '@/components/home/contact'
+import Contact from '@/components/home/contact';
 
 export default function Home() {
   return (
     <>
       <Portada />
-      {/* <Hand /> */}
-      {/* <OurProjects /> */}
       <CardSampleProjectSection />
       <Testimonials />
       <Customers />
-      {/* <Reviews /> */}
       <BannerScroll />
       <Services />
       <Experience />
@@ -30,9 +27,6 @@ export default function Home() {
       <Galaxy />
       <Faqs />
       <Contact />
-      {/* <Form /> */}
-      {/* <OurValues /> */}
-      {/* <SampleProject /> */}
     </>
   )
 }
