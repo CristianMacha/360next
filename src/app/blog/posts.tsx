@@ -1,5 +1,4 @@
 import Post from "./post";
-import background from 'fondo.jpg'
 export default function Posts() {
     return (
 <section className="miseccion px-[16px] md:px-[40px] pt-[70px]" >

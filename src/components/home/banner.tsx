@@ -110,16 +110,16 @@ export default function Banner() {
                                         <div className="flex flex-col justify-center items-center gap-[80px] md:gap-[200px] w-full">
                                             <div className="flex flex-col justify-center items-center gap-[32px]  md:gap-[64px] w-[900px]">
                                                 <div className="flex flex-col justify-center items-center gap-[4px]  md:self-auto">
-                                                    <h2 className=" text-white text-center font-primary text-[32px] not-italic font-bold leading-[normal] md:self-auto md:text-[72px]">
+                                                    <h2 className=" text-white text-center font-primary text-[15px] not-italic font-bold leading-[normal] sm:text-[30px] md:self-auto md:text-[52px]">
                                                         Qué sucede tras bastidores?
                                                     </h2>
-                                                    <h2 className=" text-white text-center font-primary text-[32px] not-italic font-bold leading-[normal] md:self-auto md:text-[72px]">
+                                                    <h2 className=" text-white text-center font-primary text-[15px] not-italic font-bold leading-[normal] sm:text-[30px] md:self-auto md:text-[52px]">
                                                         !Descubrelo por ti mismo!
                                                     </h2>
                                                 </div>
                                                 <div className="flex flex-col items-center gap-[12px] ">
-                                                    <h3 className=" text-white text-center font-primary text-[16px] not-italic font-bold leading-[normal] md:self-auto md:text-[32px]">
-                                                        Esto es un tablero. Puedes hacer click en nuestros
+                                                    <h3 className=" text-white text-center font-primary text-[16px] not-italic font-bold leading-[normal] sm:text-[30px] md:self-auto md:text-[32px]">
+                                                        Esto es un tablero. <br /> Puedes hacer click en nuestros<br />
                                                         comentarios y leerlos, si, eso es todo.
                                                     </h3>
                                                     <h3 className="text-white text-center font-primary text-[16px] not-italic font-bold leading-[normal] md:self-auto md:text-[24px]">

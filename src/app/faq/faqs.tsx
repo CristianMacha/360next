@@ -7,6 +7,7 @@ import Link from 'next/link';
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 export default function Faqs() {
+    
     const [activePanel, setActivePanel] = useState<string | null>('panel1');
     const handleToggle = (panelId: string) => {
         setActivePanel(prevPanelId => prevPanelId === panelId ? null : panelId);
@@ -15,7 +16,7 @@ export default function Faqs() {
 
     return (
         <section className="flex flex-col gap-10 px-[16px] md:px-[40px] py-[20px] md:py-[40px]">
-            <h2 className="font-primary text-[60px] md:text-[96px] md:leading-[80px]">Preguntas Frecuentes</h2>
+            <h2 className="font-primary text-[50px] sm:text-[60px] md:text-[66px] lg:text-[85px] ">Preguntas Frecuentes</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                 <div className='flex flex-col gap-4'>
                     <div className="h-[550px] rounded-[40px] overflow-hidden" style={{ backgroundImage: `url(${cubeImage})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
@@ -24,7 +25,7 @@ export default function Faqs() {
                     </Suspense> */}
                     </div>
                     <div className='flex'>
-                        <Link href={'/faq'} className='py-[17px] px-[33px] rounded-full bg-[#D9FE95] font-primary font-medium text-[20px] flex flex-row gap-4 items-center'>Ver mas preguntas <svg xmlns="http://www.w3.org/2000/svg" width="33" height="16" viewBox="0 0 33 16" fill="none">
+                        <Link href={'/faq'} className='py-[17px] px-[33px] rounded-full bg-[#D9FE95] font-primary font-medium text-[18px] flex flex-row gap-4 items-center md:text-[25px]'>Ver mas preguntas <svg xmlns="http://www.w3.org/2000/svg" width="33" height="16" viewBox="0 0 33 16" fill="none">
                             <path d="M32.7071 8.70711C33.0976 8.31658 33.0976 7.68342 32.7071 7.29289L26.3431 0.928932C25.9526 0.538408 25.3195 0.538408 24.9289 0.928932C24.5384 1.31946 24.5384 1.95262 24.9289 2.34315L30.5858 8L24.9289 13.6569C24.5384 14.0474 24.5384 14.6805 24.9289 15.0711C25.3195 15.4616 25.9526 15.4616 26.3431 15.0711L32.7071 8.70711ZM0 9H32V7H0V9Z" fill="black" />
                         </svg></Link>
                     </div>

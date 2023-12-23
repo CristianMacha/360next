@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://360next.vercel.app/'),
-    title: 'Diseño web |360 Virtual Solutions',
+    title: 'Diseño web | 360 Virtual Solutions',
     description: 'Descubre cómo nuestro equipo de diseño web puede crear experiencias visuales impactantes para tu marca. Conoce nuestros servicios de diseño de interfaces, diseño gráfico y creación de identidad visual para potenciar tu presencia en línea.',
     robots: 'index, follow',
     openGraph: {

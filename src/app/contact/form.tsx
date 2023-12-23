@@ -61,7 +61,7 @@ export default function Form() {
 
     return (
         <div className="pt-[64px] px-[16px] md:px-[40px]">
-            <h2 className="font-primary text-[60px] md:text-[96px]">Contáctanos</h2>
+            <h2 className="font-primary text-[10px] sm:text-[10px] md:text-[16px]">Contáctanos</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16">
                 <div>
                     <form onSubmit={handleSubmit}>

@@ -15,7 +15,7 @@ export default function PortadaService({ title, description, background }: Porta
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     <div className="flex flex-col gap-4 md:gap-6">
-                        <h1 className="text-[72px] leading-[60px] md:text-[96px] md:leading-[80px] font-primary font-medium">{title}</h1>
+                        <h1 className="text-[50px] leading-[60px] md:text-[96px] md:leading-[80px] font-primary font-medium">{title}</h1>
                         <div className="flex flex-row gap-1">
                             <svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69" fill="none">
                                 <g clipPath="url(#clip0_2197_88)">

@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://360next.vercel.app/'),
-    title: 'Preguntas Frecuentes |360 Virtual Solutions',
+    title: 'Preguntas Frecuentes | 360 Virtual Solutions',
     description: 'Encuentra respuestas a las preguntas frecuentes sobre nuestros servicios de diseño y desarrollo web, marketing digital y social media. Obtén información detallada sobre nuestros servicios, procesos y enfoque para potenciar tu presencia en línea.',
     robots: 'index, follow',
     openGraph: {
