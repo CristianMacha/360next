@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='overflow-x-hidden relative'>
+      <body className='overflow-x-hidden relative font-primary'>
         <Header />
         {children}
         {/* <FloatingMenu /> */}
