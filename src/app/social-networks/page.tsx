@@ -3,6 +3,19 @@ import PortadaService from "@/components/portada-service";
 import OurWork from "./our-work";
 import ImageCard from "@/presentation/components/ImageCard";
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    metadataBase: new URL('https://360next.vercel.app/'),
+    title: 'Gestion de redes sociales |360 Virtual Solutions',
+    description: 'Servicio profesional de gestión de contenido para redes sociales. Maximiza el impacto de tu presencia en redes sociales con nuestro equipo especializado en estrategias de contenido y publicaciones.',
+    robots: 'index, follow',
+    openGraph: {
+      url: 'https://www.facebook.com/360VSolutions/',
+      title: '360 Virtual Solutions | Huancayo',
+      description: 'Somos una Agencia de Marketing & Desarrollo de Software, especializados brindar soluciones tecnológicas.',
+    }
+  }
 export default function SocialNetworks() {
     const backgroundSocialNetwork = 'https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FserviceSocialNetworks.jpg?alt=media&token=117c5df9-8f22-491e-8319-c8468daebfe7';
     return (

@@ -34,18 +34,18 @@ export default function Galaxy() {
             <section className={`flex py-[40px] pb-[200px] md:py-[80px] px-[16px] flex-col justify-center items-center gap-[8px] self-stretch ${styles.galaxy} lg:hidden`}>
                 <div className="flex flex-col justify-center items-center gap-[8px]">
                     <div className="flex items-center gap-[8px] self-stretch">
-                        <span className="text-white text-justify font-primary text-[18px] not-italic font-normal leading-[normal]">Comenzando como entusiastas</span>
+                        <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] lg:text-[40px] md:text-[50px]">Comenzando como entusiastas</span>
                         <div className={`w-[91.2px] h-[34px] rounded-[99px]`} style={{backgroundImage: `url(${memeOne})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
                     </div>
-                    <span className="text-white text-justify font-primary text-[18px] not-italic font-normal leading-[normal] self-stretch">para otras personas. combinamos nuestras</span>
+                    <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] self-stretch lg:text-[40px] md:text-[50px]">para otras personas. combinamos nuestras</span>
                     <div className="flex items-center content-center gap-[8px] self-stretch flex-wrap">
-                        <span className="text-white text-justify font-primary text-[18px] not-italic font-normal leading-[normal]">habilidades</span>
+                        <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] lg:text-[40px] md:text-[50px]">habilidades</span>
                         <div className={`w-[91.2px] h-[34px] rounded-[99px]`} style={{backgroundImage: `url(${memeTwo})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
-                        <span className="text-white text-justify font-primary text-[18px] not-italic font-normal leading-[normal]">profesionales</span>
-                        <span className="text-white text-justify font-primary text-[18px] not-italic font-normal leading-[normal]"> y empatía para crear un entorno</span>
+                        <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] lg:text-[40px] md:text-[50px]">profesionales</span>
+                        <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] lg:text-[40px] md:text-[50px]"> y empatía para crear un entorno</span>
                     </div>
                     <div className="flex items-center gap-[8px] self-stretch">
-                        <span className="text-white text-justify font-primary text-[18px] not-italic font-normal leading-[normal]">colaborativo de trabajo único.</span>
+                        <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] lg:text-[40px] md:text-[50px]">colaborativo de trabajo único.</span>
                         <div className={`w-[91.2px] h-[34px] rounded-[99px]`} style={{backgroundImage: `url(${memeOne})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
                     </div>
                 </div>

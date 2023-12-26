@@ -64,9 +64,9 @@ export default function Feature() {
                             <circle cx="257.5" cy="183.5" r="35.5" stroke="#ABABE7" strokeWidth="2" />
                         </svg>
                     </div>
-                    <div className="font-primary">
-                        <h2 className="font-medium text-[40px]">Interactivo</h2>
-                        <p className="text-[20px]">Con un enfoque centrado en la interactividad, nuestros productos ofrecen una experiencia única que cautiva a los usuarios y fomenta un mayor compromiso con tu marca.</p>
+                    <div className="font-primary ">
+                        <h2 className="font-medium text-[30px] sm:text-[40px]">Interactivo</h2>
+                        <p className="text-[20px] sm:text-[20px]" >Con un enfoque centrado en la interactividad, nuestros productos ofrecen una experiencia única que cautiva a los usuarios y fomenta un mayor compromiso con tu marca.</p>
                     </div>
                 </div>
             </div>

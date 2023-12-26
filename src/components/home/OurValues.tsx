@@ -1,7 +1,7 @@
 export default function OurValues() {
     return (
         <section className="flex flex-col justify-center items-center content-center px-[16px] md:px-[40px] gap-4 py-[40px]">
-            <div className="text-[90px] leading-[80px] md:text-[105px] md:leading-[95px] font-primary font-bold italic mb-[60px]">Nuestros Valores</div>
+            <div className="text-[70px] leading-[55px] md:text-[105px] md:leading-[95px] font-primary font-bold italic mb-[60px]">Nuestros Valores</div>
             <div className="grid grid-cols-1 gap-4 md:gap-0 md:grid-cols-2 w-full content-center">
                 <div className="w-[350px] md:w-[389px] h-[514px] rounded-[40px] bg-[#F6F6F6] p-[35px] flex flex-col justify-between">
                     <div>
