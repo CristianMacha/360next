@@ -5,24 +5,31 @@ import KeenSlider from 'keen-slider';
 import 'keen-slider/keen-slider.min.css';
 import GoogleReview from '@/presentation/components/GoogleReview';
 
-const reviews = [
+interface Review {
+    id: string;
+    review: string;
+    name: string;
+    rotate: 'left' | 'right' | 'none';
+}
+
+const reviews: Review[] = [
     {
         id: 'cd637474-1e98-460e-87ed-96ca947e4dea',
         review: 'Tuve una experiencia increíble con esta empresa.Desde el principio, su atención fue agradable y profesional. Cumplieron con el tiempo de entrega, lo cual fue impresionante, ademas el sitio web que realizaron supero todas mis expectativas ya que reflejo perfectamente el mensaje que quería transmitir.',
         name: 'Alex Rodriguez',
-        rotate: -5
+        rotate: "left"
     },
     {
         id: '0501fd29-0587-4668-baf5-1d15c509b3e5',
         review: 'Su enfoque experto en marketing digital, diseño web y desarrollo es excepcional. Crean sitios modernos y funcionales, adaptados a las necesidades específicas de los negocios. Su comunicación rápida y profesional hace que la colaboración sea impecable. Si buscas una solución digital integral, confía en 360 Virtual Solutions!',
         name: 'Kevin Zain Torres Huaroc',
-        rotate: 0
+        rotate: "none"
     },
     {
         id: 'a3b9f713-3320-4a86-bdf8-cc177d7bf62d',
         review: 'Equipo profesional y atención personalizada. ¡Muy satisfecho con los resultados!',
         name: 'Alex Alcocer Rodriguez',
-        rotate: 5
+        rotate: "right"
     },
 ]
 
@@ -86,7 +93,7 @@ export default function Customers() {
             <div className='border border-[#A3A2A2] w-[400px] h-[400px] md:w-[900px] md:h-[900px] rounded-full absolute'></div>
             <div className='border border-[#A3A2A2] w-[700px] h-[700px] md:w-[1300px] md:h-[1300px] rounded-full absolute'></div>
             <div className='flex justify-center w-full mb-0 md:mb-16'>
-                <h3 className='w-[581px] font-primary font-medium text-[40px] leading-[40px] md:text-[64px] md:leading-[60px] text-center z-[1]'>Mas de 12 clientes confian en nosotros</h3>
+                <h3 className='w-[781px] title-small md:title-medium lg:title-large text-center z-[1]'>Mas de 12 clientes confian en nosotros</h3>
             </div>
             <div id="my-keen-slider-two" className="keen-slider w-full z-[2]">
                 {

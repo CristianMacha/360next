@@ -13,14 +13,14 @@ export default function Portada() {
     return (
         <section className="h-auto px-[16px] md:px-[40px] flex flex-col gap-5 md:gap-[100px] justify-start items-center py-[16px] md:pb-[40px] md:pt-[0px]">
             <div className="flex flex-col gap-16 md:gap-4 md:flex-row justify-between w-full items-center pt-[100px]">
-                <div className="font-primary font-bold text-[40px] leading-normal md:text-[70px] lg:text-[90px]">
-                    <h1 className="leading-[normal] md:leading-[100px] whitespace"><span className='text-[#797979]'>AGENCIA DE</span> DISEÑO</h1>
-                    <h1 className="leading-[normal] md:leading-[100px]">& MARKETING</h1>
-                    <h1 className="leading-[normal] md:leading-[100px] text-[#797979]">DIGITAL</h1>
+                <div className="display-small md:display-medium lg:display-large">
+                    <h1 className="whitespace"><span className='text-[#797979]'>AGENCIA DE</span> DISEÑO</h1>
+                    <h1>& MARKETING</h1>
+                    <h1 className="text-[#797979]">DIGITAL</h1>
                 </div>
                 <div className="w-auto md:w-[750px]">
-                    <div className="bg-[#F6F6F6] w-auto py-[25px] md:py-[58px] px-[16px] xs:flex-col md:px-[25px] h-auto rounded-[40px] flex flex-col sm:flex-col md:flex-col items-end lg:flex-row">
-                        <p className="font-primary text-[18px] leading-normal md:text-[24px] font-light md:leading-[32px]">Potencia tu presencia en línea, conquista tu mercado y lleva tu marca hacia nuevas alturas. con nuestra agencia de marketing digital</p>
+                    <div className="bg-[#F6F6F6] w-auto py-[32px] md:py-[25px] lg:py-[58px] px-[16px] flex-col md:px-[25px] h-auto rounded-[40px] flex items-end gap-4">
+                        <p className="content-small md:content-medium lg:content-large">Potencia tu presencia en línea, conquista tu mercado y lleva tu marca hacia nuevas alturas. con nuestra agencia de marketing digital</p>
                         <div className="flex flex-row gap-2">
                             <div className="w-[46px] md:w-[58px]">
                                 <img src="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Ffoto1.jpg?alt=media&token=e47bd562-9d15-4dff-bf90-064c33967668" alt="" className='rounded-full' />

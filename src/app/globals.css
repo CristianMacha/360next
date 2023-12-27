@@ -2,6 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .display-large {
+    @apply font-primary font-black text-[96px] leading-[90px]; 
+  }
+
+  .display-medium {
+    @apply font-primary font-black text-[72px] leading-[70px]; 
+  }
+
+  .display-small {
+    @apply font-primary font-black text-[64px] leading-[60px]; 
+  }
+
+  .title-large {
+    @apply font-primary font-bold text-[80px] leading-[72px]; 
+  }
+
+  .title-medium {
+    @apply font-primary font-bold text-[72px] leading-[64px]; 
+  }
+
+  .title-small {
+    @apply font-primary font-bold text-[64px] leading-[60px]; 
+  }
+
+  .content-large {
+    @apply font-primary font-normal text-[32px] leading-[40px];
+  }
+
+  .content-medium {
+    @apply font-primary font-normal text-[24px] leading-[32px];
+  }
+
+  .content-small {
+    @apply font-primary font-normal text-[16px];
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

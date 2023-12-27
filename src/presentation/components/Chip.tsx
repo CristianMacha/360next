@@ -1,11 +1,10 @@
 interface ChipProps {
     label: string;
     color: string;
-    onClick: () => void;
 }
-export default function Chip({ label, color, onClick }: ChipProps) {
+export default function Chip({ label, color }: ChipProps) {
     return (
-        <div onClick={onClick} className={`flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium ${color} cursor-pointer`}>
+        <div className={`flex items-center justify-center rounded-full px-4 py-2 text-[14px] md:text-[16px] font-medium ${color} border border-black`}>
             {label}
         </div>
     )

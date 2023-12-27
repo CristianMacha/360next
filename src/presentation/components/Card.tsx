@@ -6,7 +6,7 @@ interface CardProps {
 
 export default function Card({ image, title, description }: CardProps) {
     return (
-        <div className="flex flex-col items-center bg-[#F6F6F6] rounded-[60px] p-10">
+        <div className="flex flex-col items-center bg-[#F6F6F6] rounded-[60px] p-10 shadow-md">
             <img src={image} alt={title} className="w-full h-[200px] object-cover rounded-xl" />
             <div className="flex flex-col mt-4">
                 <h3 className="text-2xl font-bold">{title}</h3>

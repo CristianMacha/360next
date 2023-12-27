@@ -1,73 +1,39 @@
+import Card from "@/presentation/components/Card";
+
 export default function Feature() {
     const phoneUrl = "https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FdesignWebPhone.png?alt=media&token=4b89e043-df2e-4b97-aa8b-a23735359223";
     return (
-        <section className="h-auto md:h-[200vh] px-[16px] md:px-[40px] relative py-[96px] flex justify-center bg-scroll bg-bottom md:bg-center" style={{backgroundImage: `url(${phoneUrl})`, backgroundSize:'contain', backgroundRepeat: 'no-repeat'}}>
-            <div className="flex flex-col gap-4">
-                <div className="static md:absolute w-[350px] bg-[#F6F6F6] rounded-[20px] p-4 flex flex-col justify-center top-[150px] left-[175px] shadow-md">
-                    <div>
-                        <svg width="294" height="220" viewBox="0 0 294 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M73 36.5C73 56.0933 56.8951 72 37 72C17.1049 72 1 56.0933 1 36.5C1 16.9067 17.1049 1 37 1C56.8951 1 73 16.9067 73 36.5Z" stroke="#ABABE7" strokeWidth="2" />
-                            <circle cx="37" cy="110" r="36" stroke="#ABABE7" strokeWidth="2" />
-                            <ellipse cx="37" cy="183.5" rx="37" ry="36.5" fill="#ABABE7" />
-                            <circle cx="110.5" cy="36.5" r="36.5" fill="#D9FE95" />
-                            <ellipse cx="110.5" cy="110" rx="36.5" ry="37" fill="#ABABE7" />
-                            <circle cx="110.5" cy="183.5" r="35.5" stroke="#ABABE7" strokeWidth="2" />
-                            <path d="M220 36.5C220 56.0933 203.895 72 184 72C164.105 72 148 56.0933 148 36.5C148 16.9067 164.105 1 184 1C203.895 1 220 16.9067 220 36.5Z" stroke="#ABABE7" strokeWidth="2" />
-                            <circle cx="184" cy="110" r="36" stroke="#ABABE7" strokeWidth="2" />
-                            <path d="M220 183.5C220 203.093 203.895 219 184 219C164.105 219 148 203.093 148 183.5C148 163.907 164.105 148 184 148C203.895 148 220 163.907 220 183.5Z" stroke="#ABABE7" strokeWidth="2" />
-                            <circle cx="257.5" cy="36.5" r="35.5" stroke="#ABABE7" strokeWidth="2" />
-                            <ellipse cx="257.5" cy="110" rx="36.5" ry="37" fill="#D9FE95" />
-                            <circle cx="257.5" cy="183.5" r="35.5" stroke="#ABABE7" strokeWidth="2" />
-                        </svg>
-                    </div>
-                    <div className="font-primary">
-                        <h2 className="font-medium text-[40px]">Responsivo</h2>
-                        <p className="text-[20px]">Nuestros diseños web están cuidadosamente creados para ofrecer una experiencia responsiva excepcional, adaptándose perfectamente a cualquier dispositivo y garantizando la máxima accesibilidad para tus usuarios.</p>
-                    </div>
+        <section className="h-auto md:h-[200vh] px-[16px] md:px-[40px] relative py-[96px] flex justify-center bg-scroll bg-bottom md:bg-center" style={{ backgroundImage: `url(${phoneUrl})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
+            <div className="flex flex-col gap-4 justify-center items-center">
+                <div className="static md:absolute w-[350px] top-[150px] left-[175px]">
+                    <Card
+                        image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Felipses.png?alt=media&token=0e049f3d-377e-4af7-8425-58ff353aba9d"
+                        description="Nuestros diseños web están cuidadosamente creados para ofrecer una experiencia responsiva excepcional, adaptándose perfectamente a cualquier dispositivo y garantizando la máxima accesibilidad para tus usuarios."
+                        title="Responsivo" />
                 </div>
-                <div className="static md:absolute w-[350px] bg-[#F6F6F6] rounded-[20px] p-4 flex flex-col justify-center bottom-[50px] left-[275px] shadow-md">
-                    <div>
-                        <svg width="294" height="220" viewBox="0 0 294 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M73 36.5C73 56.0933 56.8951 72 37 72C17.1049 72 1 56.0933 1 36.5C1 16.9067 17.1049 1 37 1C56.8951 1 73 16.9067 73 36.5Z" stroke="#ABABE7" strokeWidth="2" />
-                            <circle cx="37" cy="110" r="36" stroke="#ABABE7" strokeWidth="2" />
-                            <ellipse cx="37" cy="183.5" rx="37" ry="36.5" fill="#ABABE7" />
-                            <circle cx="110.5" cy="36.5" r="36.5" fill="#D9FE95" />
-                            <ellipse cx="110.5" cy="110" rx="36.5" ry="37" fill="#ABABE7" />
-                            <circle cx="110.5" cy="183.5" r="35.5" stroke="#ABABE7" strokeWidth="2" />
-                            <path d="M220 36.5C220 56.0933 203.895 72 184 72C164.105 72 148 56.0933 148 36.5C148 16.9067 164.105 1 184 1C203.895 1 220 16.9067 220 36.5Z" stroke="#ABABE7" strokeWidth="2" />
-                            <circle cx="184" cy="110" r="36" stroke="#ABABE7" strokeWidth="2" />
-                            <path d="M220 183.5C220 203.093 203.895 219 184 219C164.105 219 148 203.093 148 183.5C148 163.907 164.105 148 184 148C203.895 148 220 163.907 220 183.5Z" stroke="#ABABE7" strokeWidth="2" />
-                            <circle cx="257.5" cy="36.5" r="35.5" stroke="#ABABE7" strokeWidth="2" />
-                            <ellipse cx="257.5" cy="110" rx="36.5" ry="37" fill="#D9FE95" />
-                            <circle cx="257.5" cy="183.5" r="35.5" stroke="#ABABE7" strokeWidth="2" />
-                        </svg>
-                    </div>
-                    <div className="font-primary">
-                        <h2 className="font-medium text-[40px]">Funcional</h2>
-                        <p className="text-[20px]">En nuestros diseños web, resaltamos la importancia de la funcionalidad para tejer una experiencia del usuario excepcional.</p>
-                    </div>
+                <div className="static md:absolute w-[350px] top-[150px] right-[175px]">
+                    <Card
+                        image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Felipses.png?alt=media&token=0e049f3d-377e-4af7-8425-58ff353aba9d"
+                        description="Utilizamos tipografías distintivas y creativas para destacar el contenido y transmitir la personalidad única de cada marca, asegurando una presentación visualmente impactante."
+                        title="Tipografía Creativa" />
                 </div>
-                <div className="static md:absolute w-[350px] bg-[#F6F6F6] rounded-[20px] p-4 flex flex-col justify-center bottom-[500px] right-[175px] shadow-md">
-                    <div>
-                        <svg width="294" height="220" viewBox="0 0 294 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M73 36.5C73 56.0933 56.8951 72 37 72C17.1049 72 1 56.0933 1 36.5C1 16.9067 17.1049 1 37 1C56.8951 1 73 16.9067 73 36.5Z" stroke="#ABABE7" strokeWidth="2" />
-                            <circle cx="37" cy="110" r="36" stroke="#ABABE7" strokeWidth="2" />
-                            <ellipse cx="37" cy="183.5" rx="37" ry="36.5" fill="#ABABE7" />
-                            <circle cx="110.5" cy="36.5" r="36.5" fill="#D9FE95" />
-                            <ellipse cx="110.5" cy="110" rx="36.5" ry="37" fill="#ABABE7" />
-                            <circle cx="110.5" cy="183.5" r="35.5" stroke="#ABABE7" strokeWidth="2" />
-                            <path d="M220 36.5C220 56.0933 203.895 72 184 72C164.105 72 148 56.0933 148 36.5C148 16.9067 164.105 1 184 1C203.895 1 220 16.9067 220 36.5Z" stroke="#ABABE7" strokeWidth="2" />
-                            <circle cx="184" cy="110" r="36" stroke="#ABABE7" strokeWidth="2" />
-                            <path d="M220 183.5C220 203.093 203.895 219 184 219C164.105 219 148 203.093 148 183.5C148 163.907 164.105 148 184 148C203.895 148 220 163.907 220 183.5Z" stroke="#ABABE7" strokeWidth="2" />
-                            <circle cx="257.5" cy="36.5" r="35.5" stroke="#ABABE7" strokeWidth="2" />
-                            <ellipse cx="257.5" cy="110" rx="36.5" ry="37" fill="#D9FE95" />
-                            <circle cx="257.5" cy="183.5" r="35.5" stroke="#ABABE7" strokeWidth="2" />
-                        </svg>
-                    </div>
-                    <div className="font-primary ">
-                        <h2 className="font-medium text-[30px] sm:text-[40px]">Interactivo</h2>
-                        <p className="text-[20px] sm:text-[20px]" >Con un enfoque centrado en la interactividad, nuestros productos ofrecen una experiencia única que cautiva a los usuarios y fomenta un mayor compromiso con tu marca.</p>
-                    </div>
+                <div className="static md:absolute w-[350px] bottom-[150px] left-[175px]">
+                    <Card
+                        image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Felipses.png?alt=media&token=0e049f3d-377e-4af7-8425-58ff353aba9d"
+                        description="En nuestros diseños web, resaltamos la importancia de la funcionalidad para tejer una experiencia del usuario excepcional."
+                        title="Funcional" />
+                </div>
+                <div className="static md:absolute w-[350px] bottom-[150px] right-[175px]">
+                    <Card
+                        image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Felipses.png?alt=media&token=0e049f3d-377e-4af7-8425-58ff353aba9d"
+                        description="Con un enfoque centrado en la interactividad, nuestros productos ofrecen una experiencia única que cautiva a los usuarios y fomenta un mayor compromiso con tu marca."
+                        title="Interactivo" />
+                </div>
+                <div className="static md:absolute w-[350px]">
+                    <Card
+                        image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Felipses.png?alt=media&token=0e049f3d-377e-4af7-8425-58ff353aba9d"
+                        description="Nuestros diseños web integran elementos 3D y efectos visuales inmersivos para crear experiencias web cautivadoras y memorables que destacan la identidad de la marca."
+                        title="Diseño Inmersivo y Experiencias 3D" />
                 </div>
             </div>
         </section>

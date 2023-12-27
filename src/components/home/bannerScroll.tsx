@@ -2,7 +2,7 @@ import styles from './bannerScroll.module.css';
 
 export default function BannerScroll() {
     return (
-        <div className="flex h-[141px] flex-col justify-center items-center gap-[8px] self-stretch border-y border-[#c7c7c7] bg-white overflow-hidden lg:h-auto">
+        <div className="flex flex-col justify-center items-center gap-[8px] self-stretch border-y border-[#c7c7c7] bg-white overflow-hidden h-auto">
             <div className="flex items-center gap-[40px] flex-1 self-stretch">
                 <div className="flex py-[40px] items-center gap-[8px] flex-1 self-stretch">
                 <div className={`${styles.content_section} ${styles.text_move} font-primary`}>
