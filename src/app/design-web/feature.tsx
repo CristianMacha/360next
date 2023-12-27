@@ -7,8 +7,8 @@ import Card from "@/presentation/components/Card";
 export default function Feature() {
     const phoneUrl = "https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FdesignWebPhone.png?alt=media&token=4b89e043-df2e-4b97-aa8b-a23735359223";
     return (
-        <section className="h-auto md:h-[150vh] px-[16px] md:px-[40px] relative py-[96px] flex justify-center bg-scroll bg-bottom md:bg-center">
-            <div className="absolute w-full h-full hidden md:block">
+        <section className="h-auto md:h-[150vh] px-[16px] md:px-[40px] relative py-[96px] flex justify-center bg-scroll bg-bottom md:bg-center" style={{backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FCINTA%20DISEN%CC%83O%20WEB.png?alt=media&token=60c94a14-a540-4819-92b6-b1eb3b43e008)`}}>
+            <div className="absolute w-full h-full hidden md:block bg-no-repeat">
                 <Spline scene='https://prod.spline.design/5E4eyIy9xR6edXVY/scene.splinecode' />
             </div>
             <div className="flex flex-col gap-4 justify-center items-center">

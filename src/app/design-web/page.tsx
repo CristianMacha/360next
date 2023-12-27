@@ -1,6 +1,7 @@
 import PortadaService from "@/components/portada-service";
 import Feature from "./feature";
 import type { Metadata } from 'next'
+import Contact from "@/components/home/contact";
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://360next.vercel.app/'),
@@ -22,6 +23,7 @@ export default function DesignWeb() {
                 description="Creamos páginas web que sean visualmente atractivas . Nuestro equipo de expertos en diseño web se enfoca en capturar la esencia de tu marca y transmitirla a través de un diseño personalizado y único"
                 background={backgroundDesignWeb} />
             <Feature />
+            <Contact />
         </>
     )
 }
