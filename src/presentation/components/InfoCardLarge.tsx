@@ -1,5 +1,5 @@
 'use client'
-import React, { Suspense } from 'react';
+import React from 'react';
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 import Chip from "./Chip";
@@ -36,7 +36,7 @@ export default function InfoCardLarge({ description, floatingImageOne, floatingI
                 <p className="text-[24px] md:text-[36px] text-center">{description}</p>
                 <div className="flex flex-row justify-center">
                     {
-                        features.map((feature, index) => (
+                        features.map((feature) => (
                             <div key={feature}>
                                 <Chip label={feature} color="" />
                             </div>

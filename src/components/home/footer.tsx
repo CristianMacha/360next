@@ -3,10 +3,10 @@ export default function Footer() {
         <footer className="flex py-[24px] px-[16px] flex-col items-start gap-[8px] lg:py-[80px] lg:px-[40px] bg-white">
             <div className="flex flex-col items-start gap-[58px] self-stretch lg:justify-between lg:flex-row">
                 <div className="flex flex-col items-start gap-[8px] self-stretch">
-                    <span className="self-stretch font-primary text-[28px] not-italic font-bold leading-[normal]">Nos encantaría saber de usted</span>
-                    <span className="self-stretch font-primary text-[16px] not-italic font-normal leading-[normal]">No dude en comunicarse con nosotros si quieres colaborar con nosotros o simplemente charlar.</span>
+                    <span className="title-small">Nos encantaría saber de usted</span>
+                    <span className="content-medium font-light">No dude en comunicarse con nosotros si quieres colaborar con nosotros o simplemente charlar.</span>
                     <div className="flex items-center gap-[8px]">
-                        <span className="font-primary text-[16px] not-italic font-normal leading-[normal]">Conviertete en cliente</span>
+                        <span className="content-medium">Conviertete en cliente</span>
                         <div className="flex w-[24px] h-[24px] p-[4px] justify-center items-center gap-[8px]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 18" fill="none" className="shrink-0 rotate-[135deg]">
                                 <mask id="mask0_1166_516" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
@@ -20,14 +20,14 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="flex flex-col items-start gap-[8px]">
-                    <span className="font-primary text-[20px] not-italic font-bold leading-[normal]">Nuestra dirección</span>
-                    <span className="font-primary text-[16px] not-italic font-light leading-[normal]">Tacna 265 - Huancayo</span>
+                    <span className="content-medium font-medium">Nuestra dirección</span>
+                    <span className="content-small font-light">Tacna 265 - Huancayo</span>
                 </div>
                 <div className="flex flex-col justify-center items-start gap-[8px]">
-                    <span className="font-primary text-[20px] not-italic font-bold leading-[normal]">Síganos</span>
+                    <span className="content-medium font-medium">Síganos</span>
                     <div className="flex flex-col items-start gap-[4px]">
                         <div className="flex justify-center items-center gap-[8px]">
-                            <a href="/" className="font-primary text-[16px] not-italic font-light leading-[normal]">Facebook</a>
+                            <a href="/" className="content-small font-light">Facebook</a>
                             <div className="flex w-[24px] h-[24px] p-[4px] justify-center items-center gap-[8px]">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 18" fill="none" className="shrink-0 rotate-[135deg]">
                                     <mask id="mask0_1166_516" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
@@ -40,7 +40,7 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className="flex justify-center items-center gap-[8px]">
-                            <a href="/" className="font-primary text-[16px] not-italic font-light leading-[normal]">TikTok</a>
+                            <a href="/" className="content-small font-light">TikTok</a>
                             <div className="flex w-[24px] h-[24px] p-[4px] justify-center items-center gap-[8px]">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 18" fill="none" className="shrink-0 rotate-[135deg]">
                                     <mask id="mask0_1166_516" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">

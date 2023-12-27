@@ -11,7 +11,7 @@ export default function Galaxy() {
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-        [".text-effect1", ".text-effect2", ".text-effect3", ".text-effect4", ".text-effect5", ".text-effect6", ".text-effect7"].forEach((fila) => {
+        [".text-effect1", ".text-effect2", ".text-effect3", ".text-effect4", ".text-effect5", ".text-effect6"].forEach((fila) => {
             gsap.fromTo(fila, {
                 y: 40,
                 opacity: 0,

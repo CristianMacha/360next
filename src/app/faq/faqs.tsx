@@ -16,7 +16,7 @@ export default function Faqs() {
 
     return (
         <section className="flex flex-col gap-10 px-[16px] md:px-[40px] py-[20px] md:py-[40px]">
-            <h2 className="font-primary text-[50px] sm:text-[60px] md:text-[66px] lg:text-[85px] text-center">Alguna pregunta?</h2>
+            <h2 className="title-small md:title-medium lg:title-large text-center">Alguna pregunta?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                 <div className='flex flex-col gap-4'>
                     <div className="h-[550px] rounded-[40px] overflow-hidden" style={{ backgroundImage: `url(${cubeImage})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>

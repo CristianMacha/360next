@@ -3,7 +3,7 @@ import styles from './Comment.module.css';
 interface CommentProps {
     image: string;
     name: string;
-    comment: string;
+    comment: string | JSX.Element[];
     position: 'left' | 'right';
 }
 
@@ -15,8 +15,8 @@ export default function Comment({ image, name, comment, position }: CommentProps
                 <div className="rounded-full w-16 h-16" style={{ backgroundImage: `url(${image})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}></div>
             </div>
             <div className={`hidden absolute top-0 ${position==='right' ? '-right-[370px] md:-right-[520px]' : '-left-[370px] md:-left-[520px]'} bg-white p-4 w-[350px] md:w-[500px] rounded-lg ${styles.comment_body}`}>
-                <div className="font-primary font-normal">{name}</div>
-                <p className="font-primary -left-1 font-light text-sm">{comment}</p>
+                <div className="content-small">{name}</div>
+                <p className="font-primary -left-1 content-small font-light whitespace-pre-line">{comment}</p>
             </div>
         </div>
     )

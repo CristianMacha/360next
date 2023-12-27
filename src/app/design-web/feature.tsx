@@ -1,9 +1,16 @@
+'use client'
+import React from 'react';
+const Spline = React.lazy(() => import('@splinetool/react-spline'));
+
 import Card from "@/presentation/components/Card";
 
 export default function Feature() {
     const phoneUrl = "https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FdesignWebPhone.png?alt=media&token=4b89e043-df2e-4b97-aa8b-a23735359223";
     return (
-        <section className="h-auto md:h-[200vh] px-[16px] md:px-[40px] relative py-[96px] flex justify-center bg-scroll bg-bottom md:bg-center" style={{ backgroundImage: `url(${phoneUrl})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
+        <section className="h-auto md:h-[150vh] px-[16px] md:px-[40px] relative py-[96px] flex justify-center bg-scroll bg-bottom md:bg-center">
+            <div className="absolute w-full h-full hidden md:block">
+                <Spline scene='https://prod.spline.design/5E4eyIy9xR6edXVY/scene.splinecode' />
+            </div>
             <div className="flex flex-col gap-4 justify-center items-center">
                 <div className="static md:absolute w-[350px] top-[150px] left-[175px]">
                     <Card
@@ -14,8 +21,8 @@ export default function Feature() {
                 <div className="static md:absolute w-[350px] top-[150px] right-[175px]">
                     <Card
                         image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Felipses.png?alt=media&token=0e049f3d-377e-4af7-8425-58ff353aba9d"
-                        description="Utilizamos tipografías distintivas y creativas para destacar el contenido y transmitir la personalidad única de cada marca, asegurando una presentación visualmente impactante."
-                        title="Tipografía Creativa" />
+                        description="Nuestros diseños web integran elementos 3D y efectos visuales inmersivos para crear experiencias web cautivadoras y memorables que destacan la identidad de la marca."
+                        title="Diseño Inmersivo y Experiencias 3D" />
                 </div>
                 <div className="static md:absolute w-[350px] bottom-[150px] left-[175px]">
                     <Card
@@ -28,12 +35,6 @@ export default function Feature() {
                         image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Felipses.png?alt=media&token=0e049f3d-377e-4af7-8425-58ff353aba9d"
                         description="Con un enfoque centrado en la interactividad, nuestros productos ofrecen una experiencia única que cautiva a los usuarios y fomenta un mayor compromiso con tu marca."
                         title="Interactivo" />
-                </div>
-                <div className="static md:absolute w-[350px]">
-                    <Card
-                        image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Felipses.png?alt=media&token=0e049f3d-377e-4af7-8425-58ff353aba9d"
-                        description="Nuestros diseños web integran elementos 3D y efectos visuales inmersivos para crear experiencias web cautivadoras y memorables que destacan la identidad de la marca."
-                        title="Diseño Inmersivo y Experiencias 3D" />
                 </div>
             </div>
         </section>

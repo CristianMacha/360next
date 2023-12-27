@@ -108,7 +108,7 @@ export default function Banner() {
                                             <div className='py-[2px] px-[4px] bg-blue-500 text-white text-xs ml-4'>Zain</div>
                                         </div>
                                         <div className="flex flex-col justify-center items-center gap-[80px] md:gap-[200px] w-full">
-                                            <div className="flex flex-col justify-center items-center gap-[32px] md:gap-[64px] w-auto lg:w-[1200px]">
+                                            <div className="flex flex-col justify-center items-center gap-[32px] md:gap-[64px] w-auto md:w-[700px] lg:w-[1200px]">
                                                 <div className="flex flex-col justify-center items-center gap-[4px] md:self-auto">
                                                     <h2 className="text-white text-center title-small md:title-medium lg:title-large">
                                                         Qué sucede tras bastidores?
@@ -161,14 +161,14 @@ export default function Banner() {
                                             <Comment
                                                 image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FavatarElihu.jpg?alt=media&token=1841dc22-eaeb-4412-904f-5bb2d0d5ff1c'
                                                 name='Elihu'
-                                                comment='Elihu: Vendedor de niños profesional, ayudante de Karboncito, el payasito más rico del Perú, diseño con alegría hasta que mi jefe me dice que le ponga más diseño.'
+                                                comment='Vendedor de niños profesional, ayudante de Karboncito, el payasito más rico del Perú, diseño con alegría hasta que mi jefe me dice que le ponga más diseño.'
                                                 position='right' />
                                         </div>
                                         <div className='absolute top-20 md:bottom-32 right-4 md:right-32'>
                                             <Comment
                                                 image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FavatarCristian.jpg?alt=media&token=989557fe-62c5-41f6-8de8-1ec24e981dd7'
                                                 name='Cristian'
-                                                comment='function singSong() {
+                                                comment={`function singSong() {
                                                     const lyrics = [
                                                       "Algún código tiene problemas reales",
                                                       "Algún código tiene mala suerte",
@@ -192,15 +192,14 @@ export default function Banner() {
                                                       "No pongas tus errores en mí",
                                                       "No pongas tus errores en mí"
                                                     ];
-                                                  }
-                                                  '
+                                                  }`}
                                                 position='left' />
                                         </div>
                                         <div className='absolute bottom-40 md:bottom-32 right-4 md:right-64'>
                                             <Comment
                                                 image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FavatarAlex.jpg?alt=media&token=2ee3969f-41f4-46c7-a402-24d00f6ed770'
                                                 name='Alex'
-                                                comment='Alex: A veces solo hay que mirar el panorama general, y con eso me refiero al cartel de la oficina que dice "El éxito es un viaje, no un destino". Eso es lo que me digo a mí mismo cada vez que borro accidentalmente una página web.'
+                                                comment='A veces solo hay que mirar el panorama general, y con eso me refiero al cartel de la oficina que dice "El éxito es un viaje, no un destino". Eso es lo que me digo a mí mismo cada vez que borro accidentalmente una página web.'
                                                 position='left' />
                                         </div>
                                     </section>

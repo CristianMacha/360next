@@ -63,8 +63,8 @@ export default function Contact() {
     };
     const handlePrevStep = () => setCounter(counter - 1);
     return (
-        <section className="px-[16px] md:px-[40px] flex justify-center flex-col items-center bg-cover bg-no-repeat" style={{ backgroundImage: `url(${backgroundUrlImage})` }}>
-            <h2 className="font-primary text-[60px] md:text-[96px]">Contáctanos</h2>
+        <section className="px-[16px] md:px-[40px] flex justify-center flex-col items-center bg-cover bg-no-repeat h-screen md:h-auto" style={{ backgroundImage: `url(${backgroundUrlImage})` }}>
+            <h2 className="title-small md:title-medium lg:title-large mb-5">Contáctanos</h2>
             <div className="rounded-[40px] h-[500px] md:h-[700px] w-full flex justify-center items-center" style={{ background: 'linear-gradient(180deg, #CAD4FF 0%, #756CFE 100%)' }}>
                 <div className="flex flex-col justify-center gap-4">
                     {
@@ -120,8 +120,8 @@ export default function Contact() {
                         counter === 3 && (
                             <>
                                 <div className="flex flex-col gap-4">
-                                    <h2 className="font-primary text-[40px] md:text-[60px] leading-[40px] md:leading-normal">¡Gracias por contactarnos!</h2>
-                                    <p className="font-primary text-[20px] md:text-[24px]">Pronto nos pondremos en contacto contigo.</p>
+                                    <h2 className="title-small md:title-medium lg:title-large text-white">¡Gracias por contactarnos!</h2>
+                                    <p className="content-small md:content-medium lg:content-large text-white">Pronto nos pondremos en contacto contigo.</p>
                                     {/* <Suspense fallback={<div className='text-white text-[24px]'>Loading...</div>}>
                                         <Spline scene="https://prod.spline.design/109fbyYwdKCbuZAs/scene.splinecode" />
                                     </Suspense> */}

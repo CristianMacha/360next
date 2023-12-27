@@ -11,7 +11,7 @@ export default function Panel({ size, question, answer, opend, onToggle }: Panel
     return (
         <div className={`panel__expand ${size} ${opend ? 'pannel__active' : ''}`}>
             <div className="px-[1rem] flex flex-row justify-between font-primary font-normal text-[32px] w-full items-center h-[96px] cursor-pointer hover:bg-gray-50" onClick={onToggle}>
-                <h2 className="font-primary font-medium text-[16px] leading-normal sm:text-[20px]  md:text-[20px] md:leading-[24px] lg:text-[28px]">
+                <h2 className="content-small md:content-medium font-medium">
                     {question}
                 </h2>
                 <div>
@@ -21,7 +21,7 @@ export default function Panel({ size, question, answer, opend, onToggle }: Panel
                 </div>
             </div>
             <div className="mt-[12px] md:mt-[24px] px-[1rem]">
-                <h3 className="text-[13px] font-primary sm:text-[20px] md:text-[16px] md:leading-normal lg:text-[20px]">{answer}</h3>
+                <h3 className="content-small md:content-medium">{answer}</h3>
             </div>
         </div>
     )

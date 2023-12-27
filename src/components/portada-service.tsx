@@ -9,13 +9,13 @@ export default function PortadaService({ title, description, background }: Porta
         <section className="pt-[64px] px-[16px] md:px-[40px] pb-10">
             <div className="flex flex-col gap-2">
                 <div className="h-[568px] bg-gray-50 rounded-[20px]" style={{backgroundImage: `url(${background})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}}></div>
-                <div className="flex justify-between font-primary text-[14px] md:text-[16px] font-normal">
+                <div className="flex justify-between content-small">
                     <span>Servicios</span>
                     <span>2024</span>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     <div className="flex flex-col gap-4 md:gap-6">
-                        <h1 className="text-[50px] leading-[60px] md:text-[96px] md:leading-[80px] font-primary font-medium">{title}</h1>
+                        <h1 className="display-large">{title}</h1>
                         <div className="flex flex-row gap-1">
                             <svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69" fill="none">
                                 <g clipPath="url(#clip0_2197_88)">
@@ -64,7 +64,7 @@ export default function PortadaService({ title, description, background }: Porta
                         </div>
                     </div>
                     <div>
-                        <p className="text-[18px] md:text-[28px] leading-normal font-primary font-light">{description}</p>
+                        <p className="font-light content-small md:content-medium lg:content-large">{description}</p>
                     </div>
                 </div>
             </div>

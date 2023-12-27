@@ -1,3 +1,9 @@
 .comment:hover .comment_body {
     display: block;
 }
+
+@media (max-width: 640px) {
+    .comment:hover .comment_body {
+        display: none;
+    }
+}

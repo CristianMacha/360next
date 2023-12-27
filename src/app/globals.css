@@ -28,15 +28,15 @@
   }
 
   .content-large {
-    @apply font-primary font-normal text-[32px] leading-[40px];
+    @apply font-primary font-light text-[32px] leading-[40px];
   }
 
   .content-medium {
-    @apply font-primary font-normal text-[24px] leading-[32px];
+    @apply font-primary font-light text-[24px] leading-[32px];
   }
 
   .content-small {
-    @apply font-primary font-normal text-[16px];
+    @apply font-primary font-light text-[16px];
   }
 }
 
@@ -166,7 +166,7 @@ html {
 }
 
 .panel__expand.pannel__active.medium {
-  height: 320px;
+  height: 360px;
 }
 
 .panel__expand.pannel__active.large {
