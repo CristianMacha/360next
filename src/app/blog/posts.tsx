@@ -4,7 +4,7 @@ export default function Posts() {
 <section className="miseccion px-[16px] md:px-[40px] pt-[70px]" >
             <div className="flex flex-col md:flex-row gap-10 justify-between relative">
                 <div className="w-[400px]">
-                    left
+                    
                 </div>
                 <div className="w-full">
                     <Post

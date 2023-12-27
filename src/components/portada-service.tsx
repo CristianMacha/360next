@@ -6,7 +6,7 @@ interface PortadaServiceProps {
 
 export default function PortadaService({ title, description, background }: PortadaServiceProps) {
     return (
-        <section className="pt-[64px] px-[16px] md:px-[40px]">
+        <section className="pt-[64px] px-[16px] md:px-[40px] pb-10">
             <div className="flex flex-col gap-2">
                 <div className="h-[568px] bg-gray-50 rounded-[20px]" style={{backgroundImage: `url(${background})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}}></div>
                 <div className="flex justify-between font-primary text-[14px] md:text-[16px] font-normal">

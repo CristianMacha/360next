@@ -20,17 +20,17 @@ export default function Development() {
     return (
         <div className="relative">
             <PortadaService
-                title="Desarrollo"
+                title="Desarrollo Web"
                 description="¡Impulsa tu presencia en línea con nuestra agencia de desarrollo web especializada en desarrollo full stack! Nuestro equipo de expertos está listo para ayudarte a destacar y alcanzar tus objetivos digitales."
                 background={backgroundDevelopment} />
             <InfoSection
-                title="Desarrollo Web"
-                description="Inspire la conexión a través de experiencias excepcionales en el sitio web"
+                title="Programación Web"
+                description="Estamos listos para crear soluciones personalizadas y funcionales que se adapten a tus necesidades, desde sitios web atractivos y responsivos, estamos aquí para convertir tus ideas en realidad."
                 features={['Website', 'Landing Page']}
                 image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fweb-development.jpg?alt=media&token=364fe7cb-ee03-4761-a582-bae6ba40dc11" />
             <InfoSection
                 title="Aplicaciones"
-                description="Inspire la conexión a través de experiencias excepcionales en el sitio web"
+                description="Transforma tu visión en una realidad móvil con nuestras aplicaciones personalizadas, diseñadas para cautivar a tus usuarios y potenciar el crecimiento de tu negocio."
                 features={['Applicaciones Web']}
                 image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fweb-development.jpg?alt=media&token=364fe7cb-ee03-4761-a582-bae6ba40dc11" />
             <OurWork />

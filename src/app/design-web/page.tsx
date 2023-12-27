@@ -20,7 +20,7 @@ export default function DesignWeb() {
         <>
             <PortadaService
                 title="Diseño Web"
-                description="Nos especializamos en crear sitios web visualmente atractivos y funcionales. Nuestro equipo de expertos en diseño web se enfoca en capturar la esencia de tu marca y transmitirla a través de un diseño personalizado y único"
+                description="Creamos páginas web que sean visualmente atractivas . Nuestro equipo de expertos en diseño web se enfoca en capturar la esencia de tu marca y transmitirla a través de un diseño personalizado y único"
                 background={backgroundDesignWeb} />
             <Feature />
             <OurWork />

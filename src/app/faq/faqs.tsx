@@ -16,7 +16,7 @@ export default function Faqs() {
 
     return (
         <section className="flex flex-col gap-10 px-[16px] md:px-[40px] py-[20px] md:py-[40px]">
-            <h2 className="font-primary text-[50px] sm:text-[60px] md:text-[66px] lg:text-[85px] ">Preguntas Frecuentes</h2>
+            <h2 className="font-primary text-[50px] sm:text-[60px] md:text-[66px] lg:text-[85px] text-center">Alguna pregunta?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                 <div className='flex flex-col gap-4'>
                     <div className="h-[550px] rounded-[40px] overflow-hidden" style={{ backgroundImage: `url(${cubeImage})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
@@ -35,25 +35,25 @@ export default function Faqs() {
                         <Panel
                             question="¿Por qué es importante tener una identidad visual para mi marca?"
                             answer='Una identidad visual sólida ayuda a tu empresa a ser reconocible y memorable. Define la personalidad de tu marca y crea una conexión emocional con tus clientes, diferenciándote de la competencia.'
-                            size="small"
+                            size="medium"
                             opend={activePanel === 'panel1'}
                             onToggle={() => handleToggle('panel1')} />
                         <Panel
-                            question="¿Cuánto tiempo lleva crear un sitio web desde cero?"
-                            answer='El tiempo puede variar según la complejidad del proyecto. Un sitio web simple podría construirse en unas pocas semanas, mientras que uno más complejo puede tomar varios meses.'
-                            size="small"
+                            question="¿Cuál es el cronograma del proyecto?"
+                            answer='El cronograma del proyecto varía según la complejidad del proyecto y sus requisitos específicos. Un cronograma típico involucra etapas como consulta, diseño, desarrollo, pruebas y lanzamiento. Para una evaluación más precisa, por favor contáctenos con detalles sobre su proyecto, y estaremos encantados de esbozar un cronograma adaptado a sus necesidades.'
+                            size="medium"
                             opend={activePanel === 'panel2'}
                             onToggle={() => handleToggle('panel2')} />
                         <Panel
-                            question="¿Por qué es importante tener una pagina web hoy en día?"
-                            answer='Un sitio web es crucial porque actúa como la presencia en línea principal de tu empresa. Permite a los clientes potenciales encontrar información sobre tus servicios o productos las 24 horas del día, los 7 días de la semana, lo que aumenta la credibilidad y facilita el acceso a tu empresa.'
+                            question="¿Cuál es el soporte post-lanzamiento?"
+                            answer='Nuestra dedicación se extiende más allá del lanzamiento. Brindamos soporte continuo para abordar cualquier problema, implementar actualizaciones y garantizar que su proyecto se mantenga optimizado. Nuestro soporte post-lanzamiento tiene como objetivo garantizar el éxito y la funcionalidad continuada de su solución digital.'
                             size="medium"
                             opend={activePanel === 'panel3'}
                             onToggle={() => handleToggle('panel3')} />
                         <Panel
-                            question="¿En qué redes sociales debería promocionar mi empresa?"
-                            answer='Las redes sociales más efectivas pueden variar según tu industria y público objetivo. Generalmente, plataformas como Facebook, Instagram, Twitter, LinkedIn y YouTube son populares. Es esencial comprender dónde se encuentra tu audiencia para elegir las redes sociales adecuadas.'
-                            size="medium"
+                            question="¿Cuál es el proceso de desarrollo?"
+                            answer='A lo largo del proceso, priorizamos la comunicación clara y sus comentarios para garantizar que el resultado final se alinee con su visión.'
+                            size="small"
                             opend={activePanel === 'panel4'}
                             onToggle={() => handleToggle('panel4')} />
                     </div>

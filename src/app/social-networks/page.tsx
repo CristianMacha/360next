@@ -1,7 +1,6 @@
 import InfoSection from "@/components/info-section";
 import PortadaService from "@/components/portada-service";
 import OurWork from "./our-work";
-import ImageCard from "@/presentation/components/ImageCard";
 
 import type { Metadata } from 'next'
 
@@ -24,17 +23,16 @@ export default function SocialNetworks() {
                 background={backgroundSocialNetwork}
                 description="Ofrecemos servicios completos que incluyen la creación de páginas de Facebook, la gestión de redes sociales y estrategias de marketing en redes sociales. Confía en nuestro equipo de expertos para impulsar tu marca en el mundo digital y alcanzar el éxito deseado."
                 title="Gestión de Redes Sociales" />
-                <ImageCard image="" description="Nos mantenemos siempre un paso adelante al ofrecerte lo último en tendencias digitales. Sabemos que estar al tanto de las tendencias en las redes sociales es fundamental para el éxito de tu marca." features={['Marketing', 'Startup']} title="Porque nosotros" />
             <InfoSection
-                title="Tendencias"
-                image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fweb-development.jpg?alt=media&token=364fe7cb-ee03-4761-a582-bae6ba40dc11"
+                title="Gestión de Contenido"
+                image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FredesSocialesGestionContenido.jpg?alt=media&token=dbc0823f-a8d2-4567-a080-2e184fbafdcd"
                 features={['Creación de páginas de Facebook', 'Gestión de redes sociales', 'Estrategias de marketing en redes sociales']}
-                description="Nos mantenemos siempre un paso adelante al ofrecerte lo último en tendencias digitales. Sabemos que estar al tanto de las tendencias en las redes sociales es fundamental para el éxito de tu marca." />
+                description="Destaca con contenido de calidad. Ofrecemos servicios especializados en la creación y gestión de contenido persuasivo, adaptado a tu audiencia y objetivos." />
             <InfoSection
-                title="Posicionamiento Seo"
-                image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fweb-development.jpg?alt=media&token=364fe7cb-ee03-4761-a582-bae6ba40dc11"
+                title="Interacción con la audiencia"
+                image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FredesSocialesInteracionAudiencia.jpg?alt=media&token=fad572f5-5cb5-4c6f-afa7-131a859ca2c2"
                 features={['Optimización de perfiles', 'Publicaciones en redes sociales', 'Técnicas avanzadas de SEO']}
-                description="Creamos estrategias para optimizar tus perfiles y publicaciones en las redes sociales más relevantes, usamos técnicas avanzadas de SEO para mejorar la visibilidad de tu marca." />
+                description="Fomenta la participación. Desarrollamos estrategias personalizadas para interactuar con tu audiencia, promoviendo la participación y construyendo relaciones sólidas en línea." />
             <OurWork />
         </>
     )

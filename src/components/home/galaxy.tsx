@@ -34,41 +34,40 @@ export default function Galaxy() {
             <section className={`flex py-[40px] pb-[200px] md:py-[80px] px-[16px] flex-col justify-center items-center gap-[8px] self-stretch ${styles.galaxy} lg:hidden`}>
                 <div className="flex flex-col justify-center items-center gap-[8px]">
                     <div className="flex items-center gap-[8px] self-stretch">
-                        <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] lg:text-[40px] md:text-[50px]">Comenzando como entusiastas</span>
+                        <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] lg:text-[40px] md:text-[50px]">Iniciamos como apasionados</span>
                         <div className={`w-[91.2px] h-[34px] rounded-[99px]`} style={{backgroundImage: `url(${memeOne})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
                     </div>
-                    <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] self-stretch lg:text-[40px] md:text-[50px]">para otras personas. combinamos nuestras</span>
+                    <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] self-stretch lg:text-[40px] md:text-[50px]">que deseaban construir algo</span>
                     <div className="flex items-center content-center gap-[8px] self-stretch flex-wrap">
-                        <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] lg:text-[40px] md:text-[50px]">habilidades</span>
+                        <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] lg:text-[40px] md:text-[50px]">verdaramente excepcional para</span>
                         <div className={`w-[91.2px] h-[34px] rounded-[99px]`} style={{backgroundImage: `url(${memeTwo})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
-                        <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] lg:text-[40px] md:text-[50px]">profesionales</span>
-                        <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] lg:text-[40px] md:text-[50px]"> y empatía para crear un entorno</span>
-                    </div>
-                    <div className="flex items-center gap-[8px] self-stretch">
-                        <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] lg:text-[40px] md:text-[50px]">colaborativo de trabajo único.</span>
+                        <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] lg:text-[40px] md:text-[50px]">otros, unimos nuestras</span>
+                        <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] lg:text-[40px] md:text-[50px]"> destrezas</span>
                         <div className={`w-[91.2px] h-[34px] rounded-[99px]`} style={{backgroundImage: `url(${memeOne})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
+                    </div>
+                    <div className="flex flex-wrap items-center gap-[8px]">
+                        <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] lg:text-[40px] md:text-[50px]">para formar un entorno de trabajo colaborativo y unico.</span>
                     </div>
                 </div>
             </section>
             <section className={`pt-[139px] pb-[300px] px-[40px] hidden lg:flex flex-col justify-center items-start gap-[8px] self-stretch ${styles.galaxy}`}>
-                <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] text-effect1">Comenzando como entusiastas</span>
+                <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] text-effect1">Iniciamos como apasionados </span>
                 <div className="flex gap-[24px] flex-wrap items-center text-effect2">
-                    <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] whitespace-nowrap">que querían crear algo</span>
+                    <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] whitespace-nowrap">que deseaban construir algo</span>
                     <div className={`w-[264px] h-[101px] rounded-[99px]`} style={{backgroundImage: `url(${memeOne})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
                 </div>
-                <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] text-effect3">realmente grandioso para otras</span>
-                <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] text-effect4">personas, cambiamos nuestras</span>
+                <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] text-effect3">verdaramente excepcional para</span>
+                <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] text-effect4">otros, unimos nuestras</span>
                 <div className="flex gap-[24px] flex-wrap items-center text-effect5">
-                    <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] whitespace-nowrap">habilidades</span>
+                    <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] whitespace-nowrap">destrezas</span>
                     <div className={`w-[264px] h-[101px] rounded-[99px]`} style={{backgroundImage: `url(${memeTwo})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
-                    <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] whitespace-nowrap">para crear</span>
+                    <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] whitespace-nowrap">para formar</span>
                 </div>
                 <div className="flex gap-[24px] flex-wrap items-center text-effect6">
-                    <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] whitespace-nowrap">un entorno</span>
+                    <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] whitespace-nowrap">un entorno de</span>
                     <div className={`w-[264px] h-[101px] rounded-[99px]`} style={{backgroundImage: `url(${memeOne})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
-                    <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] whitespace-nowrap">colaborativo</span>
+                    <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] whitespace-nowrap">trabajo colaborativo y unico</span>
                 </div>
-                <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] whitespace-nowrap text-effect7">de trabajo unico.</span>
             </section>
         </>
     )
