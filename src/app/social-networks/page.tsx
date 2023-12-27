@@ -23,9 +23,9 @@ export default function SocialNetworks() {
             <PortadaService
                 background={backgroundSocialNetwork}
                 description="Ofrecemos servicios completos que incluyen la creación de páginas de Facebook, la gestión de redes sociales y estrategias de marketing en redes sociales. Confía en nuestro equipo de expertos para impulsar tu marca en el mundo digital y alcanzar el éxito deseado."
-                title="Gestión de Redes Sociales" />
+                title="Redes Sociales" />
             <InfoCardLarge
-                image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FFONDITO%20CEL.png?alt=media&token=f4820219-4302-4f36-807c-d0e2d1980afe"
+                image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FFONDITO%20CEL%202.0.png?alt=media&token=3b2cb576-2d5f-4d9c-8150-c6c888524512"
                 title="Tendencias"
                 description="Nos mantenemos siempre un paso adelante al ofrecerte lo último en tendencias digitales. Sabemos que estar al tanto de las tendencias en las redes sociales es fundamental para el éxito de tu marca."
                 features={['Marketing', 'Facebook']} />

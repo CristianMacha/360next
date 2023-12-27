@@ -108,21 +108,21 @@ export default function Banner() {
                                             <div className='py-[2px] px-[4px] bg-blue-500 text-white text-xs ml-4'>Zain</div>
                                         </div>
                                         <div className="flex flex-col justify-center items-center gap-[80px] md:gap-[200px] w-full">
-                                            <div className="flex flex-col justify-center items-center gap-[32px]  md:gap-[64px] w-[900px]">
-                                                <div className="flex flex-col justify-center items-center gap-[4px]  md:self-auto">
-                                                    <h2 className=" text-white text-center font-primary text-[15px] not-italic font-bold leading-[normal] sm:text-[30px] md:self-auto md:text-[52px]">
+                                            <div className="flex flex-col justify-center items-center gap-[32px] md:gap-[64px] w-auto lg:w-[1200px]">
+                                                <div className="flex flex-col justify-center items-center gap-[4px] md:self-auto">
+                                                    <h2 className="text-white text-center title-small md:title-medium lg:title-large">
                                                         Qué sucede tras bastidores?
                                                     </h2>
-                                                    <h2 className=" text-white text-center font-primary text-[15px] not-italic font-bold leading-[normal] sm:text-[30px] md:self-auto md:text-[52px]">
+                                                    <h2 className="text-white text-center title-small md:title-medium lg:title-large">
                                                         !Descubrelo por ti mismo!
                                                     </h2>
                                                 </div>
                                                 <div className="flex flex-col items-center gap-[12px] ">
-                                                    <h3 className=" text-white text-center font-primary text-[16px] not-italic font-bold leading-[normal] sm:text-[30px] md:self-auto md:text-[32px]">
+                                                    <h3 className="text-white text-center content-small font-medium">
                                                         Esto es un tablero. <br /> Puedes hacer click en nuestros<br />
                                                         comentarios y leerlos, si, eso es todo.
                                                     </h3>
-                                                    <h3 className="text-white text-center font-primary text-[16px] not-italic font-bold leading-[normal] md:self-auto md:text-[24px]">
+                                                    <h3 className="text-white text-center content-small font-medium">
                                                         ... o explora mas a fondo
                                                     </h3>
                                                 </div>
@@ -164,7 +164,7 @@ export default function Banner() {
                                                 comment='Elihu: Vendedor de niños profesional, ayudante de Karboncito, el payasito más rico del Perú, diseño con alegría hasta que mi jefe me dice que le ponga más diseño.'
                                                 position='right' />
                                         </div>
-                                        <div className='absolute top-32  md:bottom-32 right-4 md:right-32'>
+                                        <div className='absolute top-20 md:bottom-32 right-4 md:right-32'>
                                             <Comment
                                                 image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FavatarCristian.jpg?alt=media&token=989557fe-62c5-41f6-8de8-1ec24e981dd7'
                                                 name='Cristian'

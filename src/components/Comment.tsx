@@ -14,9 +14,9 @@ export default function Comment({ image, name, comment, position }: CommentProps
             <div className={`bg-white p-1 rounded-t-full rounded-br-full flex justify-center items-center content-center hover:scale-[1.2] transition-all relative`}>
                 <div className="rounded-full w-16 h-16" style={{ backgroundImage: `url(${image})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}></div>
             </div>
-            <div className={`hidden absolute top-0 ${position==='right' ? '-right-[520px]' : '-left-[520px]'} bg-white p-4 w-[500px] rounded-lg ${styles.comment_body}`}>
+            <div className={`hidden absolute top-0 ${position==='right' ? '-right-[370px] md:-right-[520px]' : '-left-[370px] md:-left-[520px]'} bg-white p-4 w-[350px] md:w-[500px] rounded-lg ${styles.comment_body}`}>
                 <div className="font-primary font-normal">{name}</div>
-                <div className="font-primary -left-1 font-light text-sm">{comment}</div>
+                <p className="font-primary -left-1 font-light text-sm">{comment}</p>
             </div>
         </div>
     )
