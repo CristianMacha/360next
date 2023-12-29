@@ -60,7 +60,7 @@ export default function Form() {
     }
 
     return (
-        <div className="px-[16px] md:px-[40px] h-screen flex justify-center items-center pt-[64px]">
+        <div className="px-[16px] md:px-[40px] h-auto md:h-screens flex justify-center items-center pt-[64px]">
             <div className="w-full">
                 <h2 className="title-small md:title-medium lg:title-large mb-10">Contáctanos</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16">
