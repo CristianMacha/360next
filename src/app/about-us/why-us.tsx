@@ -2,11 +2,11 @@ export default function WhyUs() {
     return (
         <section className="px-[16px] md:px-[40px] py-52 flex flex-col justify-center items-center gap-16 relative">
             <div className="flex w-full">
-                <h2 className="font-primary text-[60px] leading-[60px] font-medium w-[630px] md:text-[90px] md:leading-[90px]">Por qué nos eligen?</h2>
+                <h2 className="title-small md:title-medium lg:title-large font-medium">Por qué nos eligen?</h2>
             </div>
             <div className="flex flex-col items-end w-full">
                 <div className="flex flex-col gap-6">
-                    <p className="font-primary text-[15px] font-normal text-justify w-auto md:w-[730px] md:text-[24px]">Nuestro equipo está formado por profesionales apasionados que se esfuerzan en capturar la esencia de cada cliente y llevarla a nuevas alturas. Valoramos la colaboración estrecha con nuestros clientes para garantizar que sus visiones se conviertan en realidades impactantes, brindando así un servicio que supera las expectativas.</p>
+                    <p className="content-small md:content-medium lg:content-large text-justify w-auto md:w-[730px]">Nuestro equipo está formado por profesionales apasionados que se esfuerzan en capturar la esencia de cada cliente y llevarla a nuevas alturas. Valoramos la colaboración estrecha con nuestros clientes para garantizar que sus visiones se conviertan en realidades impactantes, brindando así un servicio que supera las expectativas.</p>
                     <div>
                         <button className='py-[17px] px-[33px] rounded-full bg-[#D9FE95] font-primary font-medium text-[15px] flex flex-row gap-4 items-center md:text-[20px]'>Trabajemos! <svg xmlns="http://www.w3.org/2000/svg" width="33" height="16" viewBox="0 0 33 16" fill="none">
                             <path d="M32.7071 8.70711C33.0976 8.31658 33.0976 7.68342 32.7071 7.29289L26.3431 0.928932C25.9526 0.538408 25.3195 0.538408 24.9289 0.928932C24.5384 1.31946 24.5384 1.95262 24.9289 2.34315L30.5858 8L24.9289 13.6569C24.5384 14.0474 24.5384 14.6805 24.9289 15.0711C25.3195 15.4616 25.9526 15.4616 26.3431 15.0711L32.7071 8.70711ZM0 9H32V7H0V9Z" fill="black" />

@@ -11,7 +11,7 @@ export default function OurValues() {
     return (
         <div className="flex flex-col justify-center items-center gap-4 px-[16px] md:px-[40px]">
             <img src="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FCintaNuestrosValores.png?alt=media&token=7fc54726-188b-44c7-9e69-d659707a4b77" alt="" className="absolute -z-[1]" />
-            <h2 className="text-[72px] font-bold">Nuestros Valores</h2>
+            <h2 className="title-small md:title-medium lg:title-large">Nuestros Valores</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <div className="col-span-1 md:col-span-2">
                     <Card

@@ -29,7 +29,7 @@ export default function Portada() {
             <div>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6'>
                     <div className='flex flex-col gap-6'>
-                        <h1 className='font-primary font-medium text-[32px]'>Sobre Nosotros</h1>
+                        <h1 className='display-small md:display-medium lg:display-large'>Sobre Nosotros</h1>
                         <div className='flex flex-row gap-4'>
                             <div className='flex items-center'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
@@ -44,7 +44,7 @@ export default function Portada() {
                                     </defs>
                                 </svg>
                             </div>
-                            <p className='font-primary font-normal text-[20px]'>Somos una empresa de marketing que conecta marcas con consumidores a través de interfaces digitales.</p>
+                            <p className='content-small md:content-medium lg:content-large'>Somos una empresa de marketing que conecta marcas con consumidores a través de interfaces digitales.</p>
                         </div>
                         <div>
                             <button className='py-[17px] px-[33px] rounded-full bg-[#D9FE95] font-primary font-medium text-[20px] flex flex-row gap-4 items-center'>Trabajemos! <svg xmlns="http://www.w3.org/2000/svg" width="33" height="16" viewBox="0 0 33 16" fill="none">
@@ -53,7 +53,7 @@ export default function Portada() {
                         </div>
                     </div>
                     <div className='flex items-start justify-end'>
-                        <div className='font-primary font-medium text-[24px]'>2024</div>
+                        <div className='content-small'>2024</div>
                     </div>
                 </div>
             </div>

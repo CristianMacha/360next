@@ -21,7 +21,7 @@ async function sendDataForm(formValues: FormValues) {
 }
 
 export default function Contact() {
-    const backgroundUrlImage = 'https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FtestimonialBackground.jpg?alt=media&token=69c5d301-13e5-4b15-be93-f36fed4197a3';
+    const backgroundUrlImage = 'https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FcontactBackground.jpg?alt=media&token=37d6d95c-c5f7-4070-a65f-187039a115e7';
     const [counter, setCounter] = useState<number>(0);
     const [loading, setLoading] = useState<boolean>(false);
     const [formValues, setFormValues] = useState<FormValues>({
@@ -63,7 +63,7 @@ export default function Contact() {
     };
     const handlePrevStep = () => setCounter(counter - 1);
     return (
-        <section className="px-[16px] md:px-[40px] flex justify-center flex-col items-center bg-cover bg-no-repeat h-screen md:h-auto" style={{ backgroundImage: `url(${backgroundUrlImage})` }}>
+        <section className="px-[16px] md:px-[160px] flex justify-center flex-col items-center bg-cover bg-no-repeat h-screen bg-center" style={{ backgroundImage: `url(${backgroundUrlImage})` }}>
             <h2 className="title-small md:title-medium lg:title-large mb-5">Contáctanos</h2>
             <div className="rounded-[40px] h-[500px] md:h-[700px] w-full flex justify-center items-center" style={{ background: 'linear-gradient(180deg, #CAD4FF 0%, #756CFE 100%)' }}>
                 <div className="flex flex-col justify-center gap-4">
