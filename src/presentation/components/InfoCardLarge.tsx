@@ -29,7 +29,7 @@ export default function InfoCardLarge({ description, floatingImageOne, floatingI
                     </div>
                 </div>
             </div>
-            <div className="hidden lg:block relative h-[500px] md:h-screen bg-contain md:bg-cover bg-no-repeat bg-bottom" style={{ backgroundImage: `url(${image})` }}>
+            <div className="hidden lg:block relative h-[500px] md:h-screen bg-contain md:bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${image})` }}>
                 <Spline scene={splineUrl || 'https://prod.spline.design/LwngIR9F4ERBbbgk/scene.splinecode'} />
             </div>
             <div className="block lg:hidden relative h-[500px] md:h-screen bg-contain md:bg-cover bg-no-repeat bg-bottom" style={{ backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FgestionRedesSocialesTendencias.jpg?alt=media&token=78161481-051e-42fd-9631-79a3c5f12aee)` }}></div>

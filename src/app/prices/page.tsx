@@ -2,7 +2,7 @@ import CardPrice from "@/presentation/components/CardPrice";
 
 export default function PricePage() {
     return (
-        <div className="pt-[64px]" style={{backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FpricesBg.jpg?alt=media&token=8bb7d4f9-43de-46ce-9fdf-1304eb86f5be)`}}>
+        <div className="pt-[64px] bg-no-repeat" style={{ backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FpricesBg.jpg?alt=media&token=8bb7d4f9-43de-46ce-9fdf-1304eb86f5be)` }}>
             <div className="px-[16px] md:px-[40px]">
                 <h1 className="display-small md:display-medium lg:display-large">Precios</h1>
                 <div className="flex flex-row gap-1">
@@ -52,7 +52,7 @@ export default function PricePage() {
                     </svg>
                 </div>
             </div>
-            <section className="px-[16px] md:px-[40px] mt-20">
+            <section className="px-[16px] md:px-[40px] py-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     <div>
                         <CardPrice
@@ -61,12 +61,17 @@ export default function PricePage() {
                             price="S/ 00.00"
                             style="basic"
                             features={[
-                                'Dominio.com', 
+                                'Dominio.com',
                                 'Hosting de alta evlocidad',
                                 '1 página',
                                 'Página web administrable',
-                                'Propuestas de diseño'
-                                ]} />
+                                'Propuestas de diseño',
+                                'Formulario contacto',
+                                'Blog informativo',
+                                'Optimización Seo',
+                                'Integrado a las redes sociales',
+                                'Contacto rápid a Whatsapp'
+                            ]} />
                     </div>
                     <div>
                         <CardPrice
@@ -74,7 +79,24 @@ export default function PricePage() {
                             plan="Premium"
                             price="S/ 00.00"
                             style="premium"
-                            features={['Dominio.com', 'Hosting de alta evlocidad']} />
+                            features={[
+                                'Dominio.com / .pe',
+                                'Hosting de alta evlocidad',
+                                'Certificado SSL',
+                                'Mas de 5 páginas',
+                                'Carrito de compras',
+                                'Pasarela de pago',
+                                'Slider intro/ fotos y textos',
+                                '10 cuentas de correo',
+                                'Página web administrable',
+                                'Optimizacion SEO',
+                                'Galería de imágenes',
+                                'Blog informativo',
+                                'Integrado a redes sociales',
+                                'Chat de Facebook Messenger',
+                                'Contacto rápido a WhatsApp',
+                                'Tienda o Aula Virtual'
+                            ]} />
                     </div>
                     <div>
                         <CardPrice
@@ -82,7 +104,21 @@ export default function PricePage() {
                             plan="Avanzado"
                             price="S/ 00.00"
                             style="basic"
-                            features={['Dominio.com', 'Hosting de alta evlocidad']} />
+                            features={[
+                                'Dominio.com',
+                                'Hosting de alta evlocidad',
+                                'Certificado SSL',
+                                '3 Paginas',
+                                'Propuesta de Diseño',
+                                'Página web administrable',
+                                'Optimizacion SEO',
+                                'Galeria de imagenes',
+                                'Blog informativo',
+                                'Integrado a redes sociales',
+                                'Chat de Facebook Messeger',
+                                'Contacto rápido de Whatsapp',
+                                'Tienda o Aula virtual'
+                            ]} />
                     </div>
                 </div>
             </section>

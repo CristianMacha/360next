@@ -36,10 +36,10 @@ export default function SocialNetworks() {
                 description="Destaca con contenido de calidad. Ofrecemos servicios especializados en la creación y gestión de contenido persuasivo, adaptado a tu audiencia y objetivos." />
             <InfoSection
                 title="Interacción con la audiencia"
-                image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FredesSocialesInteracionAudiencia.jpg?alt=media&token=fad572f5-5cb5-4c6f-afa7-131a859ca2c2"
+                image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FsocialNetworkBg.jpg?alt=media&token=fd673420-feff-4b57-807d-ee24d48c6281"
                 features={['Optimización de perfiles', 'Publicaciones en redes sociales', 'Técnicas avanzadas de SEO']}
                 description="Fomenta la participación. Desarrollamos estrategias personalizadas para interactuar con tu audiencia, promoviendo la participación y construyendo relaciones sólidas en línea." />
-            <OurWork />
+            {/* <OurWork /> */}
         </>
     )
 }

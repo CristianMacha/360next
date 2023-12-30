@@ -36,9 +36,19 @@ export default function Development() {
                 image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fweb-development.jpg?alt=media&token=364fe7cb-ee03-4761-a582-bae6ba40dc11" />
             {/* <OurWork /> */}
             <InfoCardLarge
-                description=""
+                description="Nos mantenemos siempre un paso adelante al ofrecerte lo último en tendencias digitales. Sabemos que estar al tanto de las tendencias en las redes sociales es fundamental para el éxito de tu marca."
                 splineUrl="https://prod.spline.design/OcTCyrrgfVny4DJb/scene.splinecode"
-                features={[]}
+                image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FdevelopmentBg.jpg?alt=media&token=e6752387-59b4-4708-9800-90a83e96c5d8"
+                features={[
+                    'Website',
+                    'Desarrollo Web',
+                    'Landing Page',
+                    'SaaS',
+                    'Startup',
+                    'Web',
+                    'Fintech',
+                    'Marketing'
+                ]}
                 title=""
             />
         </div>

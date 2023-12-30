@@ -18,8 +18,8 @@ export default function CardPrice({ description, plan, features, price, style }:
                 <div className="mt-10 px-10 flex flex-col divide-y divide-solid pb-5">
                     {
                         features.map((feature, index) => (
-                            <div key={index} className="flex flex-row gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <div key={index} className="flex flex-row gap-2 pt-2 content-small md:content-medium lg:content-large items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-6 h-6">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                                 </svg>
                                 {feature}
