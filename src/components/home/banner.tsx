@@ -87,7 +87,7 @@ export default function Banner() {
                                             <div>
                                                 <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.19704 20.3624L1.22843 1.52392L16.5588 12.648L8.71267 14.1258L8.52458 14.1612L8.39986 14.3064L3.19704 20.3624Z" fill="#2FD499" stroke="white" strokeWidth="1.09101"></path></svg>
                                             </div>
-                                            <div className='py-[2px] px-[4px] bg-purple-500 text-white text-xs ml-4'>Maria</div>
+                                            <div className='py-[2px] px-[4px] bg-purple-500 text-white text-xs ml-4'>Cristian</div>
                                         </div>
                                         <div className='cursor__pink absolute top-[450px] right-[600px]'>
                                             <div>
@@ -151,20 +151,20 @@ export default function Banner() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className='absolute top-10 left-16'>
+                                        <div className='absolute top-[50px] left-[40px] md:top-[100px] md:left-[184px]'>
                                             <Comment
                                                 image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FavatarZain.jpg?alt=media&token=1b25d827-ed8c-4161-9a3a-21bdbe355c80'
                                                 name='Zain' comment='Cuando los clientes dicen "hazlo impactante", respiro y luego me detengo. ¿Lo quieren grande, brillante o atrevido? Desearía que sus instrucciones no fueran tan frías, pero agregaré un poco de brillo, una pizca de dinamismo, y espero que les guste, no hay necesidad de jazz. Así que "impactante", siempre dicen, haré lo mejor que pueda, pase lo que pase. !”'
                                                 position='right' />
                                         </div>
-                                        <div className='absolute bottom-20 left-4 md:left-20'>
+                                        <div className='absolute bottom-[80px] left-[40px] md:bottom-40 md:left-[284px]'>
                                             <Comment
                                                 image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FavatarElihu.jpg?alt=media&token=1841dc22-eaeb-4412-904f-5bb2d0d5ff1c'
                                                 name='Elihu'
                                                 comment='Vendedor de niños profesional, ayudante de Karboncito, el payasito más rico del Perú, diseño con alegría hasta que mi jefe me dice que le ponga más diseño.'
                                                 position='right' />
                                         </div>
-                                        <div className='absolute top-20 md:bottom-32 right-4 md:right-32'>
+                                        <div className='absolute top-[70px] right-[40px] md:top-[120px] md:right-[200px]'>
                                             <Comment
                                                 image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FavatarCristian.jpg?alt=media&token=989557fe-62c5-41f6-8de8-1ec24e981dd7'
                                                 name='Cristian'
@@ -195,7 +195,7 @@ export default function Banner() {
                                                   }`}
                                                 position='left' />
                                         </div>
-                                        <div className='absolute bottom-40 md:bottom-32 right-4 md:right-64'>
+                                        <div className='absolute bottom-[60px] right-[50px] md:bottom-[180px] md:right-[220px]'>
                                             <Comment
                                                 image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FavatarAlex.jpg?alt=media&token=2ee3969f-41f4-46c7-a402-24d00f6ed770'
                                                 name='Alex'
