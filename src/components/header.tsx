@@ -52,7 +52,13 @@ export default function Header() {
                         </Link>
                     </div>
                     <div className='flex justify-center items-center gap-28'>
-                        <div className='font-primary text-[#5E5E5E] hidden md:block'>Huancayo, Peru</div>
+                        <div className='font-primary text-[#5E5E5E] hidden md:flex flex-row items-center'>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+
+                            En algun lugar del mundo</div>
                         <div className='flex flex-row items-center gap-6'>Menu
                             <button onClick={toggleActiveMenu} className='w-[43px] h-[43px] rounded-full border flex justify-center items-center border-black'>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -66,7 +72,15 @@ export default function Header() {
             <div className={`${styles.menu} ${active ? styles.active : ''}`}>
                 <div className={`p-10 flex flex-col justify-between h-full`}>
                     <div>
-                        <div className='flex justify-between items-center'>Huancayo, Perú
+                        <div className='flex justify-between items-center'>
+                            <div className='flex flex-row items-center'>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                                </svg>
+
+                                En algun lugar del mundo
+                            </div>
                             <div className='flex flex-row items-center gap-6'>Close
                                 <button onClick={toggleActiveMenu} className='w-[43px] h-[43px] rounded-full border flex justify-center items-center border-black'>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

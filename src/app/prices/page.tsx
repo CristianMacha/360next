@@ -2,7 +2,7 @@ import CardPrice from "@/presentation/components/CardPrice";
 
 export default function PricePage() {
     return (
-        <div className="pt-[64px] bg-no-repeat" style={{ backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FpricesBg.jpg?alt=media&token=8bb7d4f9-43de-46ce-9fdf-1304eb86f5be)` }}>
+        <div className="pt-[64px] bg-no-repeat" style={{ backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FpreciosCinta.png?alt=media&token=80189be8-c79e-48a6-b8de-0205a4235cbf)` }}>
             <div className="px-[16px] md:px-[40px]">
                 <h1 className="display-small md:display-medium lg:display-large">Precios</h1>
                 <div className="flex flex-row gap-1">

@@ -11,7 +11,7 @@ export default function Testimonials() {
                             <div className="content-small md:content-medium lg:content-large">Reseñas verificadas</div>
                         </div>
                         <div className="flex gap-[8px] items-end lg:h-[82px] lg:items-end lg:gap-[4px]">
-                            <div className="display-small md:display-medium lg:display-large">0.5</div>
+                            <div className="display-small md:display-medium lg:display-large">5.0</div>
                             <div className="content-small md:content-medium lg:content-large">Puntuación media</div>
                         </div>
                     </div>

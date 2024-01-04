@@ -16,11 +16,13 @@ export default function CardSampleProjectSection() {
         gsap.to(sections, {
             xPercent: -100 * (sections.length - 1),
             ease: "none",
+            // top: "+=500",
             scrollTrigger: {
                 trigger: ".container_scroll",
                 pin: true,
                 scrub: 1,
                 end: "+=3000",
+                markers: false
             }
         })
     }, []);
@@ -36,24 +38,24 @@ export default function CardSampleProjectSection() {
                         <CardSampleProject
                             title="Diseño web"
                             description="Transformamos ideas en experiencias visuales cautivadoras."
-                            items={['2023']}
+                            items={['']}
                             position="bottom"
                             url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FGALE%201%20OPT.webp?alt=media&token=7292bc01-3aa9-4dc8-9107-bc71291ede59"} />
                     </section>
                     <section>
                         <CardSampleProject
-                            title="Redes Sociales"
+                            title="Desarrollo Web"
                             description="Conectamos marcas con su audiencia de manera auténtica"
-                            items={['2023']}
+                            items={['']}
                             position="top"
-                            url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FGALE%202%20OPT.webp?alt=media&token=23fb96cc-b8b2-4c93-9c07-b443a10eb335"} />
+                            url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FdesarrollowebServiceBg.webp?alt=media&token=59f0841c-3d8e-4a89-bbc6-f1a9d083dc39"} />
                     </section>
                     <section>
                         <CardSampleProject
-                            title="Desarrollo"
-                            description="Más que códigos, construimos soluciones digitales."
-                            items={['2023']}
-                            position="bottom"
+                            title="Redes Sociales"
+                            description="Conectamos marcas con su audiencia de manera auténtica"
+                            items={['']}
+                            position="top"
                             url={"https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FGALE%203%20OPT.webp?alt=media&token=09d82f45-90c2-4e7a-8b8e-27665e75157b"} />
                     </section>
                 </div>

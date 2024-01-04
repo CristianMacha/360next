@@ -12,13 +12,13 @@ export default function CardSample({ url, title, description, items }: CardProps
                     <div className="title-small md:title-medium lg:title-large font-medium">{title}</div>
                     <div className="content-small md:content-medium lg:content-large hidden md:block">{description}</div>
                 </div>
-                <div className="flex flex-row flex-wrap justify-start md:justify-end gap-1">
+                {/* <div className="flex flex-row flex-wrap justify-start md:justify-end gap-1">
                     {items.map((item, index) => (
                         <div key={index}>
                             <div className="border border-white rounded-full px-[16px] py-[8px] font-primary font-extralight text-black">{item}</div>
                         </div>
                     ))}
-                </div>
+                </div> */}
             </div>
         </div>
     )

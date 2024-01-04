@@ -8,7 +8,21 @@ import styles from './portada.module.css';
 
 export default function Portada() {
     const [game, setGame] = React.useState(false);
-    const handlePlayGame = () => setGame(!game);
+    const [loadingFake, setLoadingFake] = React.useState(false);
+
+    const handlePlayGame = () => {
+        if(game) {
+            // setLoadingFake(prevLoadingFake => !prevLoadingFake);
+            setGame(prevGame => !prevGame);
+        } else {
+            setLoadingFake(prevLoadingFake => !prevLoadingFake);
+    
+            setTimeout(() => {
+                setLoadingFake(prevLoadingFake => !prevLoadingFake);
+                setGame(prevGame => !prevGame);
+            }, 3000);
+        }
+    };
 
     return (
         <section className="h-auto px-[16px] md:px-[40px] flex flex-col gap-5 md:gap-[100px] justify-start items-center py-[16px] md:pb-[40px] md:pt-[0px]">
@@ -49,10 +63,13 @@ export default function Portada() {
             <div className="h-[800px] w-full rounded-[20px] overflow-hidden relative" style={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FSTATIC%203D.webp?alt=media&token=dbaadf1c-a177-41b4-a0bb-9d0d7a750b3b')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
                 {
                     game ? (
-                        <Suspense fallback={<div className='h-[800px] w-full rounded-[20px] text-white flex justify-center items-center text-[24px]'>Loading...</div>}>
-                            <Spline scene="https://prod.spline.design/hDb-ZfPyU0kaAXNR/scene.splinecode" />
+                        <Suspense fallback={<div className='absolute top-0 right-0 left-0 bottom-0 rounded-[20px] text-white flex justify-center items-center text-[24px]'>Loading...</div>}>
+                            <Spline scene="https://prod.spline.design/hDb-ZfPyU0kaAXNR/scene.splinecode" className='z-[11]' />
                         </Suspense>
                     ) : null
+                }
+                {
+                    loadingFake ? (<div className='absolute z-10 top-0 left-0 right-0 bottom-0 bg-black/60 rounded-[20px] text-white flex justify-center items-center text-[24px]'>Loading...</div>) : null
                 }
                 {/* <div className='absolute top-0 right-0 left-0 bottom-0'></div> */}
                 <div className='flex justify-center w-full absolute top-2'>

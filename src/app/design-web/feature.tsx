@@ -9,7 +9,7 @@ export default function Feature() {
     return (
         <section className="h-auto md:h-[150vh] px-[16px] md:px-[40px] relative py-[96px] flex justify-center bg-scroll bg-bottom md:bg-center" style={{backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FCINTA%20DISEN%CC%83O%20WEB.png?alt=media&token=60c94a14-a540-4819-92b6-b1eb3b43e008)`}}>
             <div className="absolute w-full h-full hidden md:block bg-no-repeat">
-                <Spline scene='https://prod.spline.design/5E4eyIy9xR6edXVY/scene.splinecode' />
+                <Spline scene='https://prod.spline.design/YumHUNwlabD8WhFu/scene.splinecode' />
             </div>
             <div className="flex flex-col gap-4 justify-center items-center">
                 <div className="static md:absolute w-[350px] top-[150px] left-[175px]">

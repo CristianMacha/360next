@@ -1,20 +1,27 @@
 'use client'
 import React from 'react';
+import Lottie from 'lottie-react';
+import arrowLottie from "@/assets/lotties/lottieDesarrolloWebArrow.json";
+import arrowLottieTwo from "@/assets/lotties/lottieDesarrolloWebArrowTwo.json";
+
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 import Chip from "./Chip";
+import { useInView } from 'react-intersection-observer';
 
 interface InfoCardLargeProps {
     image?: string;
     splineUrl?: string;
-    floatingImageOne?: string;
-    floatingImageTwo?: string;
+    lotties?: boolean;
     title: string;
     description: string;
     features: string[];
 }
 
-export default function InfoCardLarge({ description, floatingImageOne, floatingImageTwo, image, title, features, splineUrl }: InfoCardLargeProps) {
+export default function InfoCardLarge({ description, image, title, features, splineUrl, lotties = false }: InfoCardLargeProps) {
+    const {ref, inView } = useInView({
+        threshold: 0
+    })
     return (
         <div>
             <div className="px-[16px] md:px-[40px] pb-20">
@@ -29,8 +36,10 @@ export default function InfoCardLarge({ description, floatingImageOne, floatingI
                     </div>
                 </div>
             </div>
-            <div className="hidden lg:block relative h-[500px] md:h-screen bg-contain md:bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${image})` }}>
-                <Spline scene={splineUrl || 'https://prod.spline.design/LwngIR9F4ERBbbgk/scene.splinecode'} />
+            <div className="hidden lg:block relative h-[500px] md:h-screen bg-contain md:bg-cover bg-no-repeat bg-center overflow-hidden" style={{ backgroundImage: `url(${image})` }}>
+                {(inView && lotties) && <Lottie loop={false} animationData={arrowLottie} className='w-96 absolute top-[3rem] right-[10rem] -rotate-45' />}
+                {(inView && lotties) && <Lottie loop={true} animationData={arrowLottieTwo} className='w-96 absolute bottom-[3rem] left-[10rem] -rotate-45 opacity-50' />}
+                <Spline scene={splineUrl || 'https://prod.spline.design/LwngIR9F4ERBbbgk/scene.splinecode'} ref={ref} />
             </div>
             <div className="block lg:hidden relative h-[500px] md:h-screen bg-contain md:bg-cover bg-no-repeat bg-bottom" style={{ backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FgestionRedesSocialesTendencias.jpg?alt=media&token=78161481-051e-42fd-9631-79a3c5f12aee)` }}></div>
             <div className="bg-gradient-to-b from-[#D6D3FE] to-[#ffffff] px-[16px] md:px-[40px] flex justify-center flex-col py-10 md:py-40 gap-10">

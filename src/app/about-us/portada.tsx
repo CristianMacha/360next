@@ -7,9 +7,9 @@ export default function Portada() {
     return (
         <section className="h-auto px-[16px] md:px-[40px] flex flex-col gap-7 md:gap-11 justify-start items-center py-[16px] md:pb-[40px] md:pt-[70px] relative">
             <div className="h-[600px] w-full rounded-[20px] overflow-hidden hidden md:block relative" style={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FSTATIC%203D.webp?alt=media&token=dbaadf1c-a177-41b4-a0bb-9d0d7a750b3b')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
-                {/* <Suspense fallback={<div>Loading...</div>}>
-                    <Spline scene="https://prod.spline.design/hDb-ZfPyU0kaAXNR/scene.splinecode" />
-                </Suspense> */}
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Spline scene="https://prod.spline.design/vDx1hmxl86t7sn0Z/scene.splinecode" />
+                </Suspense>
             <div className='flex justify-center w-full absolute top-2'>
                     <div className='flex flex-row items-center gap-2 font-medium bg-[#D9FE95] px-3 py-1 rounded-[20px]'>360 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
                         <g clipPath="url(#clip0_2105_269)">

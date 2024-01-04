@@ -31,6 +31,18 @@ const reviews: Review[] = [
         name: 'Alex Alcocer Rodriguez',
         rotate: "right"
     },
+    {
+        id: 'bb715d2c-4d0f-4288-af8b-7a8400021a7a',
+        review: 'Excelente servicio y resultados sobresalientes con 360. Su equipo demostró gran profesionalismo al crear un sitio web que superó mis expectativas. El diseño es atractivo y funcional, ¡recomendado al 100%!',
+        name: 'Elihu',
+        rotate: 'left'
+    },
+    {
+        id: 'c7ffac02-75f8-42a2-a337-06b4f1b26f19',
+        review: 'Hemos tenido una experiencia excepcional trabajando con 360 virtual solutions. Su equipo demostró habilidades técnicas impresionantes y un enfoque creativo en el diseño de nuestro sitio web. La comunicación fue clara y eficiente, cumpliendo con los plazos establecidos. Estamos muy satisfechos con la estética y funcionalidad del sitio. ¡Recomendamos encarecidamente sus servicios!',
+        name: 'Cristian',
+        rotate: 'none'
+    }
 ]
 
 export default function Customers() {

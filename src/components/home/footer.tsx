@@ -9,14 +9,14 @@ export default function Footer() {
                     <span className="content-medium font-light">No dude en comunicarse con nosotros si quieres colaborar con nosotros o simplemente charlar.</span>
                     <div className="flex items-center gap-[8px] hover:text-blue-600">
                         <Link href={'/contact'} className="content-medium">Conviertete en cliente</Link>
-                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                                </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
                     </div>
                 </div>
                 <div className="flex flex-col items-start gap-[8px]">
                     <span className="content-medium font-medium">Nuestra dirección</span>
-                    <span className="content-small font-light">Tacna 265 - Huancayo</span>
+                    <span className="content-small font-light">En algun lugar del mundo</span>
                 </div>
                 <div className="flex flex-col justify-center items-start gap-[8px]">
                     <span className="content-medium font-medium">Síganos</span>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface CardPricePros {
     description: string;
     plan: string,
@@ -29,7 +31,7 @@ export default function CardPrice({ description, plan, features, price, style }:
                 </div>
             </div>
             <div className="pb-5 flex justify-center">
-                <button className="bg-[#D9FE95] px-5 py-2 hover:bg-[#a1cf4d]">Mas información</button>
+                <Link href={'contact'} className="bg-[#D9FE95] px-5 py-2 hover:bg-[#a1cf4d]">Mas información</Link>
             </div>
         </div>
     )
