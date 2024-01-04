@@ -52,7 +52,7 @@ export default function PricePage() {
                     </svg>
                 </div>
             </div>
-            <section className="px-[16px] md:px-[40px] py-20">
+            <section className="px-[16px] md:px-[180px] py-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     <div>
                         <CardPrice

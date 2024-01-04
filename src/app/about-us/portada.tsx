@@ -6,7 +6,7 @@ const Spline = React.lazy(() => import('@splinetool/react-spline'));
 export default function Portada() {
     return (
         <section className="h-auto px-[16px] md:px-[40px] flex flex-col gap-7 md:gap-11 justify-start items-center py-[16px] md:pb-[40px] md:pt-[70px] relative">
-            <div className="h-[600px] w-full rounded-[20px] overflow-hidden hidden md:block relative" style={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FSTATIC%203D.webp?alt=media&token=dbaadf1c-a177-41b4-a0bb-9d0d7a750b3b')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+            <div className="h-[600px] w-full rounded-[20px] overflow-hidden hidden md:block relative" style={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FScreenshot%202024-01-04%20at%2013.25.26.png?alt=media&token=7741dddc-b0a3-4d30-9198-ea40c80b223d')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
                 <Suspense fallback={<div>Loading...</div>}>
                     <Spline scene="https://prod.spline.design/vDx1hmxl86t7sn0Z/scene.splinecode" />
                 </Suspense>
