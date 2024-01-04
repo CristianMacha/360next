@@ -66,12 +66,13 @@ export default function PricePage() {
                                 '1 página',
                                 'Página web administrable',
                                 'Propuestas de diseño',
-                                'Formulario contacto',
+                            ]}
+                            featuresExtras={['Formulario contacto',
                                 'Blog informativo',
                                 'Optimización Seo',
                                 'Integrado a las redes sociales',
-                                'Contacto rápid a Whatsapp'
-                            ]} />
+                                'Contacto rápid a Whatsapp']}
+                        />
                     </div>
                     <div>
                         <CardPrice
@@ -85,7 +86,8 @@ export default function PricePage() {
                                 'Certificado SSL',
                                 'Mas de 5 páginas',
                                 'Carrito de compras',
-                                'Pasarela de pago',
+                            ]}
+                            featuresExtras={['Pasarela de pago',
                                 'Slider intro/ fotos y textos',
                                 '10 cuentas de correo',
                                 'Página web administrable',
@@ -95,8 +97,7 @@ export default function PricePage() {
                                 'Integrado a redes sociales',
                                 'Chat de Facebook Messenger',
                                 'Contacto rápido a WhatsApp',
-                                'Tienda o Aula Virtual'
-                            ]} />
+                                'Tienda o Aula Virtual']} />
                     </div>
                     <div>
                         <CardPrice
@@ -110,15 +111,15 @@ export default function PricePage() {
                                 'Certificado SSL',
                                 '3 Paginas',
                                 'Propuesta de Diseño',
-                                'Página web administrable',
+                            ]}
+                            featuresExtras={['Página web administrable',
                                 'Optimizacion SEO',
                                 'Galeria de imagenes',
                                 'Blog informativo',
                                 'Integrado a redes sociales',
                                 'Chat de Facebook Messeger',
                                 'Contacto rápido de Whatsapp',
-                                'Tienda o Aula virtual'
-                            ]} />
+                                'Tienda o Aula virtual']} />
                     </div>
                 </div>
             </section>
