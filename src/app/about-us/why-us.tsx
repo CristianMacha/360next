@@ -2,7 +2,7 @@ export default function WhyUs() {
     return (
         <section className="px-[16px] md:px-[40px] py-52 flex flex-col justify-center items-center gap-16 relative">
             <div className="flex w-full">
-                <h2 className="title-small md:title-medium lg:title-large font-medium">Por qué nos eligen?</h2>
+                <h2 className="title-small md:title-medium lg:title-large font-medium">¿Por qué nos eligen?</h2>
             </div>
             <div className="flex flex-col items-end w-full">
                 <div className="flex flex-col gap-6">

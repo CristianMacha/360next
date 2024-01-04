@@ -12,10 +12,10 @@ export default function Experience() {
                 <div className="flex w-auto py-[31px] px-[34px] flex-col justify-center items-center gap-[8px] self-stretch rounded-[40px] bg-[#ABABE7] lg:self-auto lg:w-[690px] overflow-hidden experience-desktop">
                     <div className="flex flex-col justify-center items-start gap-[28px] self-stretch lg:self-auto">
                         <div className="flex flex-col items-start gap-[44px] self-stretch lg:self-auto">
-                            <h3 className="content-small md:content-medium lg:content-large font-medium md:font-bold">
+                            <h3 className="content-small md:content-medium lg:content-large font-normal">
                                 Nuestro equipo cuenta con una gran cantidad de
-                                experiencia, por lo que puedes estar seguro de que
-                                presentaremos proyectos impresionantes y que nuestra
+                                <span className="font-bold"> experiencia</span>, por lo que puedes estar seguro de que
+                                presentaremos <a className="font-bold">proyectos impresionantes</a> y que nuestra
                                 comunicación sea impecable.
                             </h3>
                         </div>

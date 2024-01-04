@@ -45,14 +45,13 @@ export default function Header() {
                     <div className='flex items-center gap-[96px]'>
                         <Link href='/' className='flex flex-row gap-4 items-center text-[18px] md:text-[30px] font-bold'>
                             <img
-                                src="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Flogo360Black.png?alt=media&token=4de7eb5c-2891-456a-8a44-73b726ffd991"
+                                src="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FLogo%20(1).png?alt=media&token=86ce7e5b-3392-4d79-899a-f75ecc116264"
                                 alt="logo"
-                                className='w-[46px] h-[22px] md:w-[56px] md:h-[32px]' />
-                            Virtual solutions
+                                className='w-[161px] h-[37px]' />
                         </Link>
                     </div>
                     <div className='flex justify-center items-center gap-28'>
-                        <div className='font-primary text-[#5E5E5E] hidden md:flex flex-row items-center'>
+                        <div className='font-primary text-[#5E5E5E] hidden md:flex flex-row items-center flex-wrap'>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
@@ -73,7 +72,7 @@ export default function Header() {
                 <div className={`p-10 flex flex-col justify-between h-full`}>
                     <div>
                         <div className='flex justify-between items-center'>
-                            <div className='flex flex-row items-center'>
+                            <div className='flex flex-row items-center flex-wrap'>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />

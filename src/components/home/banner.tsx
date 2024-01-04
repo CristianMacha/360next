@@ -111,7 +111,7 @@ export default function Banner() {
                                             <div className="flex flex-col justify-center items-center gap-[32px] md:gap-[64px] w-auto md:w-[700px] lg:w-[1200px]">
                                                 <div className="flex flex-col justify-center items-center gap-[4px] md:self-auto">
                                                     <h2 className="text-white text-center title-small md:title-medium lg:title-large">
-                                                        Qué sucede tras bastidores?
+                                                        ¿Qué sucede tras bastidores?
                                                     </h2>
                                                     <h2 className="text-white text-center title-small md:title-medium lg:title-large">
                                                         !Descubrelo por ti mismo!
@@ -119,8 +119,8 @@ export default function Banner() {
                                                 </div>
                                                 <div className="flex flex-col items-center gap-[12px] ">
                                                     <h3 className="text-white text-center content-small font-medium">
-                                                        Esto es un tablero. <br /> Puedes hacer click en nuestros<br />
-                                                        comentarios y leerlos, si, eso es todo.
+                                                        Esto es un tablero. <br /> Puedes pasar el mouse por nuestras fotos<br />
+                                                         y leernos, sí, eso es todo.
                                                     </h3>
                                                     <h3 className="text-white text-center content-small font-medium">
                                                         ... o explora mas a fondo
