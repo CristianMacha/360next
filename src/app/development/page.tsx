@@ -48,7 +48,8 @@ export default function Development() {
                     'Startup',
                     'Web',
                     'Fintech',
-                    'Marketing'
+                    'Marketing',
+                    'Diseño Web'
                 ]}
                 title=""
             />

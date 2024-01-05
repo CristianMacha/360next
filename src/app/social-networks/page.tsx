@@ -1,6 +1,5 @@
 import InfoSection from "@/components/info-section";
 import PortadaService from "@/components/portada-service";
-import OurWork from "./our-work";
 
 import type { Metadata } from 'next'
 import InfoCardLarge from "@/presentation/components/InfoCardLarge";
@@ -28,7 +27,7 @@ export default function SocialNetworks() {
                 image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FFONDITO%20CEL%202.0.png?alt=media&token=3b2cb576-2d5f-4d9c-8150-c6c888524512"
                 title="Tendencias"
                 description="Nos mantenemos siempre un paso adelante al ofrecerte lo último en tendencias digitales. Sabemos que estar al tanto de las tendencias en las redes sociales es fundamental para el éxito de tu marca."
-                features={['Marketing', 'Facebook']} />
+                features={['Marketing', 'Facebook', 'Fintech', 'Otros']} />
             <InfoSection
                 title="Gestión de Contenido"
                 image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FredesSocialesGestionContenido.jpg?alt=media&token=dbc0823f-a8d2-4567-a080-2e184fbafdcd"
