@@ -16,7 +16,6 @@ export default function CardSampleProjectSection() {
         gsap.to(sections, {
             xPercent: -100 * (sections.length - 1),
             ease: "none",
-            // top: "+=500",
             scrollTrigger: {
                 trigger: ".container_scroll",
                 pin: true,

@@ -8,6 +8,7 @@ import styles from './galaxy.module.css'
 export default function Galaxy() {
     const memeOne = 'https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fmeme01.jpg?alt=media&token=cf6e96dd-809c-41b8-a6e9-81a580ed0875';
     const memeTwo = 'https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FmemeTwo.jpg?alt=media&token=91c9bf4a-09a5-4c7a-a5e2-00ee8f93e255';
+    const memeThree = 'https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FmemeMono.jpg?alt=media&token=da43091f-33da-4717-aafc-e837e9ad5cd0';
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -43,7 +44,7 @@ export default function Galaxy() {
                         <div className={`w-[91.2px] h-[34px] rounded-[99px]`} style={{backgroundImage: `url(${memeTwo})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
                         <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] lg:text-[40px] md:text-[50px]">otros, unimos nuestras</span>
                         <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] lg:text-[40px] md:text-[50px]"> destrezas</span>
-                        <div className={`w-[91.2px] h-[34px] rounded-[99px]`} style={{backgroundImage: `url(${memeOne})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
+                        <div className={`w-[91.2px] h-[34px] rounded-[99px]`} style={{backgroundImage: `url(${memeThree})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
                     </div>
                     <div className="flex flex-wrap items-center gap-[8px]">
                         <span className="text-white text-justify font-primary text-[28px] not-italic font-normal leading-[normal] lg:text-[40px] md:text-[50px]">para formar un entorno de trabajo colaborativo y unico.</span>
@@ -54,18 +55,18 @@ export default function Galaxy() {
                 <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] text-effect1">Iniciamos como apasionados </span>
                 <div className="flex gap-[24px] flex-wrap items-center text-effect2">
                     <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] whitespace-nowrap">que deseaban construir algo</span>
-                    <div className={`w-[264px] h-[101px] rounded-[99px]`} style={{backgroundImage: `url(${memeOne})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
+                    <div className={`w-[354px] h-[101px] rounded-[99px]`} style={{backgroundImage: `url(${memeOne})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
                 </div>
                 <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] text-effect3">verdaramente excepcional para</span>
                 <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] text-effect4">otros, unimos nuestras</span>
                 <div className="flex gap-[24px] flex-wrap items-center text-effect5">
                     <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] whitespace-nowrap">destrezas</span>
-                    <div className={`w-[264px] h-[101px] rounded-[99px]`} style={{backgroundImage: `url(${memeTwo})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
+                    <div className={`w-[354px] h-[101px] rounded-[99px]`} style={{backgroundImage: `url(${memeTwo})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
                     <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] whitespace-nowrap">para formar</span>
                 </div>
                 <div className="flex gap-[24px] flex-wrap items-center text-effect6">
                     <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] whitespace-nowrap">un entorno de</span>
-                    <div className={`w-[264px] h-[101px] rounded-[99px]`} style={{backgroundImage: `url(${memeOne})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
+                    <div className={`w-[354px] h-[101px] rounded-[99px]`} style={{backgroundImage: `url(${memeThree})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
                     <span className="self-stretch text-white font-primary text-[96px] not-italic font-bold leading-[normal] whitespace-nowrap">trabajo colaborativo y unico</span>
                 </div>
             </section>

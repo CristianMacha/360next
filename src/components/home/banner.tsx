@@ -164,7 +164,7 @@ export default function Banner() {
                                                 comment='Vendedor de niños profesional, ayudante de Karboncito, el payasito más rico del Perú, diseño con alegría hasta que mi jefe me dice que le ponga más diseño.'
                                                 position='right' />
                                         </div>
-                                        <div className='absolute top-[70px] right-[40px] md:top-[120px] md:right-[200px]'>
+                                        <div className='absolute top-[70px] right-[40px] md:top-[120px] md:right-[300px]'>
                                             <Comment
                                                 image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FavatarCristian.jpg?alt=media&token=989557fe-62c5-41f6-8de8-1ec24e981dd7'
                                                 name='Cristian'
@@ -195,7 +195,7 @@ export default function Banner() {
                                                   }`}
                                                 position='left' />
                                         </div>
-                                        <div className='absolute bottom-[60px] right-[50px] md:bottom-[180px] md:right-[220px]'>
+                                        <div className='absolute bottom-[60px] right-[50px] md:bottom-[280px] md:right-[420px]'>
                                             <Comment
                                                 image='https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FavatarAlex.jpg?alt=media&token=2ee3969f-41f4-46c7-a402-24d00f6ed770'
                                                 name='Alex'

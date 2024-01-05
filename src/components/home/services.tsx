@@ -2,7 +2,7 @@ export default function Services() {
     const tape = "https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FtapeService.png?alt=media&token=c4247817-cae3-4d4d-a66c-3a6c46febbe8";
     return (
         <section className="flex pt-[32px] flex-col items-start lg:pt-0 relative">
-            <div style={{ backgroundImage: `url(${tape})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'left' }} className="absolute bottom-0 left-0 right-0 h-[200px] md:h-[740px] -z-[1]"></div>
+            <div style={{ backgroundImage: `url(${tape})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: '25% 52%' }} className="absolute bottom-0 left-0 right-0 h-[200px] md:h-[740px] -z-[1]"></div>
             <div className="flex flex-col items-start lg:px-[40px] lg:flex-row lg:justify-center w-full">
                 <div className="flex py-0 px-[16px] items-start gap-[8px] lg:pt-[50px] lg:pr-[36px] lg:pl-0 lg:pb-0 lg:rounded-t-none lg:rounded-bl-[50px] lg:rounded-br-none lg:border-b lg:border-[#c7c7c7] lg:self-stretch relative">
                     <h2 className="title-small md:title-medium lg:title-large sticky top-[50px] h-auto">Ofrecemos</h2>

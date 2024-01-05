@@ -31,7 +31,7 @@ export default function Header() {
 
         ScrollTrigger.create({
             start: "top top-=70",
-            end: "bottom+=3000 bottom",
+            end: "bottom+=6000 bottom",
             onUpdate: (self) => {
                 self.direction === -1 ? showAnim.play() : showAnim.reverse();
             },
@@ -45,9 +45,9 @@ export default function Header() {
                     <div className='flex items-center gap-[96px]'>
                         <Link href='/' className='flex flex-row gap-4 items-center text-[18px] md:text-[30px] font-bold'>
                             <img
-                                src="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FLogo%20(1).png?alt=media&token=86ce7e5b-3392-4d79-899a-f75ecc116264"
+                                src="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FLogo%20header.png?alt=media&token=c35dbf69-0052-4363-be9f-687e8cc4daa8"
                                 alt="logo"
-                                className='w-[161px] h-[37px]' />
+                                className='w-[145px] h-[37px]' />
                         </Link>
                     </div>
                     <div className='flex justify-center items-center gap-28'>

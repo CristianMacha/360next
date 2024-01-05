@@ -33,12 +33,12 @@ export default function Development() {
                 title="Aplicaciones"
                 description="Transforma tu visión en una realidad móvil con nuestras aplicaciones personalizadas, diseñadas para cautivar a tus usuarios y potenciar el crecimiento de tu negocio."
                 features={['Applicaciones Web']}
-                image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fweb-development.jpg?alt=media&token=364fe7cb-ee03-4761-a582-bae6ba40dc11" />
+                image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2Fdesarrolloweb.jpg?alt=media&token=cbda9335-0d4f-4021-830d-0cb4e44a754d" />
             {/* <OurWork /> */}
             <InfoCardLarge
                 lotties={true}
                 description="Nos mantenemos siempre un paso adelante al ofrecerte lo último en tendencias digitales. Sabemos que estar al tanto de las tendencias en las redes sociales es fundamental para el éxito de tu marca."
-                splineUrl="https://prod.spline.design/OcTCyrrgfVny4DJb/scene.splinecode"
+                splineUrl="https://prod.spline.design/CCkVkTddXWR7tIdw/scene.splinecode"
                 image="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FunSoloClick.webp?alt=media&token=69cb2262-ad53-4ccf-bea2-c4e3d87689c0"
                 features={[
                     'Website',

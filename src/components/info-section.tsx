@@ -20,7 +20,7 @@ export default function InfoSection({ title, description, features, image }: Inf
                     </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-                    <div className="h-[500px] rounded-[20px] bg-contain" style={{backgroundImage: `url(${image})`, backgroundRepeat: 'no-repeat'}}></div>
+                    <div className="h-[500px] rounded-[20px] bg-cover" style={{backgroundImage: `url(${image})`, backgroundRepeat: 'no-repeat'}}></div>
                     <div className="flex flex-col justify-center gap-4">
                         <p className="font-primary text-[24px] md:text-[28px]">{description}</p>
                         <div className="flex flex-row flex-wrap">
