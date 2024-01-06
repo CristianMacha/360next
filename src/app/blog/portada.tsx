@@ -1,7 +1,7 @@
 export default function Portada() {
     return (
-        <div className="px-[16px] md:px-[40px] pt-[70px] flex flex-row justify-between items-end">
-            <div >
+        <div className="px-[16px] md:px-[40px] pt-[70px] flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+            <div>
                 <h1 className="font-primary text-[96px]">Blog</h1>
                 <div className="flex flex-row gap-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69" fill="none">
@@ -55,7 +55,6 @@ export default function Portada() {
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                     </svg>
-
                 </button>
             </div>
         </div>
