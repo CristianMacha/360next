@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
             from: `360vs <${resendEmail}>`,
             to: [destinationEmail],
             subject: `Contact #${nanoid(6)}`,
-            react: EmailTemplate({ firstName: name }),
+            react: EmailTemplate({ firstName: name, email, message }),
             text: "email",
         });
 

@@ -16,13 +16,13 @@ export default function CardPrice({ description, plan, features, featuresExtras,
     const [viewMoreFeature, setViewMoreFeature] = useState(false);
 
     return (
-        <div className={`shadow-md rounded-md bg-white ${plan ==='Premium' && styles.card_principal}`}>
-            <div className={`bg-[#ABABE7]  ${style == 'basic' && 'bg-opacity-60'} ${style == 'premium' && 'bg-opacity-100'} text-center py-5 rounded-t-md`}>
-                <p className="content-small md:content-medium lg:content-lg mb-5">{description}</p>
-                <h2 className="title-small md:title-medium lg:title-large text-white whitespace-pre-line">{plan}</h2>
+        <div className={`shadow-md rounded-[70px] bg-white ${plan ==='Premium' && styles.card_principal} hover:scale-100 md:hover:scale-105 transition-all`}>
+            <div className={`${(style === 'basic') ? 'bg-gradient-to-r from-cyan-100 via-pink-200 to-cyan-100' : null} ${style === 'premium' ? 'bg-gradient-to-br from-green-300 via-green-600 to-green-300' : null} text-center py-8 rounded-t-[70px]`}>
+                <h2 className="title-small text-white whitespace-pre-line">{plan}</h2>
             </div>
             <div className="mt-10">
-                <div className="title-small md:title-medium lg:title-large text-center">{price}</div>
+            <p className="content-small md:content-medium lg:content-lg mb-5 text-center">{description}</p>
+                <div className="title-small md:title-medium text-center">{price}</div>
                 <div className="mt-10 px-10 flex flex-col pb-5">
                     {
                         features.map((feature, index) => (
