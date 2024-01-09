@@ -47,7 +47,7 @@ export default function Header() {
                             <img
                                 src="https://firebasestorage.googleapis.com/v0/b/dev-system2023.appspot.com/o/360%2FLogo%20header.png?alt=media&token=c35dbf69-0052-4363-be9f-687e8cc4daa8"
                                 alt="logo"
-                                className='w-[145px] h-[37px]' />
+                                className='w-[145px] h-[45px]' />
                         </Link>
                     </div>
                     <div className='flex justify-center items-center gap-28'>

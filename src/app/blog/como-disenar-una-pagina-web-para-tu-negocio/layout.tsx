@@ -1,11 +1,6 @@
-import Atoms from "@/presentation/components/Atoms"
+import Atoms from "@/presentation/components/Atoms";
 
-interface BlogLayoutProps {
-    images: string[],
-    children: React.ReactDOM
-}
-
-export default function BlogLayout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
     return (
         <div className="px-[16px] md:px-[40px] pt-[84px]">
             <Atoms />

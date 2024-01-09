@@ -61,17 +61,14 @@ export default function PricePage() {
                             price="S/ 00.00"
                             style="basic"
                             features={[
-                                'Dominio.com',
-                                'Hosting de alta evlocidad',
                                 '1 página',
+                                'Propuesta de diseño',
                                 'Página web administrable',
-                                'Propuestas de diseño',
-                            ]}
-                            featuresExtras={['Formulario contacto',
-                                'Blog informativo',
-                                'Optimización Seo',
+                                'Formulario de contactanos',
+                                'Optimizacion SEO',
                                 'Integrado a las redes sociales',
-                                'Contacto rápid a Whatsapp']}
+                            ]}
+                            featuresExtras={[]}
                         />
                     </div>
                     <div>
@@ -81,23 +78,19 @@ export default function PricePage() {
                             price="S/ 00.00"
                             style="premium"
                             features={[
-                                'Dominio.com / .pe',
-                                'Hosting de alta evlocidad',
-                                'Certificado SSL',
-                                'Mas de 5 páginas',
+                                '5 páginas',
+                                'Propuesta de diseño',
+                                'Página web administrable',
+                                'Formulario de contactanos',
+                                'Optimizacion SEO',
+                                'Integrado a las redes sociales',
+                                'Pasarela de pago',
+                                '10 cuentas de correo',
+                                'Blog informativo',
+                                'Tienda virtual',
                                 'Carrito de compras',
                             ]}
-                            featuresExtras={['Pasarela de pago',
-                                'Slider intro/ fotos y textos',
-                                '10 cuentas de correo',
-                                'Página web administrable',
-                                'Optimizacion SEO',
-                                'Galería de imágenes',
-                                'Blog informativo',
-                                'Integrado a redes sociales',
-                                'Chat de Facebook Messenger',
-                                'Contacto rápido a WhatsApp',
-                                'Tienda o Aula Virtual']} />
+                            featuresExtras={[]} />
                     </div>
                     <div>
                         <CardPrice
@@ -106,20 +99,19 @@ export default function PricePage() {
                             price="S/ 00.00"
                             style="basic"
                             features={[
-                                'Dominio.com',
-                                'Hosting de alta evlocidad',
-                                'Certificado SSL',
-                                '3 Paginas',
-                                'Propuesta de Diseño',
-                            ]}
-                            featuresExtras={['Página web administrable',
+                                '10 páginas',
+                                'Propuesta de diseño',
+                                'Página web administrable',
+                                'Formulario de contactanos',
                                 'Optimizacion SEO',
-                                'Galeria de imagenes',
+                                'Integrado a las redes sociales',
+                                'Pasarela de pago',
+                                '15 cuentas de correo',
                                 'Blog informativo',
-                                'Integrado a redes sociales',
-                                'Chat de Facebook Messeger',
-                                'Contacto rápido de Whatsapp',
-                                'Tienda o Aula virtual']} />
+                                'Tienda virtual',
+                                'Carrito de compras',
+                            ]}
+                            featuresExtras={[]} />
                     </div>
                 </div>
             </section>
